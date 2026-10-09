@@ -1,0 +1,1613 @@
+{
+ "arcs": [
+  {
+   "id": "the-seventh-clause",
+   "name": "The Seventh Clause",
+   "question": "Will the city write its cover-up into permanent law?",
+   "premise": "Silvyr's Mana Rights Act comes to a vote in forty days. Passing it makes well-ownership, and the Seventh Clause's indemnity for \"downstream effects,\" permanent. Lena Kovalenko is weeks from proof that the downstream effect is the Gloom. Everyone who knows is now on a clock.",
+   "color": "#d9bd77",
+   "cast": [
+    "silvyr-moondew",
+    "elandra-silvershade",
+    "ambassador-julian-torres",
+    "faelar-shadowsong",
+    "dr-lena-kovalenko",
+    "aerendir-leafgold",
+    "maxwell-riggs",
+    "lireal-moonblade",
+    "alex-datafist-mercer",
+    "sylph-voidwalker",
+    "commander-erica-stone"
+   ]
+  },
+  {
+   "id": "the-3-10-freight",
+   "name": "The 3:10 Freight",
+   "question": "What's in the canisters, and who gets to say?",
+   "premise": "Mara's Gloom Raiders hire the Neon Runners through Jax to hit Thrombur's night freight for food. The car they open holds sealed canisters stamped with Elandra's mark. The canisters are full of concentrated silt, bound for the Gloomscape sumps.",
+   "color": "#78cbd0",
+   "cast": [
+    "mara-hearthkeeper",
+    "thrombur-irontrack",
+    "elandor-swiftwind",
+    "max-turbo-jackson",
+    "riley-gearshift-morgan",
+    "brond-ironwheel-gravelheart",
+    "sirena-velocity-vexx",
+    "jax-the-ghost-turner",
+    "ivor-grimeshade",
+    "echo-the-wraith-vale",
+    "rollo-scrapminder",
+    "faelar-shadowsong",
+    "ghost-nakamura"
+   ]
+  },
+  {
+   "id": "the-deep-is-rising",
+   "name": "The Deep Is Rising",
+   "question": "Can the dwarves seal the Sump without admitting what's in it?",
+   "premise": "A Stonefist seam floods with silt and traps twelve miners below Ironheart Foundry. The Sump is rising. To seal it, Thrain needs the Stonefist, Gilda's honest drawings of the Downflow, and Bruni's explosives, and each of them costs him something he swore he'd never pay.",
+   "color": "#df955d",
+   "cast": [
+    "thrain-ironfist",
+    "borin-gravelbeard",
+    "brogan-steelbrow",
+    "gilda-rockfounder",
+    "bruni-gearhack",
+    "brond-ironwheel-gravelheart",
+    "dr-felix-morpho",
+    "rex-nightshade"
+   ]
+  },
+  {
+   "id": "the-carmine-night",
+   "name": "The Carmine Night",
+   "question": "Who pays for a fire that made a hero?",
+   "premise": "On the sixth anniversary, Maxwell rededicates Blaze's statue at Unity Plaza. Valkyrie gets an invitation, and Milo finally gives her a name. The fire that killed 31 people was a planned clearance, and four people in this city planned it, paid for it, staffed it or were paid to be its hero.",
+   "color": "#e0675c",
+   "cast": [
+    "blaze-carmine",
+    "valkyrie-stroud",
+    "elara-the-conductor-vance",
+    "milo-the-broker-harland",
+    "aerendir-leafgold",
+    "commander-erica-stone",
+    "echo-the-wraith-vale",
+    "maxwell-riggs",
+    "rollo-scrapminder",
+    "zara-flux"
+   ]
+  },
+  {
+   "id": "ascension",
+   "name": "Ascension",
+   "question": "Is the DreamPlane a door or a drain?",
+   "premise": "Orion opens a free DreamPlane node at the Veil of Mist, and Morgana's dying patients line up. That same week Max Turbo crashes and wakes up inside the DreamPlane, and he doesn't want to leave. Gael's throat goes violet at every node.",
+   "color": "#8fb4ff",
+   "cast": [
+    "orion-cybermind",
+    "eva-trueborn",
+    "max-turbo-jackson",
+    "morgana-vale",
+    "gael-greenwarden",
+    "dr-nova-seraph",
+    "mia-sanchez",
+    "lireal-moonblade"
+   ]
+  },
+  {
+   "id": "last-call",
+   "name": "Last Call",
+   "question": "Can one night of truce hold a city together?",
+   "premise": "Once a year the three great bartenders host the Long Pour: a crawl from Neon Nirvana to Iron Spirits to The Human Touch, under a truce every faction honors. This year it ends at Mia's bar, during the week everything else is breaking.",
+   "color": "#c8e790",
+   "cast": [
+    "mia-sanchez",
+    "borin-gravelbeard",
+    "lysanthir-altherion",
+    "riley-gearshift-morgan",
+    "max-turbo-jackson",
+    "milo-the-broker-harland",
+    "ivor-grimeshade",
+    "maxwell-riggs"
+   ]
+  }
+ ],
+ "prologue": [
+  {
+   "when": "Over 1,000 years ago",
+   "text": "The elven houses claim the Wells.",
+   "cast": []
+  },
+  {
+   "when": "About 110 years ago",
+   "text": "The Coupling: mana first run through a machine.",
+   "cast": []
+  },
+  {
+   "when": "About 90 years ago",
+   "text": "The Ironfist-Stonefist schism over the Lattice contract.",
+   "cast": []
+  },
+  {
+   "when": "About 80 years ago",
+   "text": "Elandra's ley-survey finds silt. She seals it and takes the mana-sight eye.",
+   "cast": [
+    "elandra-silvershade"
+   ]
+  },
+  {
+   "when": "40 years ago",
+   "text": "The Downflow drainage project, designed by Gilda Rockfounder.",
+   "cast": [
+    "gilda-rockfounder"
+   ]
+  },
+  {
+   "when": "18 years ago",
+   "text": "The Ley Riots. Erica Stone and Valkyrie Stroud serve in the Riot Corps; Maxwell loses his hand in a Lattice fire.",
+   "cast": [
+    "valkyrie-stroud",
+    "maxwell-riggs",
+    "commander-erica-stone"
+   ]
+  },
+  {
+   "when": "12 years ago",
+   "text": "The Unity Accord. The Unity Plaza standoff, staged by Elara Vance, makes Maxwell Speaker.",
+   "cast": [
+    "maxwell-riggs",
+    "elara-the-conductor-vance"
+   ]
+  },
+  {
+   "when": "8 years ago",
+   "text": "Kovalenko's first silt data reaches Maxwell. He funds \"further study.\"",
+   "cast": [
+    "dr-lena-kovalenko",
+    "maxwell-riggs"
+   ]
+  },
+  {
+   "when": "6 years ago",
+   "text": "The Carmine Night: a fire in the upper Gloomscape kills 31. Blaze Carmine becomes a folk hero; Aerendir Leafgold buys the burned blocks.",
+   "cast": [
+    "aerendir-leafgold",
+    "blaze-carmine"
+   ]
+  },
+  {
+   "when": "3 years ago",
+   "text": "Zara Flux wins the first Mutant Quarters seat.",
+   "cast": [
+    "zara-flux"
+   ]
+  }
+ ],
+ "events": [
+  {
+   "id": "the-3-10-freight-1",
+   "kind": "beat",
+   "day": 1,
+   "arc": "the-3-10-freight",
+   "text": "The hit goes cleanly, because a freight door was left unbolted. Thrombur reports the loss an hour late.",
+   "cast": [
+    "thrombur-irontrack"
+   ]
+  },
+  {
+   "id": "the-3-10-freight-2",
+   "kind": "beat",
+   "day": 1,
+   "arc": "the-3-10-freight",
+   "text": "Elandor recognizes his mother's seal and goes quiet for the whole drive back.",
+   "cast": [
+    "elandor-swiftwind"
+   ]
+  },
+  {
+   "id": "the-seventh-clause-1",
+   "kind": "beat",
+   "day": 2,
+   "arc": "the-seventh-clause",
+   "text": "Julian quietly lines up the votes. Silvyr notices he left one clause untouched in his redline.",
+   "cast": [
+    "silvyr-moondew",
+    "ambassador-julian-torres"
+   ]
+  },
+  {
+   "id": "the-3-10-freight-3",
+   "kind": "beat",
+   "day": 4,
+   "arc": "the-3-10-freight",
+   "text": "Ivor appraises a canister at the Bazaar and says one word: \"Grey.\" Echo opens one and finds what she bottles.",
+   "cast": [
+    "ivor-grimeshade",
+    "echo-the-wraith-vale"
+   ]
+  },
+  {
+   "id": "the-deep-is-rising-1",
+   "kind": "beat",
+   "day": 5,
+   "arc": "the-deep-is-rising",
+   "text": "Borin's back room becomes the only place Thrain and the Stonefist matriarch will meet. He puts out two mugs and his whole stock of rings.",
+   "cast": [
+    "thrain-ironfist",
+    "borin-gravelbeard"
+   ]
+  },
+  {
+   "id": "the-3-10-freight-4",
+   "kind": "beat",
+   "day": 6,
+   "arc": "the-3-10-freight",
+   "text": "Rollo puts a moss filter over an open canister. By morning the silt reading has dropped by half.",
+   "cast": [
+    "rollo-scrapminder"
+   ]
+  },
+  {
+   "id": "the-deep-is-rising-2",
+   "kind": "beat",
+   "day": 8,
+   "arc": "the-deep-is-rising",
+   "text": "Brogan's workers refuse the lower levels. The Syndicate calls in Local 7's strike-fund loan to break the refusal.",
+   "cast": [
+    "brogan-steelbrow"
+   ]
+  },
+  {
+   "id": "the-seventh-clause-2",
+   "kind": "beat",
+   "day": 9,
+   "arc": "the-seventh-clause",
+   "text": "A University courier carrying Lena's samples doesn't arrive. Erica's missing-persons file grows by one, and the trail ends at the gates of Elven Heights.",
+   "cast": [
+    "commander-erica-stone",
+    "dr-lena-kovalenko"
+   ]
+  },
+  {
+   "id": "ascension-1",
+   "kind": "beat",
+   "day": 10,
+   "arc": "ascension",
+   "text": "Morgana's best nurse ascends first, and her body stays breathing for nine days.",
+   "cast": [
+    "morgana-vale"
+   ]
+  },
+  {
+   "id": "the-3-10-freight-5",
+   "kind": "beat",
+   "day": 12,
+   "arc": "the-3-10-freight",
+   "text": "The Quiet Office hires Ghost, through Milo, to get the canisters back. Jax is asked, politely, to drive someone out of the city.",
+   "cast": [
+    "ghost-nakamura",
+    "milo-the-broker-harland",
+    "jax-the-ghost-turner"
+   ]
+  },
+  {
+   "id": "ascension-2",
+   "kind": "beat",
+   "day": 13,
+   "arc": "ascension",
+   "text": "Gael preaches at the node's door with his throat lit violet. People believe him for an afternoon.",
+   "cast": [
+    "gael-greenwarden"
+   ]
+  },
+  {
+   "id": "the-3-10-freight-fork",
+   "kind": "fork",
+   "day": 13,
+   "arc": "the-3-10-freight",
+   "text": "The Raiders hold the proof. They can sell it to Aerendir, give it to Morgana, hand it to Gael's network, or hold it as leverage. Elandor can take it home to his mother himself.",
+   "open": "How much does Thrombur know he knows? He has never once opened a canister.",
+   "cast": [
+    "aerendir-leafgold",
+    "morgana-vale",
+    "elandor-swiftwind",
+    "gael-greenwarden"
+   ]
+  },
+  {
+   "id": "the-deep-is-rising-3",
+   "kind": "beat",
+   "day": 14,
+   "arc": "the-deep-is-rising",
+   "text": "Gilda draws the Downflow honestly for the first time and has to put her name on where it empties.",
+   "cast": [
+    "gilda-rockfounder"
+   ]
+  },
+  {
+   "id": "ascension-3",
+   "kind": "beat",
+   "day": 15,
+   "arc": "ascension",
+   "text": "Max's body is at Nova's clinic while his mind is in the DreamPlane. Mia sits with the body.",
+   "cast": [
+    "dr-nova-seraph",
+    "mia-sanchez",
+    "max-turbo-jackson"
+   ]
+  },
+  {
+   "id": "the-seventh-clause-3",
+   "kind": "beat",
+   "day": 16,
+   "arc": "the-seventh-clause",
+   "text": "Alex tells Lena who really funds her. She has to decide whether Aerendir's money poisons the proof.",
+   "cast": [
+    "aerendir-leafgold",
+    "dr-lena-kovalenko",
+    "alex-datafist-mercer"
+   ]
+  },
+  {
+   "id": "the-carmine-night-1",
+   "kind": "beat",
+   "day": 18,
+   "arc": "the-carmine-night",
+   "text": "A survivor speaks on Zara's channel about who arrived before Blaze did.",
+   "cast": [
+    "blaze-carmine",
+    "zara-flux"
+   ]
+  },
+  {
+   "id": "the-deep-is-rising-4",
+   "kind": "beat",
+   "day": 19,
+   "arc": "the-deep-is-rising",
+   "text": "Bruni is asked to blow another tunnel. Brond asks to go down with him.",
+   "cast": [
+    "bruni-gearhack",
+    "brond-ironwheel-gravelheart"
+   ]
+  },
+  {
+   "id": "the-carmine-night-2",
+   "kind": "beat",
+   "day": 20,
+   "arc": "the-carmine-night",
+   "text": "Valkyrie gets the planner's name from Milo, and Elara gets a warning from Milo in the same hour.",
+   "cast": [
+    "valkyrie-stroud",
+    "elara-the-conductor-vance",
+    "milo-the-broker-harland"
+   ]
+  },
+  {
+   "id": "ascension-4",
+   "kind": "beat",
+   "day": 21,
+   "arc": "ascension",
+   "text": "Eva Trueborn plugs in to reach her son. She's the first Purist to do it.",
+   "cast": [
+    "eva-trueborn"
+   ]
+  },
+  {
+   "id": "the-deep-is-rising-5",
+   "kind": "beat",
+   "day": 23,
+   "arc": "the-deep-is-rising",
+   "text": "Felix's dross supply dries up, and the price of Hush in the Quarters doubles overnight. Rex's crystal reaches his eye.",
+   "cast": [
+    "dr-felix-morpho",
+    "rex-nightshade"
+   ]
+  },
+  {
+   "id": "the-carmine-night-3",
+   "kind": "beat",
+   "day": 24,
+   "arc": "the-carmine-night",
+   "text": "Elara tells Maxwell she'll release the Unity Plaza proof if Erica's investigation goes forward.",
+   "cast": [
+    "maxwell-riggs",
+    "commander-erica-stone",
+    "elara-the-conductor-vance"
+   ]
+  },
+  {
+   "id": "the-deep-is-rising-fork",
+   "kind": "fork",
+   "day": 25,
+   "arc": "the-deep-is-rising",
+   "text": "Sealing the Sump saves the miners and pushes the silt somewhere else: up into the Quarters or out into the Gloomscape. Thrain chooses where the grey goes, and someone has to be told.",
+   "open": "Whose axe took Thrain's hand on the night of the schism?",
+   "cast": [
+    "thrain-ironfist"
+   ]
+  },
+  {
+   "id": "the-seventh-clause-4",
+   "kind": "beat",
+   "day": 26,
+   "arc": "the-seventh-clause",
+   "text": "Lireal leads the Pacers into the Archive of Ages for the original ley-survey. Faelar's songbird watches them go in, and Sylph watches the songbird.",
+   "cast": [
+    "faelar-shadowsong",
+    "lireal-moonblade",
+    "sylph-voidwalker"
+   ]
+  },
+  {
+   "id": "ascension-5",
+   "kind": "beat",
+   "day": 27,
+   "arc": "ascension",
+   "text": "Inside, the drowned speak to Eva in voices she recognizes from her clinics.",
+   "cast": [
+    "eva-trueborn"
+   ]
+  },
+  {
+   "id": "ascension-fork",
+   "kind": "fork",
+   "day": 28,
+   "arc": "ascension",
+   "text": "Eva can bring Max back and burn the node, prove Orion right by staying, or come out saying the drowned are real, which would make the Purists the DreamPlane's newest believers.",
+   "open": "Are the drowned the ascended dead, or echoes in silt-heavy mana? The bible never answers this.",
+   "cast": [
+    "orion-cybermind",
+    "eva-trueborn",
+    "max-turbo-jackson"
+   ]
+  },
+  {
+   "id": "the-carmine-night-4",
+   "kind": "beat",
+   "day": 29,
+   "arc": "the-carmine-night",
+   "text": "Echo meets Valkyrie for the first time and says her squad's names out loud.",
+   "cast": [
+    "valkyrie-stroud",
+    "echo-the-wraith-vale"
+   ]
+  },
+  {
+   "id": "the-carmine-night-5",
+   "kind": "beat",
+   "day": 31,
+   "arc": "the-carmine-night",
+   "text": "Rollo returns the thing Blaze dropped in the fire.",
+   "cast": [
+    "rollo-scrapminder",
+    "blaze-carmine"
+   ]
+  },
+  {
+   "id": "the-carmine-night-fork",
+   "kind": "fork",
+   "day": 31,
+   "arc": "the-carmine-night",
+   "text": "Blaze can tell the truth at the rededication and lose the legend that pays him, or he can keep the legend. Erica can close the case and lose Maxwell, or let it go and lose Valkyrie for good. Either way, Aerendir still owns the land.",
+   "open": "Did Blaze know how big the fire would be? He says no. The children he carried believe him.",
+   "cast": [
+    "aerendir-leafgold",
+    "valkyrie-stroud",
+    "maxwell-riggs",
+    "commander-erica-stone",
+    "blaze-carmine"
+   ]
+  },
+  {
+   "id": "last-call-1",
+   "kind": "beat",
+   "day": 33,
+   "arc": "last-call",
+   "text": "Mia's jar finally reaches the ocular price the same week her mother's filters fail.",
+   "cast": [
+    "mia-sanchez"
+   ]
+  },
+  {
+   "id": "the-seventh-clause-5",
+   "kind": "beat",
+   "day": 36,
+   "arc": "the-seventh-clause",
+   "text": "Silvyr traces the annex's drafting history to her mentor's hand and asks Elandra to her face.",
+   "cast": [
+    "elandra-silvershade",
+    "silvyr-moondew"
+   ]
+  },
+  {
+   "id": "last-call-2",
+   "kind": "beat",
+   "day": 37,
+   "arc": "last-call",
+   "text": "Lysanthir calls in Aerendir's old debt on Mia's behalf. She hasn't decided whether to let him.",
+   "cast": [
+    "lysanthir-altherion",
+    "aerendir-leafgold",
+    "mia-sanchez"
+   ]
+  },
+  {
+   "id": "last-call-3",
+   "kind": "beat",
+   "day": 38,
+   "arc": "last-call",
+   "text": "At Iron Spirits, Borin adds a ring. Nobody asks whose until he's poured.",
+   "cast": [
+    "borin-gravelbeard"
+   ]
+  },
+  {
+   "id": "last-call-4",
+   "kind": "beat",
+   "day": 38,
+   "arc": "last-call",
+   "text": "A tap blows at The Human Touch at the worst possible moment. Riley fixes it with her tool fingers while two factions watch.",
+   "cast": [
+    "riley-gearshift-morgan"
+   ]
+  },
+  {
+   "id": "last-call-5",
+   "kind": "beat",
+   "day": 39,
+   "arc": "last-call",
+   "text": "At dawn Ivor's anonymous tips stop arriving, and Mia finally works out who sent them.",
+   "cast": [
+    "ivor-grimeshade",
+    "mia-sanchez"
+   ]
+  },
+  {
+   "id": "last-call-fork",
+   "kind": "fork",
+   "day": 39,
+   "arc": "last-call",
+   "text": "Mia can buy the eye, buy her mother's filters, or take Lysanthir's favor and owe the Heights. Each choice is small, and each one is the city's bargain at the size of one person.",
+   "open": "Why doesn't Riley drive? Mia knows. The Long Pour is the one night she might tell.",
+   "cast": [
+    "lysanthir-altherion",
+    "mia-sanchez"
+   ]
+  },
+  {
+   "id": "the-seventh-clause-fork",
+   "kind": "fork",
+   "day": 40,
+   "arc": "the-seventh-clause",
+   "text": "On vote day Silvyr can withdraw the Act (and break Elandra), pass it (and become the cover-up), or amend it so the well-owners carry the liability (and start a war between the houses). Faelar decides, separately, whether the survey reaches the press.",
+   "open": "Did Elandra choose Silvyr for her rigor or her trust? Elandra may not know either.",
+   "cast": [
+    "elandra-silvershade",
+    "silvyr-moondew",
+    "faelar-shadowsong"
+   ]
+  }
+ ],
+ "whispers": [
+  {
+   "id": "elandra-silvershade-1",
+   "about": "elandra-silvershade",
+   "cluster": "the-wells",
+   "text": "Silvyr brings her the draft annex and asks, very carefully, who wrote it.",
+   "cast": [
+    "elandra-silvershade",
+    "silvyr-moondew"
+   ]
+  },
+  {
+   "id": "elandra-silvershade-2",
+   "about": "elandra-silvershade",
+   "cluster": "the-wells",
+   "text": "Her son's crew hijacks a freight car stamped with her own seal.",
+   "cast": [
+    "elandra-silvershade"
+   ]
+  },
+  {
+   "id": "lysanthir-altherion-1",
+   "about": "lysanthir-altherion",
+   "cluster": "the-wells",
+   "text": "He finally calls in Aerendir's debt, on someone else's behalf.",
+   "cast": [
+    "lysanthir-altherion",
+    "aerendir-leafgold"
+   ]
+  },
+  {
+   "id": "lysanthir-altherion-2",
+   "about": "lysanthir-altherion",
+   "cluster": "the-wells",
+   "text": "Faelar asks for a table on the first of the month, as always, and doesn't come.",
+   "cast": [
+    "lysanthir-altherion",
+    "faelar-shadowsong"
+   ]
+  },
+  {
+   "id": "aerendir-leafgold-1",
+   "about": "aerendir-leafgold",
+   "cluster": "carmine-night",
+   "text": "Kovalenko gets a grant renewal with a deadline that matches his portfolio a little too well.",
+   "cast": [
+    "aerendir-leafgold",
+    "dr-lena-kovalenko"
+   ]
+  },
+  {
+   "id": "aerendir-leafgold-2",
+   "about": "aerendir-leafgold",
+   "cluster": "carmine-night",
+   "text": "Valkyrie Stroud learns who owned the land her squad died on.",
+   "cast": [
+    "aerendir-leafgold",
+    "valkyrie-stroud"
+   ]
+  },
+  {
+   "id": "silvyr-moondew-1",
+   "about": "silvyr-moondew",
+   "cluster": "the-wells",
+   "text": "Julian redlines her draft and leaves one clause untouched. She notices.",
+   "cast": [
+    "silvyr-moondew",
+    "ambassador-julian-torres"
+   ]
+  },
+  {
+   "id": "silvyr-moondew-2",
+   "about": "silvyr-moondew",
+   "cluster": "the-wells",
+   "text": "The vote is in forty days, and her mentor won't meet her eyes.",
+   "cast": [
+    "silvyr-moondew"
+   ]
+  },
+  {
+   "id": "faelar-shadowsong-1",
+   "about": "faelar-shadowsong",
+   "cluster": "the-wells",
+   "text": "The songbird records something outside Kovalenko's lab that he decides not to report.",
+   "cast": [
+    "faelar-shadowsong",
+    "dr-lena-kovalenko"
+   ]
+  },
+  {
+   "id": "faelar-shadowsong-2",
+   "about": "faelar-shadowsong",
+   "cluster": "the-wells",
+   "text": "Lysanthir sets a table for two and leaves the second chair empty.",
+   "cast": [
+    "faelar-shadowsong",
+    "lysanthir-altherion"
+   ]
+  },
+  {
+   "id": "maxwell-riggs-1",
+   "about": "maxwell-riggs",
+   "cluster": "the-wells",
+   "text": "Elara calls in her leverage the week Erica reopens the Carmine Night file.",
+   "cast": [
+    "maxwell-riggs",
+    "commander-erica-stone",
+    "elara-the-conductor-vance"
+   ]
+  },
+  {
+   "id": "maxwell-riggs-2",
+   "about": "maxwell-riggs",
+   "cluster": "the-wells",
+   "text": "Lena brings him the full data, and a press conference date.",
+   "cast": [
+    "maxwell-riggs",
+    "dr-lena-kovalenko"
+   ]
+  },
+  {
+   "id": "mia-sanchez-1",
+   "about": "mia-sanchez",
+   "cluster": "downhill-trade",
+   "text": "Someone powerful offers to fill the jar, with strings.",
+   "cast": [
+    "mia-sanchez"
+   ]
+  },
+  {
+   "id": "mia-sanchez-2",
+   "about": "mia-sanchez",
+   "cluster": "downhill-trade",
+   "text": "The Long Pour is at her bar this year, and every faction in the city is on the guest list.",
+   "cast": [
+    "mia-sanchez"
+   ]
+  },
+  {
+   "id": "dr-lena-kovalenko-1",
+   "about": "dr-lena-kovalenko",
+   "cluster": "bodies",
+   "text": "Her grant renewal arrives with an unusually specific deadline.",
+   "cast": [
+    "dr-lena-kovalenko"
+   ]
+  },
+  {
+   "id": "dr-lena-kovalenko-2",
+   "about": "dr-lena-kovalenko",
+   "cluster": "bodies",
+   "text": "Alex Mercer, her expelled student, shows up at her window and tells her who really pays her.",
+   "cast": [
+    "dr-lena-kovalenko",
+    "alex-datafist-mercer"
+   ]
+  },
+  {
+   "id": "ambassador-julian-torres-1",
+   "about": "ambassador-julian-torres",
+   "cluster": "the-wells",
+   "text": "Silvyr asks him straight out who wrote the annex.",
+   "cast": [
+    "ambassador-julian-torres",
+    "silvyr-moondew"
+   ]
+  },
+  {
+   "id": "ambassador-julian-torres-2",
+   "about": "ambassador-julian-torres",
+   "cluster": "the-wells",
+   "text": "Morgana invites him to a ward in the Gloomscape. He has never said yes.",
+   "cast": [
+    "ambassador-julian-torres",
+    "morgana-vale"
+   ]
+  },
+  {
+   "id": "commander-erica-stone-1",
+   "about": "commander-erica-stone",
+   "cluster": "carmine-night",
+   "text": "Valkyrie walks into her office asking for the Carmine Night file.",
+   "cast": [
+    "commander-erica-stone",
+    "valkyrie-stroud"
+   ]
+  },
+  {
+   "id": "commander-erica-stone-2",
+   "about": "commander-erica-stone",
+   "cluster": "carmine-night",
+   "text": "A Syndicate captain offers her the orchestra's conductor if she lets one shipment go.",
+   "cast": [
+    "commander-erica-stone"
+   ]
+  },
+  {
+   "id": "eva-trueborn-1",
+   "about": "eva-trueborn",
+   "cluster": "bodies",
+   "text": "Max crashes and goes deep into the DreamPlane; to reach him she has to plug in.",
+   "cast": [
+    "eva-trueborn",
+    "max-turbo-jackson"
+   ]
+  },
+  {
+   "id": "eva-trueborn-2",
+   "about": "eva-trueborn",
+   "cluster": "bodies",
+   "text": "Kovalenko's data would prove the Purists right about the harm and wrong about the soul.",
+   "cast": [
+    "eva-trueborn",
+    "dr-lena-kovalenko"
+   ]
+  },
+  {
+   "id": "orion-cybermind-1",
+   "about": "orion-cybermind",
+   "cluster": "bodies",
+   "text": "He opens a free node at the Veil of Mist, and Morgana's patients line up.",
+   "cast": [
+    "orion-cybermind",
+    "morgana-vale"
+   ]
+  },
+  {
+   "id": "orion-cybermind-2",
+   "about": "orion-cybermind",
+   "cluster": "bodies",
+   "text": "Eva Trueborn plugs in to find her son and finds Orion waiting.",
+   "cast": [
+    "orion-cybermind",
+    "eva-trueborn"
+   ]
+  },
+  {
+   "id": "thrain-ironfist-1",
+   "about": "thrain-ironfist",
+   "cluster": "the-deep",
+   "text": "A Stonefist seam floods with silt and twelve miners are trapped below his foundry.",
+   "cast": [
+    "thrain-ironfist"
+   ]
+  },
+  {
+   "id": "thrain-ironfist-2",
+   "about": "thrain-ironfist",
+   "cluster": "the-deep",
+   "text": "Brogan brings him a list of foundry workers with grey in their veins.",
+   "cast": [
+    "thrain-ironfist",
+    "brogan-steelbrow"
+   ]
+  },
+  {
+   "id": "borin-gravelbeard-1",
+   "about": "borin-gravelbeard",
+   "cluster": "the-deep",
+   "text": "The Stonefist matriarch and Thrain both ask for his back room on the same night.",
+   "cast": [
+    "borin-gravelbeard",
+    "thrain-ironfist"
+   ]
+  },
+  {
+   "id": "borin-gravelbeard-2",
+   "about": "borin-gravelbeard",
+   "cluster": "the-deep",
+   "text": "Mia brings him a new cocktail for the Long Pour, and he hates it loudly and orders forty bottles.",
+   "cast": [
+    "borin-gravelbeard",
+    "mia-sanchez"
+   ]
+  },
+  {
+   "id": "brogan-steelbrow-1",
+   "about": "brogan-steelbrow",
+   "cluster": "the-deep",
+   "text": "The Syndicate calls in the strike-fund loan: one vote at Local 7, their way.",
+   "cast": [
+    "brogan-steelbrow"
+   ]
+  },
+  {
+   "id": "brogan-steelbrow-2",
+   "about": "brogan-steelbrow",
+   "cluster": "the-deep",
+   "text": "Lena Kovalenko asks to sample his members' blood.",
+   "cast": [
+    "brogan-steelbrow",
+    "dr-lena-kovalenko"
+   ]
+  },
+  {
+   "id": "gilda-rockfounder-1",
+   "about": "gilda-rockfounder",
+   "cluster": "the-wells",
+   "text": "Thrain asks her to design a seal for the Sump, which means drawing the Downflow honestly for the first time.",
+   "cast": [
+    "gilda-rockfounder",
+    "thrain-ironfist"
+   ]
+  },
+  {
+   "id": "gilda-rockfounder-2",
+   "about": "gilda-rockfounder",
+   "cluster": "the-wells",
+   "text": "Rollo leaves the outfall map on Thrombur's bench, under her stones.",
+   "cast": [
+    "gilda-rockfounder",
+    "thrombur-irontrack",
+    "rollo-scrapminder"
+   ]
+  },
+  {
+   "id": "thrombur-irontrack-1",
+   "about": "thrombur-irontrack",
+   "cluster": "the-wells",
+   "text": "The Raiders take a canister instead of food, and he has to decide whether to report the loss.",
+   "cast": [
+    "thrombur-irontrack"
+   ]
+  },
+  {
+   "id": "thrombur-irontrack-2",
+   "about": "thrombur-irontrack",
+   "cluster": "the-wells",
+   "text": "Elandor Swiftwind asks him, very politely, whose seal is on the night freight.",
+   "cast": [
+    "thrombur-irontrack",
+    "elandor-swiftwind"
+   ]
+  },
+  {
+   "id": "zara-flux-1",
+   "about": "zara-flux",
+   "cluster": "bodies",
+   "text": "A mutant registration bill appears on the Council agenda the week Rex's crystal reaches his eye.",
+   "cast": [
+    "zara-flux",
+    "rex-nightshade"
+   ]
+  },
+  {
+   "id": "zara-flux-2",
+   "about": "zara-flux",
+   "cluster": "bodies",
+   "text": "Ghost turns up at a rally, fully visible, and doesn't say why.",
+   "cast": [
+    "zara-flux",
+    "ghost-nakamura"
+   ]
+  },
+  {
+   "id": "rex-nightshade-1",
+   "about": "rex-nightshade",
+   "cluster": "bodies",
+   "text": "Felix brings him Hush data that says the drug is the same grey as his face.",
+   "cast": [
+    "rex-nightshade",
+    "dr-felix-morpho"
+   ]
+  },
+  {
+   "id": "rex-nightshade-2",
+   "about": "rex-nightshade",
+   "cluster": "bodies",
+   "text": "Zara finally refuses his money, at a rally, on camera.",
+   "cast": [
+    "rex-nightshade",
+    "zara-flux"
+   ]
+  },
+  {
+   "id": "dr-felix-morpho-1",
+   "about": "dr-felix-morpho",
+   "cluster": "downhill-trade",
+   "text": "Morgana asks for his notebook.",
+   "cast": [
+    "dr-felix-morpho",
+    "morgana-vale"
+   ]
+  },
+  {
+   "id": "dr-felix-morpho-2",
+   "about": "dr-felix-morpho",
+   "cluster": "downhill-trade",
+   "text": "Ivor catches him at the Bazaar with a case of micro-doses.",
+   "cast": [
+    "dr-felix-morpho",
+    "ivor-grimeshade"
+   ]
+  },
+  {
+   "id": "dr-nova-seraph-1",
+   "about": "dr-nova-seraph",
+   "cluster": "bodies",
+   "text": "Lena Kovalenko asks her for a lung to test, and for the failure data.",
+   "cast": [
+    "dr-nova-seraph",
+    "dr-lena-kovalenko"
+   ]
+  },
+  {
+   "id": "dr-nova-seraph-2",
+   "about": "dr-nova-seraph",
+   "cluster": "bodies",
+   "text": "Rex asks her how long he has. She tells him.",
+   "cast": [
+    "dr-nova-seraph",
+    "rex-nightshade"
+   ]
+  },
+  {
+   "id": "morgana-vale-1",
+   "about": "morgana-vale",
+   "cluster": "bodies",
+   "text": "Lena brings her the proof, and asks her to stand beside it at the press conference.",
+   "cast": [
+    "morgana-vale",
+    "dr-lena-kovalenko"
+   ]
+  },
+  {
+   "id": "morgana-vale-2",
+   "about": "morgana-vale",
+   "cluster": "bodies",
+   "text": "Orion's free node opens at the Veil of Mist, and her best nurse goes first.",
+   "cast": [
+    "morgana-vale",
+    "orion-cybermind"
+   ]
+  },
+  {
+   "id": "ivor-grimeshade-1",
+   "about": "ivor-grimeshade",
+   "cluster": "downhill-trade",
+   "text": "The Raiders bring him a sealed canister to appraise. He knows what grey looks like.",
+   "cast": [
+    "ivor-grimeshade"
+   ]
+  },
+  {
+   "id": "ivor-grimeshade-2",
+   "about": "ivor-grimeshade",
+   "cluster": "downhill-trade",
+   "text": "Morgana walks into the Bazaar for the first time in nine years.",
+   "cast": [
+    "ivor-grimeshade",
+    "morgana-vale"
+   ]
+  },
+  {
+   "id": "mara-hearthkeeper-1",
+   "about": "mara-hearthkeeper",
+   "cluster": "downhill-trade",
+   "text": "The Raiders open a freight car and find canisters instead of food.",
+   "cast": [
+    "mara-hearthkeeper"
+   ]
+  },
+  {
+   "id": "mara-hearthkeeper-2",
+   "about": "mara-hearthkeeper",
+   "cluster": "downhill-trade",
+   "text": "Morgana asks her, straight out, where the rations come from.",
+   "cast": [
+    "mara-hearthkeeper",
+    "morgana-vale"
+   ]
+  },
+  {
+   "id": "rollo-scrapminder-1",
+   "about": "rollo-scrapminder",
+   "cluster": "downhill-trade",
+   "text": "Gael brings a sensor reading that proves the moss works, and a reporter.",
+   "cast": [
+    "rollo-scrapminder",
+    "gael-greenwarden"
+   ]
+  },
+  {
+   "id": "rollo-scrapminder-2",
+   "about": "rollo-scrapminder",
+   "cluster": "downhill-trade",
+   "text": "Aerendir's people come to buy the Boneyard.",
+   "cast": [
+    "rollo-scrapminder",
+    "aerendir-leafgold"
+   ]
+  },
+  {
+   "id": "gael-greenwarden-1",
+   "about": "gael-greenwarden",
+   "cluster": "bodies",
+   "text": "Rollo asks him to test the moss in front of witnesses.",
+   "cast": [
+    "gael-greenwarden",
+    "rollo-scrapminder"
+   ]
+  },
+  {
+   "id": "gael-greenwarden-2",
+   "about": "gael-greenwarden",
+   "cluster": "bodies",
+   "text": "Orion invites him into the DreamPlane to hear the drowned.",
+   "cast": [
+    "gael-greenwarden",
+    "orion-cybermind"
+   ]
+  },
+  {
+   "id": "blaze-carmine-1",
+   "about": "blaze-carmine",
+   "cluster": "carmine-night",
+   "text": "Maxwell rededicates the statue on the sixth anniversary, and Valkyrie is invited.",
+   "cast": [
+    "blaze-carmine",
+    "valkyrie-stroud",
+    "maxwell-riggs"
+   ]
+  },
+  {
+   "id": "blaze-carmine-2",
+   "about": "blaze-carmine",
+   "cluster": "carmine-night",
+   "text": "Erica asks him to read the casualty list out loud.",
+   "cast": [
+    "blaze-carmine",
+    "commander-erica-stone"
+   ]
+  },
+  {
+   "id": "ghost-nakamura-1",
+   "about": "ghost-nakamura",
+   "cluster": "carmine-night",
+   "text": "Sylph puts a scope on him, then lowers the rifle.",
+   "cast": [
+    "ghost-nakamura",
+    "sylph-voidwalker"
+   ]
+  },
+  {
+   "id": "ghost-nakamura-2",
+   "about": "ghost-nakamura",
+   "cluster": "carmine-night",
+   "text": "Zara asks him to stand next to her, visible, on Council day.",
+   "cast": [
+    "ghost-nakamura",
+    "zara-flux"
+   ]
+  },
+  {
+   "id": "valkyrie-stroud-1",
+   "about": "valkyrie-stroud",
+   "cluster": "carmine-night",
+   "text": "Milo finally gives her a name: Elara Vance.",
+   "cast": [
+    "valkyrie-stroud",
+    "elara-the-conductor-vance",
+    "milo-the-broker-harland"
+   ]
+  },
+  {
+   "id": "valkyrie-stroud-2",
+   "about": "valkyrie-stroud",
+   "cluster": "carmine-night",
+   "text": "Erica offers her the Carmine Night file in exchange for one honest conversation.",
+   "cast": [
+    "valkyrie-stroud",
+    "commander-erica-stone"
+   ]
+  },
+  {
+   "id": "elara-the-conductor-vance-1",
+   "about": "elara-the-conductor-vance",
+   "cluster": "carmine-night",
+   "text": "Valkyrie gets her name.",
+   "cast": [
+    "elara-the-conductor-vance",
+    "valkyrie-stroud"
+   ]
+  },
+  {
+   "id": "elara-the-conductor-vance-2",
+   "about": "elara-the-conductor-vance",
+   "cluster": "carmine-night",
+   "text": "Maxwell asks for the proof back. He offers something she actually wants.",
+   "cast": [
+    "elara-the-conductor-vance",
+    "maxwell-riggs"
+   ]
+  },
+  {
+   "id": "milo-the-broker-harland-1",
+   "about": "milo-the-broker-harland",
+   "cluster": "carmine-night",
+   "text": "Valkyrie asks him for the planner's name.",
+   "cast": [
+    "milo-the-broker-harland",
+    "valkyrie-stroud"
+   ]
+  },
+  {
+   "id": "milo-the-broker-harland-2",
+   "about": "milo-the-broker-harland",
+   "cluster": "carmine-night",
+   "text": "The Pacers finally call him, for something he can't price.",
+   "cast": [
+    "milo-the-broker-harland"
+   ]
+  },
+  {
+   "id": "jax-the-ghost-turner-1",
+   "about": "jax-the-ghost-turner",
+   "cluster": "downhill-trade",
+   "text": "He delivers the envelope.",
+   "cast": [
+    "jax-the-ghost-turner"
+   ]
+  },
+  {
+   "id": "jax-the-ghost-turner-2",
+   "about": "jax-the-ghost-turner",
+   "cluster": "downhill-trade",
+   "text": "Faelar gets into the back seat.",
+   "cast": [
+    "jax-the-ghost-turner",
+    "faelar-shadowsong"
+   ]
+  },
+  {
+   "id": "lireal-moonblade-1",
+   "about": "lireal-moonblade",
+   "cluster": "carmine-night",
+   "text": "The Pacers decide to break the Archive.",
+   "cast": [
+    "lireal-moonblade"
+   ]
+  },
+  {
+   "id": "lireal-moonblade-2",
+   "about": "lireal-moonblade",
+   "cluster": "carmine-night",
+   "text": "Faelar's songbird lands on her windowsill.",
+   "cast": [
+    "lireal-moonblade",
+    "faelar-shadowsong"
+   ]
+  },
+  {
+   "id": "alex-datafist-mercer-1",
+   "about": "alex-datafist-mercer",
+   "cluster": "carmine-night",
+   "text": "Lena's lab goes dark, and he's the one who notices the songbird.",
+   "cast": [
+    "alex-datafist-mercer",
+    "dr-lena-kovalenko"
+   ]
+  },
+  {
+   "id": "alex-datafist-mercer-2",
+   "about": "alex-datafist-mercer",
+   "cluster": "carmine-night",
+   "text": "Bruni finds his comms to Erica.",
+   "cast": [
+    "alex-datafist-mercer",
+    "commander-erica-stone",
+    "bruni-gearhack"
+   ]
+  },
+  {
+   "id": "bruni-gearhack-1",
+   "about": "bruni-gearhack",
+   "cluster": "the-deep",
+   "text": "Thrain asks him to blow another tunnel to seal the Sump.",
+   "cast": [
+    "bruni-gearhack",
+    "thrain-ironfist"
+   ]
+  },
+  {
+   "id": "bruni-gearhack-2",
+   "about": "bruni-gearhack",
+   "cluster": "the-deep",
+   "text": "Brond sits down next to him at Iron Spirits, and Bruni doesn't leave.",
+   "cast": [
+    "bruni-gearhack",
+    "brond-ironwheel-gravelheart"
+   ]
+  },
+  {
+   "id": "sylph-voidwalker-1",
+   "about": "sylph-voidwalker",
+   "cluster": "carmine-night",
+   "text": "A contract on Ghost reaches the Pacers.",
+   "cast": [
+    "sylph-voidwalker",
+    "ghost-nakamura"
+   ]
+  },
+  {
+   "id": "sylph-voidwalker-2",
+   "about": "sylph-voidwalker",
+   "cluster": "carmine-night",
+   "text": "Ghost leaves a light on in the drain.",
+   "cast": [
+    "sylph-voidwalker",
+    "ghost-nakamura"
+   ]
+  },
+  {
+   "id": "echo-the-wraith-vale-1",
+   "about": "echo-the-wraith-vale",
+   "cluster": "carmine-night",
+   "text": "The Raiders bring her a sealed canister from the 3:10, and it's full of what she makes.",
+   "cast": [
+    "echo-the-wraith-vale"
+   ]
+  },
+  {
+   "id": "echo-the-wraith-vale-2",
+   "about": "echo-the-wraith-vale",
+   "cluster": "carmine-night",
+   "text": "Morgana asks her to help, for the first time in twenty years.",
+   "cast": [
+    "echo-the-wraith-vale",
+    "morgana-vale"
+   ]
+  },
+  {
+   "id": "elandor-swiftwind-1",
+   "about": "elandor-swiftwind",
+   "cluster": "downhill-trade",
+   "text": "The Raiders hire the Runners to hit the 3:10, and the canisters carry his mother's seal.",
+   "cast": [
+    "elandor-swiftwind"
+   ]
+  },
+  {
+   "id": "elandor-swiftwind-2",
+   "about": "elandor-swiftwind",
+   "cluster": "downhill-trade",
+   "text": "Elandra sends a message through Thrombur's post, by hand.",
+   "cast": [
+    "elandor-swiftwind",
+    "thrombur-irontrack",
+    "elandra-silvershade"
+   ]
+  },
+  {
+   "id": "max-turbo-jackson-1",
+   "about": "max-turbo-jackson",
+   "cluster": "downhill-trade",
+   "text": "He crashes and wakes up inside the DreamPlane, not wanting to leave.",
+   "cast": [
+    "max-turbo-jackson"
+   ]
+  },
+  {
+   "id": "max-turbo-jackson-2",
+   "about": "max-turbo-jackson",
+   "cluster": "downhill-trade",
+   "text": "His mother shows up at the track.",
+   "cast": [
+    "max-turbo-jackson"
+   ]
+  },
+  {
+   "id": "riley-gearshift-morgan-1",
+   "about": "riley-gearshift-morgan",
+   "cluster": "downhill-trade",
+   "text": "Rollo asks her to scale up the moss filters.",
+   "cast": [
+    "riley-gearshift-morgan",
+    "rollo-scrapminder"
+   ]
+  },
+  {
+   "id": "riley-gearshift-morgan-2",
+   "about": "riley-gearshift-morgan",
+   "cluster": "downhill-trade",
+   "text": "Max crashes in one of her cars.",
+   "cast": [
+    "riley-gearshift-morgan",
+    "max-turbo-jackson"
+   ]
+  },
+  {
+   "id": "brond-ironwheel-gravelheart-1",
+   "about": "brond-ironwheel-gravelheart",
+   "cluster": "the-deep",
+   "text": "The Stonefist matriarch calls him home to help seal the Sump.",
+   "cast": [
+    "brond-ironwheel-gravelheart"
+   ]
+  },
+  {
+   "id": "brond-ironwheel-gravelheart-2",
+   "about": "brond-ironwheel-gravelheart",
+   "cluster": "the-deep",
+   "text": "Sirena gets caught, and he has to choose between the cargo and her.",
+   "cast": [
+    "brond-ironwheel-gravelheart",
+    "sirena-velocity-vexx"
+   ]
+  },
+  {
+   "id": "sirena-velocity-vexx-1",
+   "about": "sirena-velocity-vexx",
+   "cluster": "bodies",
+   "text": "Her annual Shadows job is a Hush shipment.",
+   "cast": [
+    "sirena-velocity-vexx"
+   ]
+  },
+  {
+   "id": "sirena-velocity-vexx-2",
+   "about": "sirena-velocity-vexx",
+   "cluster": "bodies",
+   "text": "Zara asks her to stand guard at a rally where Rex will be on stage.",
+   "cast": [
+    "sirena-velocity-vexx",
+    "zara-flux",
+    "rex-nightshade"
+   ]
+  }
+ ],
+ "clusters": [
+  {
+   "id": "the-wells",
+   "name": "The Wells"
+  },
+  {
+   "id": "the-deep",
+   "name": "The Deep"
+  },
+  {
+   "id": "carmine-night",
+   "name": "Carmine Night"
+  },
+  {
+   "id": "bodies",
+   "name": "Bodies"
+  },
+  {
+   "id": "downhill-trade",
+   "name": "Downhill trade"
+  }
+ ],
+ "names": {
+  "ambassador-julian-torres": {
+   "name": "Ambassador Julian Torres",
+   "short": "Julian"
+  },
+  "elandra-silvershade": {
+   "name": "Elandra Silvershade",
+   "short": "Elandra"
+  },
+  "faelar-shadowsong": {
+   "name": "Faelar Shadowsong",
+   "short": "Faelar"
+  },
+  "gilda-rockfounder": {
+   "name": "Gilda Rockfounder",
+   "short": "Gilda"
+  },
+  "lysanthir-altherion": {
+   "name": "Lysanthir Altherion",
+   "short": "Lysanthir"
+  },
+  "maxwell-riggs": {
+   "name": "Maxwell Riggs",
+   "short": "Maxwell"
+  },
+  "silvyr-moondew": {
+   "name": "Silvyr Moondew",
+   "short": "Silvyr"
+  },
+  "thrombur-irontrack": {
+   "name": "Thrombur Irontrack",
+   "short": "Thrombur"
+  },
+  "borin-gravelbeard": {
+   "name": "Borin Gravelbeard",
+   "short": "Borin"
+  },
+  "brogan-steelbrow": {
+   "name": "Brogan Steelbrow",
+   "short": "Brogan"
+  },
+  "brond-ironwheel-gravelheart": {
+   "name": "Brond 'Ironwheel' Gravelheart",
+   "short": "Brond"
+  },
+  "bruni-gearhack": {
+   "name": "Bruni Gearhack",
+   "short": "Bruni"
+  },
+  "thrain-ironfist": {
+   "name": "Thrain Ironfist",
+   "short": "Thrain"
+  },
+  "aerendir-leafgold": {
+   "name": "Aerendir Leafgold",
+   "short": "Aerendir"
+  },
+  "alex-datafist-mercer": {
+   "name": "Alex 'Datafist' Mercer",
+   "short": "Alex"
+  },
+  "blaze-carmine": {
+   "name": "Blaze Carmine",
+   "short": "Blaze"
+  },
+  "commander-erica-stone": {
+   "name": "Commander Erica Stone",
+   "short": "Erica"
+  },
+  "echo-the-wraith-vale": {
+   "name": "Echo 'The Wraith' Vale",
+   "short": "Echo"
+  },
+  "elara-the-conductor-vance": {
+   "name": "Elara 'The Conductor' Vance",
+   "short": "Elara"
+  },
+  "ghost-nakamura": {
+   "name": "Ghost Nakamura",
+   "short": "Ghost"
+  },
+  "lireal-moonblade": {
+   "name": "Lireal Moonblade",
+   "short": "Lireal"
+  },
+  "milo-the-broker-harland": {
+   "name": "Milo 'The Broker' Harland",
+   "short": "Milo"
+  },
+  "sylph-voidwalker": {
+   "name": "Sylph Voidwalker",
+   "short": "Sylph"
+  },
+  "valkyrie-stroud": {
+   "name": "Valkyrie Stroud",
+   "short": "Valkyrie"
+  },
+  "dr-lena-kovalenko": {
+   "name": "Dr. Lena Kovalenko",
+   "short": "Lena"
+  },
+  "dr-nova-seraph": {
+   "name": "Dr. Nova Seraph",
+   "short": "Nova"
+  },
+  "eva-trueborn": {
+   "name": "Eva Trueborn",
+   "short": "Eva"
+  },
+  "gael-greenwarden": {
+   "name": "Gael Greenwarden",
+   "short": "Gael"
+  },
+  "morgana-vale": {
+   "name": "Morgana Vale",
+   "short": "Morgana"
+  },
+  "orion-cybermind": {
+   "name": "Orion Cybermind",
+   "short": "Orion"
+  },
+  "rex-nightshade": {
+   "name": "Rex Nightshade",
+   "short": "Rex"
+  },
+  "sirena-velocity-vexx": {
+   "name": "Sirena 'Velocity' Vexx",
+   "short": "Sirena"
+  },
+  "zara-flux": {
+   "name": "Zara Flux",
+   "short": "Zara"
+  },
+  "dr-felix-morpho": {
+   "name": "Dr. Felix Morpho",
+   "short": "Felix"
+  },
+  "elandor-swiftwind": {
+   "name": "Elandor Swiftwind",
+   "short": "Elandor"
+  },
+  "ivor-grimeshade": {
+   "name": "Ivor Grimeshade",
+   "short": "Ivor"
+  },
+  "jax-the-ghost-turner": {
+   "name": "Jax 'The Ghost' Turner",
+   "short": "Jax"
+  },
+  "mara-hearthkeeper": {
+   "name": "Mara Hearthkeeper",
+   "short": "Mara"
+  },
+  "max-turbo-jackson": {
+   "name": "Max 'Turbo' Jackson",
+   "short": "Max"
+  },
+  "mia-sanchez": {
+   "name": "Mia Sanchez",
+   "short": "Mia"
+  },
+  "riley-gearshift-morgan": {
+   "name": "Riley 'Gearshift' Morgan",
+   "short": "Riley"
+  },
+  "rollo-scrapminder": {
+   "name": "Rollo Scrapminder",
+   "short": "Rollo"
+  }
+ }
+}

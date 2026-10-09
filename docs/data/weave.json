@@ -1,0 +1,1557 @@
+{
+ "core": {
+  "name": "The Gloom",
+  "body": "The Gloom isn't a disease. Every implant in Neonix burns blue mana, and spent mana (silt, or \"grey\" on the street) is heavier than air and water. It settles downhill through the Downflow drains into the Sump and the Gloomscape. Years of exposure cause grey-violet veining, clouded eyes, tired lungs and personal mana that runs grey. It isn't contagious, and nothing reverses it while the city keeps running.\n\nFew people know. Elandra Silvershade sealed the evidence about 80 years ago, the Quiet Office keeps it buried, and the Seventh Clause of the Unity Accord makes it nobody's legal fault.",
+  "knowers": [
+   "elandra-silvershade",
+   "faelar-shadowsong",
+   "ambassador-julian-torres",
+   "aerendir-leafgold",
+   "dr-lena-kovalenko",
+   "maxwell-riggs",
+   "gael-greenwarden",
+   "rollo-scrapminder",
+   "gilda-rockfounder",
+   "thrombur-irontrack",
+   "morgana-vale",
+   "rex-nightshade",
+   "dr-felix-morpho",
+   "echo-the-wraith-vale"
+  ]
+ },
+ "clusters": [
+  {
+   "id": "the-wells",
+   "name": "The Wells",
+   "binds": "The Accord, the Seventh Clause and the sealed freight: the people who built the arrangement and keep it running.",
+   "members": [
+    "ambassador-julian-torres",
+    "elandra-silvershade",
+    "faelar-shadowsong",
+    "gilda-rockfounder",
+    "lysanthir-altherion",
+    "maxwell-riggs",
+    "silvyr-moondew",
+    "thrombur-irontrack"
+   ]
+  },
+  {
+   "id": "the-deep",
+   "name": "The Deep",
+   "binds": "The Ironfist-Stonefist schism and the tunnels that reach the Sump.",
+   "members": [
+    "borin-gravelbeard",
+    "brogan-steelbrow",
+    "brond-ironwheel-gravelheart",
+    "bruni-gearhack",
+    "thrain-ironfist"
+   ]
+  },
+  {
+   "id": "carmine-night",
+   "name": "Carmine Night",
+   "binds": "The fire six years ago, and the shadow trade that staffed it.",
+   "members": [
+    "aerendir-leafgold",
+    "alex-datafist-mercer",
+    "blaze-carmine",
+    "commander-erica-stone",
+    "echo-the-wraith-vale",
+    "elara-the-conductor-vance",
+    "ghost-nakamura",
+    "lireal-moonblade",
+    "milo-the-broker-harland",
+    "sylph-voidwalker",
+    "valkyrie-stroud"
+   ]
+  },
+  {
+   "id": "bodies",
+   "name": "Bodies",
+   "binds": "The fight over what a body is for: the wards, the clinic, the lab, and three faiths.",
+   "members": [
+    "dr-lena-kovalenko",
+    "dr-nova-seraph",
+    "eva-trueborn",
+    "gael-greenwarden",
+    "morgana-vale",
+    "orion-cybermind",
+    "rex-nightshade",
+    "sirena-velocity-vexx",
+    "zara-flux"
+   ]
+  },
+  {
+   "id": "downhill-trade",
+   "name": "Downhill trade",
+   "binds": "Everything that moves down the hill and back up: filters, food, freight, Hush and moss.",
+   "members": [
+    "dr-felix-morpho",
+    "elandor-swiftwind",
+    "ivor-grimeshade",
+    "jax-the-ghost-turner",
+    "mara-hearthkeeper",
+    "max-turbo-jackson",
+    "mia-sanchez",
+    "riley-gearshift-morgan",
+    "rollo-scrapminder"
+   ]
+  }
+ ],
+ "nodes": [
+  {
+   "id": "ambassador-julian-torres",
+   "name": "Ambassador Julian Torres",
+   "short": "Julian",
+   "people": "Humans",
+   "color": "#78cbd0",
+   "cluster": "the-wells",
+   "tagline": "The peacemaker who is the city's most fluent liar",
+   "summary": "Human · 54 · Ambassador to the boroughs"
+  },
+  {
+   "id": "elandra-silvershade",
+   "name": "Elandra Silvershade",
+   "short": "Elandra",
+   "people": "Elves",
+   "color": "#d9bd77",
+   "cluster": "the-wells",
+   "tagline": "The guardian who chose the many",
+   "summary": "Elf · 451 · Chair for Elven Heights"
+  },
+  {
+   "id": "faelar-shadowsong",
+   "name": "Faelar Shadowsong",
+   "short": "Faelar",
+   "people": "Elves",
+   "color": "#d9bd77",
+   "cluster": "the-wells",
+   "tagline": "The spymaster who has started to wonder",
+   "summary": "Elf · 325 · Head of the Quiet Office"
+  },
+  {
+   "id": "gilda-rockfounder",
+   "name": "Gilda Rockfounder",
+   "short": "Gilda",
+   "people": "Dwarves",
+   "color": "#df955d",
+   "cluster": "the-wells",
+   "tagline": "The planner who has never finished one thought",
+   "summary": "Dwarf · 153 · Chief construction planner, Dwarf District"
+  },
+  {
+   "id": "lysanthir-altherion",
+   "name": "Lysanthir Altherion",
+   "short": "Lysanthir",
+   "people": "Elves",
+   "color": "#d9bd77",
+   "cluster": "the-wells",
+   "tagline": "The host who keeps the ledger",
+   "summary": "Elf · 237 · Neon Nirvana, Elven Heights"
+  },
+  {
+   "id": "maxwell-riggs",
+   "name": "Maxwell Riggs",
+   "short": "Maxwell",
+   "people": "Humans",
+   "color": "#78cbd0",
+   "cluster": "the-wells",
+   "tagline": "The uniter with a staged legend and a real one nobody saw",
+   "summary": "Human · 52 · Speaker of the Council, Humanity Central"
+  },
+  {
+   "id": "silvyr-moondew",
+   "name": "Silvyr Moondew",
+   "short": "Silvyr",
+   "people": "Elves",
+   "color": "#d9bd77",
+   "cluster": "the-wells",
+   "tagline": "The lawmaker writing the cover-up without knowing it",
+   "summary": "Elf · 279 · Council legislative counsel, Elven Heights"
+  },
+  {
+   "id": "thrombur-irontrack",
+   "name": "Thrombur Irontrack",
+   "short": "Thrombur",
+   "people": "Dwarves",
+   "color": "#df955d",
+   "cluster": "the-wells",
+   "tagline": "Never late, never left",
+   "summary": "Dwarf · 165 · Master of the city rails and post"
+  },
+  {
+   "id": "borin-gravelbeard",
+   "name": "Borin Gravelbeard",
+   "short": "Borin",
+   "people": "Dwarves",
+   "color": "#df955d",
+   "cluster": "the-deep",
+   "tagline": "The Stonefist son who keeps a bar for everyone",
+   "summary": "Dwarf · 157 · Owner of Iron Spirits, Dwarf District"
+  },
+  {
+   "id": "brogan-steelbrow",
+   "name": "Brogan Steelbrow",
+   "short": "Brogan",
+   "people": "Dwarves",
+   "color": "#df955d",
+   "cluster": "the-deep",
+   "tagline": "The union dwarf who broke tradition to protect it",
+   "summary": "Dwarf · 178 · Head of Local 7, Ironheart Foundry"
+  },
+  {
+   "id": "brond-ironwheel-gravelheart",
+   "name": "Brond 'Ironwheel' Gravelheart",
+   "short": "Brond",
+   "people": "Dwarves",
+   "color": "#df955d",
+   "cluster": "the-deep",
+   "tagline": "The enforcer who's the gentlest one in the crew",
+   "summary": "Dwarf · 168 · Neon Runners enforcer and heavy transport"
+  },
+  {
+   "id": "bruni-gearhack",
+   "name": "Bruni Gearhack",
+   "short": "Bruni",
+   "people": "Dwarves",
+   "color": "#df955d",
+   "cluster": "the-deep",
+   "tagline": "The explosives expert who flinches at loud noises",
+   "summary": "Dwarf · 156 · Shade Pacer, hardware and explosives"
+  },
+  {
+   "id": "thrain-ironfist",
+   "name": "Thrain Ironfist",
+   "short": "Thrain",
+   "people": "Dwarves",
+   "color": "#df955d",
+   "cluster": "the-deep",
+   "tagline": "The craftsman-king whose best work is the poison pipe",
+   "summary": "Dwarf · 210 · Chair for the Dwarf District, master of Ironheart Foundry"
+  },
+  {
+   "id": "aerendir-leafgold",
+   "name": "Aerendir Leafgold",
+   "short": "Aerendir",
+   "people": "Elves",
+   "color": "#d9bd77",
+   "cluster": "carmine-night",
+   "tagline": "An immortal who lives like a mayfly",
+   "summary": "Elf · 312 · Hedge fund manager, Elven Heights"
+  },
+  {
+   "id": "alex-datafist-mercer",
+   "name": "Alex 'Datafist' Mercer",
+   "short": "Alex",
+   "people": "Humans",
+   "color": "#78cbd0",
+   "cluster": "carmine-night",
+   "tagline": "The hacker who solves problems with his fists",
+   "summary": "Human · 32 · Shade Pacer, data and close combat"
+  },
+  {
+   "id": "blaze-carmine",
+   "name": "Blaze Carmine",
+   "short": "Blaze",
+   "people": "Humans",
+   "color": "#78cbd0",
+   "cluster": "carmine-night",
+   "tagline": "The folk hero who was paid to be one",
+   "summary": "Human · 35 · Mercenary"
+  },
+  {
+   "id": "commander-erica-stone",
+   "name": "Commander Erica Stone",
+   "short": "Erica",
+   "people": "Humans",
+   "color": "#78cbd0",
+   "cluster": "carmine-night",
+   "tagline": "The honest cop running a bought force",
+   "summary": "Human · 39 · Commander, Neonix Police Department"
+  },
+  {
+   "id": "echo-the-wraith-vale",
+   "name": "Echo 'The Wraith' Vale",
+   "short": "Echo",
+   "people": "The Plagued",
+   "color": "#9aaea8",
+   "cluster": "carmine-night",
+   "tagline": "The sister who weaponizes the sickness",
+   "summary": "Human, the Plagued · 40 · Shade Pacer, guerrilla tactics and toxic weapons"
+  },
+  {
+   "id": "elara-the-conductor-vance",
+   "name": "Elara 'The Conductor' Vance",
+   "short": "Elara",
+   "people": "Humans",
+   "color": "#78cbd0",
+   "cluster": "carmine-night",
+   "tagline": "The planner who orchestrates chaos and can't stand disorder",
+   "summary": "Human · 38 · Criminal planner"
+  },
+  {
+   "id": "ghost-nakamura",
+   "name": "Ghost Nakamura",
+   "short": "Ghost",
+   "people": "Mutants",
+   "color": "#bd98dd",
+   "cluster": "carmine-night",
+   "tagline": "The man who vanishes for a living and wants to be seen",
+   "summary": "Mutant · 29 · Mercenary"
+  },
+  {
+   "id": "lireal-moonblade",
+   "name": "Lireal Moonblade",
+   "short": "Lireal",
+   "people": "Elves",
+   "color": "#d9bd77",
+   "cluster": "carmine-night",
+   "tagline": "The elf who chose illusions over magic",
+   "summary": "Elf · 210 · Shade Pacer, digital illusion"
+  },
+  {
+   "id": "milo-the-broker-harland",
+   "name": "Milo 'The Broker' Harland",
+   "short": "Milo",
+   "people": "Humans",
+   "color": "#78cbd0",
+   "cluster": "carmine-night",
+   "tagline": "The man who knows everyone and has no friends",
+   "summary": "Human · 45 · Mercenary broker"
+  },
+  {
+   "id": "sylph-voidwalker",
+   "name": "Sylph Voidwalker",
+   "short": "Sylph",
+   "people": "Mutants",
+   "color": "#bd98dd",
+   "cluster": "carmine-night",
+   "tagline": "The gentle sniper",
+   "summary": "Mutant · 27 · Shade Pacer, stealth and surveillance"
+  },
+  {
+   "id": "valkyrie-stroud",
+   "name": "Valkyrie Stroud",
+   "short": "Valkyrie",
+   "people": "Humans",
+   "color": "#78cbd0",
+   "cluster": "carmine-night",
+   "tagline": "The general who takes orders from anyone with coin",
+   "summary": "Human · 42 · Mercenary commander"
+  },
+  {
+   "id": "dr-lena-kovalenko",
+   "name": "Dr. Lena Kovalenko",
+   "short": "Lena",
+   "people": "Humans",
+   "color": "#78cbd0",
+   "cluster": "bodies",
+   "tagline": "The ethicist who experiments on herself",
+   "summary": "Human · 46 · Researcher, Neonix University"
+  },
+  {
+   "id": "dr-nova-seraph",
+   "name": "Dr. Nova Seraph",
+   "short": "Nova",
+   "people": "Humans",
+   "color": "#78cbd0",
+   "cluster": "bodies",
+   "tagline": "The surgeon who changes every face but hers",
+   "summary": "Human, heavily self-modified · 39 · Surgeon, the Chrysalis Clinic"
+  },
+  {
+   "id": "eva-trueborn",
+   "name": "Eva Trueborn",
+   "short": "Eva",
+   "people": "Humans",
+   "color": "#78cbd0",
+   "cluster": "bodies",
+   "tagline": "The Purist whose son is all chrome",
+   "summary": "Human · 52 · Leader of the Purists"
+  },
+  {
+   "id": "gael-greenwarden",
+   "name": "Gael Greenwarden",
+   "short": "Gael",
+   "people": "Humans",
+   "color": "#78cbd0",
+   "cluster": "bodies",
+   "tagline": "The doomsayer who is right",
+   "summary": "Human · 47 · Doomsayer of the Terra Guardians"
+  },
+  {
+   "id": "morgana-vale",
+   "name": "Morgana Vale",
+   "short": "Morgana",
+   "people": "The Plagued",
+   "color": "#9aaea8",
+   "cluster": "bodies",
+   "tagline": "The healer looking for a cure she doubts exists",
+   "summary": "Human, the Plagued · 47 · Fifth Chair, the Gloomscape"
+  },
+  {
+   "id": "orion-cybermind",
+   "name": "Orion Cybermind",
+   "short": "Orion",
+   "people": "Humans",
+   "color": "#78cbd0",
+   "cluster": "bodies",
+   "tagline": "The oracle who wants to leave his body and spends a fortune keeping it",
+   "summary": "Human, heavily modified · 45 · Digital Oracle of the DreamPlane Ascendants"
+  },
+  {
+   "id": "rex-nightshade",
+   "name": "Rex Nightshade",
+   "short": "Rex",
+   "people": "Mutants",
+   "color": "#bd98dd",
+   "cluster": "bodies",
+   "tagline": "Beauty and decay on one face",
+   "summary": "Mutant · 42 · Overseer of the Redlight District"
+  },
+  {
+   "id": "sirena-velocity-vexx",
+   "name": "Sirena 'Velocity' Vexx",
+   "short": "Sirena",
+   "people": "Mutants",
+   "color": "#bd98dd",
+   "cluster": "bodies",
+   "tagline": "Faster on foot than any car she steals for",
+   "summary": "Mutant · 26 · Neon Runners jacker"
+  },
+  {
+   "id": "zara-flux",
+   "name": "Zara Flux",
+   "short": "Zara",
+   "people": "Mutants",
+   "color": "#bd98dd",
+   "cluster": "bodies",
+   "tagline": "The leader who can't hide a single feeling",
+   "summary": "Mutant · 35 · Chair for the Mutant Quarters"
+  },
+  {
+   "id": "dr-felix-morpho",
+   "name": "Dr. Felix Morpho",
+   "short": "Felix",
+   "people": "Mutants",
+   "color": "#bd98dd",
+   "cluster": "downhill-trade",
+   "tagline": "The chemist who never takes his own product",
+   "summary": "Mutant · 37 · Chemist for the Neon Shadows"
+  },
+  {
+   "id": "elandor-swiftwind",
+   "name": "Elandor Swiftwind",
+   "short": "Elandor",
+   "people": "Elves",
+   "color": "#d9bd77",
+   "cluster": "downhill-trade",
+   "tagline": "The patient elf whose job is speed",
+   "summary": "Elf · 189 · Neon Runners strategist and navigator"
+  },
+  {
+   "id": "ivor-grimeshade",
+   "name": "Ivor Grimeshade",
+   "short": "Ivor",
+   "people": "The Plagued",
+   "color": "#9aaea8",
+   "cluster": "downhill-trade",
+   "tagline": "The black marketeer who funds the cure",
+   "summary": "Human, the Plagued · 55 · Boss of the Breathless Bazaar"
+  },
+  {
+   "id": "jax-the-ghost-turner",
+   "name": "Jax 'The Ghost' Turner",
+   "short": "Jax",
+   "people": "Humans",
+   "color": "#78cbd0",
+   "cluster": "downhill-trade",
+   "tagline": "The smuggler who moves anyone anywhere and never leaves his car",
+   "summary": "Human · 40 · Smuggler and driver"
+  },
+  {
+   "id": "mara-hearthkeeper",
+   "name": "Mara Hearthkeeper",
+   "short": "Mara",
+   "people": "The Plagued",
+   "color": "#9aaea8",
+   "cluster": "downhill-trade",
+   "tagline": "The kind woman with the ladle who runs the hijackers",
+   "summary": "Human, the Plagued · 48 · Ration distributor, the Gloomscape"
+  },
+  {
+   "id": "max-turbo-jackson",
+   "name": "Max 'Turbo' Jackson",
+   "short": "Max",
+   "people": "Humans",
+   "color": "#78cbd0",
+   "cluster": "downhill-trade",
+   "tagline": "The daredevil afraid of being forgotten",
+   "summary": "Human · 27 · Neon Runners driver and face"
+  },
+  {
+   "id": "mia-sanchez",
+   "name": "Mia Sanchez",
+   "short": "Mia",
+   "people": "Humans",
+   "color": "#78cbd0",
+   "cluster": "downhill-trade",
+   "tagline": "The bartender saving for an implant that would add to her mother's poison",
+   "summary": "Human · 28 · Bartender, The Human Touch"
+  },
+  {
+   "id": "riley-gearshift-morgan",
+   "name": "Riley 'Gearshift' Morgan",
+   "short": "Riley",
+   "people": "Humans",
+   "color": "#78cbd0",
+   "cluster": "downhill-trade",
+   "tagline": "The genius mechanic who won't drive",
+   "summary": "Human · 30 · Neon Runners mechanic"
+  },
+  {
+   "id": "rollo-scrapminder",
+   "name": "Rollo Scrapminder",
+   "short": "Rollo",
+   "people": "The Plagued",
+   "color": "#9aaea8",
+   "cluster": "downhill-trade",
+   "tagline": "The junk master who found the only thing that helps",
+   "summary": "Human, the Plagued · 60 · Master of the Boneyard"
+  }
+ ],
+ "ties": [
+  {
+   "a": "elandra-silvershade",
+   "b": "elandor-swiftwind",
+   "type": "kin",
+   "label": "mother and son, estranged",
+   "description": "Elandor is Elandra's son. He took his father's house name and left the Heights sixty years ago; they haven't spoken in forty.",
+   "visibility": "private"
+  },
+  {
+   "a": "elandra-silvershade",
+   "b": "silvyr-moondew",
+   "type": "mentor",
+   "label": "mentor and protégé",
+   "description": "Silvyr is Elandra's chosen successor and writes her law. She doesn't know what the law is for.",
+   "visibility": "public"
+  },
+  {
+   "a": "elandra-silvershade",
+   "b": "faelar-shadowsong",
+   "type": "secret",
+   "label": "the secret they share",
+   "description": "Faelar has kept Elandra's secret for eighty years and has started to wonder who it protects.",
+   "visibility": "secret"
+  },
+  {
+   "a": "elandra-silvershade",
+   "b": "maxwell-riggs",
+   "type": "council",
+   "label": "Accord co-signers",
+   "description": "Co-signers of the Unity Accord: respect, a long chess game, one shared silence.",
+   "visibility": "public"
+  },
+  {
+   "a": "elandra-silvershade",
+   "b": "ambassador-julian-torres",
+   "type": "secret",
+   "label": "the Seventh Clause",
+   "description": "Julian drafted the Seventh Clause at Elandra's table.",
+   "visibility": "secret"
+  },
+  {
+   "a": "elandra-silvershade",
+   "b": "morgana-vale",
+   "type": "council",
+   "label": "Council rivals",
+   "description": "Elandra votes; Morgana only speaks. Elandra has never once looked away while she does.",
+   "visibility": "public"
+  },
+  {
+   "a": "elandra-silvershade",
+   "b": "lysanthir-altherion",
+   "type": "debt",
+   "label": "his house's debt",
+   "description": "House Silvershade bought the dry Altherion well's debt. Lysanthir hosts her gatherings and owes her his name.",
+   "visibility": "private"
+  },
+  {
+   "a": "elandra-silvershade",
+   "b": "thrombur-irontrack",
+   "type": "secret",
+   "label": "the sealed night freight",
+   "description": "The sealed Archive freight on the 3:10 runs under Elandra's seal. Thrombur has carried it for 61 years without asking.",
+   "visibility": "private"
+  },
+  {
+   "a": "elandra-silvershade",
+   "b": "thrain-ironfist",
+   "type": "council",
+   "label": "inherited contract",
+   "description": "Thrain's father signed the Lattice contract with Elandra. Thrain inherited the contract and the silence.",
+   "visibility": "private"
+  },
+  {
+   "a": "lysanthir-altherion",
+   "b": "faelar-shadowsong",
+   "type": "ex-lovers",
+   "label": "former lovers",
+   "description": "Together for a century, apart for ninety years. They still dine on the first of every month.",
+   "visibility": "private"
+  },
+  {
+   "a": "lysanthir-altherion",
+   "b": "mia-sanchez",
+   "type": "friends",
+   "label": "Last Call circle",
+   "description": "Two of the city's three great bartenders. He calls her \"the young one\" and means it as a title.",
+   "visibility": "public"
+  },
+  {
+   "a": "lysanthir-altherion",
+   "b": "borin-gravelbeard",
+   "type": "friends",
+   "label": "Last Call circle",
+   "description": "Bartenders for a combined four centuries. They argue about glassware and nothing else.",
+   "visibility": "public"
+  },
+  {
+   "a": "lysanthir-altherion",
+   "b": "aerendir-leafgold",
+   "type": "debt",
+   "label": "an unpaid favor",
+   "description": "Aerendir owes Lysanthir for the introduction that made his fortune. It hasn't been called in.",
+   "visibility": "private"
+  },
+  {
+   "a": "lysanthir-altherion",
+   "b": "silvyr-moondew",
+   "type": "friends",
+   "label": "her drafting table",
+   "description": "Silvyr drafts at his corner table. He reads upside down.",
+   "visibility": "private"
+  },
+  {
+   "a": "aerendir-leafgold",
+   "b": "dr-lena-kovalenko",
+   "type": "secret",
+   "label": "secret funding",
+   "description": "Aerendir funds Lena's research through a shell grant so the truth breaks on his schedule. She doesn't know.",
+   "visibility": "secret"
+  },
+  {
+   "a": "aerendir-leafgold",
+   "b": "blaze-carmine",
+   "type": "secret",
+   "label": "the Carmine Night payment",
+   "description": "Aerendir paid for the Carmine Night, both the fire and the hero.",
+   "visibility": "secret"
+  },
+  {
+   "a": "aerendir-leafgold",
+   "b": "milo-the-broker-harland",
+   "type": "employer",
+   "label": "the Carmine contracts",
+   "description": "Milo brokered the Carmine Night contracts for Aerendir.",
+   "visibility": "private"
+  },
+  {
+   "a": "aerendir-leafgold",
+   "b": "elandra-silvershade",
+   "type": "rivals",
+   "label": "votes together, bets against",
+   "description": "Aerendir's house holds a minor well. He votes with Elandra and bets against her.",
+   "visibility": "private"
+  },
+  {
+   "a": "silvyr-moondew",
+   "b": "ambassador-julian-torres",
+   "type": "rivals",
+   "label": "drafting rivals",
+   "description": "They redline each other's drafts weekly and lunch together after. She trusts his words; she shouldn't.",
+   "visibility": "public"
+  },
+  {
+   "a": "faelar-shadowsong",
+   "b": "lireal-moonblade",
+   "type": "secret",
+   "label": "former handler, defector",
+   "description": "Lireal was Faelar's best illusionist. She walked out with a copy of his network map. He let her, and neither knows why.",
+   "visibility": "private"
+  },
+  {
+   "a": "faelar-shadowsong",
+   "b": "jax-the-ghost-turner",
+   "type": "secret",
+   "label": "the smuggling he allows",
+   "description": "Faelar knows Jax smuggles out the people Faelar is meant to remove, and lets it run.",
+   "visibility": "secret"
+  },
+  {
+   "a": "faelar-shadowsong",
+   "b": "dr-lena-kovalenko",
+   "type": "secret",
+   "label": "surveillance",
+   "description": "Faelar's songbird has sat outside Lena's lab window for three years.",
+   "visibility": "secret"
+  },
+  {
+   "a": "faelar-shadowsong",
+   "b": "ambassador-julian-torres",
+   "type": "informant",
+   "label": "handler and asset",
+   "description": "Julian reports to Faelar after every negotiation.",
+   "visibility": "secret"
+  },
+  {
+   "a": "faelar-shadowsong",
+   "b": "thrombur-irontrack",
+   "type": "secret",
+   "label": "reads the post",
+   "description": "The Quiet Office reads the city post. Thrombur knows and hand-delivers anything that matters.",
+   "visibility": "private"
+  },
+  {
+   "a": "faelar-shadowsong",
+   "b": "commander-erica-stone",
+   "type": "rivals",
+   "label": "the missing-persons files",
+   "description": "Erica's disappearance files keep ending at the gates of Elven Heights.",
+   "visibility": "private"
+  },
+  {
+   "a": "maxwell-riggs",
+   "b": "elara-the-conductor-vance",
+   "type": "secret",
+   "label": "the staged standoff",
+   "description": "Elara ran Maxwell's first campaign and staged the Unity Plaza standoff he \"defused.\" She kept proof.",
+   "visibility": "secret"
+  },
+  {
+   "a": "maxwell-riggs",
+   "b": "dr-lena-kovalenko",
+   "type": "secret",
+   "label": "the buried data",
+   "description": "Maxwell saw Lena's first silt data eight years ago and funded \"further study.\"",
+   "visibility": "secret"
+  },
+  {
+   "a": "maxwell-riggs",
+   "b": "ambassador-julian-torres",
+   "type": "friends",
+   "label": "oldest friends",
+   "description": "Julian is Maxwell's oldest friend, and the one man who lies to him for his own good.",
+   "visibility": "public"
+  },
+  {
+   "a": "maxwell-riggs",
+   "b": "commander-erica-stone",
+   "type": "employer",
+   "label": "chain of command",
+   "description": "Erica reports to the Council through Maxwell. He protects her budget and ignores her memos.",
+   "visibility": "public"
+  },
+  {
+   "a": "maxwell-riggs",
+   "b": "mia-sanchez",
+   "type": "friends",
+   "label": "a regular at The Human Touch",
+   "description": "He drinks at The Human Touch without staff and talks about his father. She has never voted for him.",
+   "visibility": "public"
+  },
+  {
+   "a": "maxwell-riggs",
+   "b": "gilda-rockfounder",
+   "type": "employer",
+   "label": "the Uplift towers",
+   "description": "Gilda designs Maxwell's Uplift towers in Humanity Central.",
+   "visibility": "public"
+  },
+  {
+   "a": "maxwell-riggs",
+   "b": "thrain-ironfist",
+   "type": "council",
+   "label": "Council colleagues",
+   "description": "They work well together because neither trusts the other with anything important.",
+   "visibility": "public"
+  },
+  {
+   "a": "dr-lena-kovalenko",
+   "b": "dr-nova-seraph",
+   "type": "rivals",
+   "label": "former colleagues",
+   "description": "Co-authors at Neonix University until Nova chose transformation over research. They still trade parts and insults.",
+   "visibility": "public"
+  },
+  {
+   "a": "dr-lena-kovalenko",
+   "b": "alex-datafist-mercer",
+   "type": "mentor",
+   "label": "teacher and expelled student",
+   "description": "Alex was Lena's grad student until he hacked the grant system and found who really pays her. He never told her.",
+   "visibility": "private"
+  },
+  {
+   "a": "dr-lena-kovalenko",
+   "b": "gael-greenwarden",
+   "type": "secret",
+   "label": "sensor logs, bought quietly",
+   "description": "She called Gael a crank on a broadcast. Now she buys his sensor logs through a cutout.",
+   "visibility": "private"
+  },
+  {
+   "a": "dr-lena-kovalenko",
+   "b": "morgana-vale",
+   "type": "allies",
+   "label": "samples and theories",
+   "description": "Morgana sends Lena tissue samples from the wards. Together they're closing in on a truth neither wants.",
+   "visibility": "private"
+  },
+  {
+   "a": "eva-trueborn",
+   "b": "max-turbo-jackson",
+   "type": "kin",
+   "label": "mother and son",
+   "description": "Max was born Max Trueborn. He took his father's name and every implant he could afford.",
+   "visibility": "private"
+  },
+  {
+   "a": "eva-trueborn",
+   "b": "orion-cybermind",
+   "type": "enemies",
+   "label": "opposite prophets",
+   "description": "She says the body is sacred; he says it's a cage. Each is right about something.",
+   "visibility": "public"
+  },
+  {
+   "a": "eva-trueborn",
+   "b": "morgana-vale",
+   "type": "allies",
+   "label": "share a ward",
+   "description": "Purist clinics serve the Gloomscape. Eva and Morgana share a ward and an argument about filters.",
+   "visibility": "public"
+  },
+  {
+   "a": "eva-trueborn",
+   "b": "gael-greenwarden",
+   "type": "allies",
+   "label": "uneasy allies",
+   "description": "Both warn that the city is killing itself. She can't forgive the implant in his throat.",
+   "visibility": "public"
+  },
+  {
+   "a": "eva-trueborn",
+   "b": "zara-flux",
+   "type": "enemies",
+   "label": "public enemies",
+   "description": "Eva calls mutants a warning. Zara calls the Purists a eugenics club with better knitting.",
+   "visibility": "public"
+  },
+  {
+   "a": "commander-erica-stone",
+   "b": "valkyrie-stroud",
+   "type": "ex-lovers",
+   "label": "former lovers, Riot Corps",
+   "description": "They served in the Riot Corps and were together six years after. Neither says who left.",
+   "visibility": "private"
+  },
+  {
+   "a": "commander-erica-stone",
+   "b": "elara-the-conductor-vance",
+   "type": "enemies",
+   "label": "the orchestra case",
+   "description": "Erica's longest open case is a heist pattern she calls \"the orchestra.\"",
+   "visibility": "private"
+  },
+  {
+   "a": "commander-erica-stone",
+   "b": "blaze-carmine",
+   "type": "rivals",
+   "label": "the open Carmine file",
+   "description": "Erica has kept the Carmine Night file open for six years.",
+   "visibility": "private"
+  },
+  {
+   "a": "commander-erica-stone",
+   "b": "alex-datafist-mercer",
+   "type": "informant",
+   "label": "informant and handler",
+   "description": "Alex feeds Erica tips on the Iron Syndicate, and she keeps him out of lockup.",
+   "visibility": "secret"
+  },
+  {
+   "a": "mia-sanchez",
+   "b": "riley-gearshift-morgan",
+   "type": "friends",
+   "label": "best friends",
+   "description": "They grew up two doors apart. Riley fixes Mia's taps, and Mia feeds Riley.",
+   "visibility": "public"
+  },
+  {
+   "a": "mia-sanchez",
+   "b": "max-turbo-jackson",
+   "type": "lovers",
+   "label": "on again, off again",
+   "description": "On, off, on. She likes him most when he's scared, which only she gets to see.",
+   "visibility": "private"
+  },
+  {
+   "a": "mia-sanchez",
+   "b": "ivor-grimeshade",
+   "type": "debt",
+   "label": "her mother's filters",
+   "description": "Every month the jar pays Ivor for her mother's filters.",
+   "visibility": "private"
+  },
+  {
+   "a": "mia-sanchez",
+   "b": "milo-the-broker-harland",
+   "type": "friends",
+   "label": "house rules",
+   "description": "Milo tries to hold meetings at The Human Touch. Mia makes him order a drink and keep the business off her bar.",
+   "visibility": "public"
+  },
+  {
+   "a": "mia-sanchez",
+   "b": "borin-gravelbeard",
+   "type": "friends",
+   "label": "Last Call circle",
+   "description": "Borin taught her to change a keg in under a minute, and she taught him a cocktail he pretends to hate.",
+   "visibility": "public"
+  },
+  {
+   "a": "thrain-ironfist",
+   "b": "borin-gravelbeard",
+   "type": "friends",
+   "label": "friends across the feud",
+   "description": "Borin left the Stonefist and opened a bar on Thrain's side of the line. Thrain pays double for every drink; it's the only tithe he'll admit to.",
+   "visibility": "public"
+  },
+  {
+   "a": "thrain-ironfist",
+   "b": "brogan-steelbrow",
+   "type": "rivals",
+   "label": "union against clan-king",
+   "description": "Brogan's Local 7 works Thrain's foundry. They fight over every contract and would die for each other in a fire.",
+   "visibility": "public"
+  },
+  {
+   "a": "thrain-ironfist",
+   "b": "gilda-rockfounder",
+   "type": "allies",
+   "label": "chief planner",
+   "description": "Gilda is Thrain's chief planner and the only person he lets correct him.",
+   "visibility": "public"
+  },
+  {
+   "a": "thrain-ironfist",
+   "b": "bruni-gearhack",
+   "type": "debt",
+   "label": "the Hollow Seam debt",
+   "description": "Bruni's blast saved Thrain's foundry levels from a silt surge. Thrain has never thanked him in public.",
+   "visibility": "private"
+  },
+  {
+   "a": "borin-gravelbeard",
+   "b": "brond-ironwheel-gravelheart",
+   "type": "kin",
+   "label": "uncle and nephew",
+   "description": "Borin is Brond's uncle. When Brond ran from the Stonefist, Borin hid him for a week and never told the matriarch.",
+   "visibility": "private"
+  },
+  {
+   "a": "borin-gravelbeard",
+   "b": "bruni-gearhack",
+   "type": "friends",
+   "label": "the Hollow Seam rings",
+   "description": "Borin wears four beard rings for the crew Bruni's Hollow Seam blast left on the wrong side.",
+   "visibility": "private"
+  },
+  {
+   "a": "bruni-gearhack",
+   "b": "brond-ironwheel-gravelheart",
+   "type": "friends",
+   "label": "from the same deep halls",
+   "description": "Brond thinks Bruni is a hero. Bruni can't stay in a room with him.",
+   "visibility": "private"
+  },
+  {
+   "a": "borin-gravelbeard",
+   "b": "brogan-steelbrow",
+   "type": "friends",
+   "label": "the back booth",
+   "description": "Local 7 meets in Borin's back booth. Borin waters nothing and hears everything.",
+   "visibility": "public"
+  },
+  {
+   "a": "brogan-steelbrow",
+   "b": "morgana-vale",
+   "type": "allies",
+   "label": "joint grievance",
+   "description": "The Gloom has reached the foundry floor. Brogan and Morgana filed the first joint health grievance in the city's history.",
+   "visibility": "public"
+  },
+  {
+   "a": "brogan-steelbrow",
+   "b": "brond-ironwheel-gravelheart",
+   "type": "rivals",
+   "label": "wrestling rivals",
+   "description": "Wrestling-pit rivals at Stonehall Stadium. The lifetime record is 14 wins each.",
+   "visibility": "public"
+  },
+  {
+   "a": "gilda-rockfounder",
+   "b": "rollo-scrapminder",
+   "type": "secret",
+   "label": "the drains and the yard",
+   "description": "Gilda's Downflow empties into Rollo's Boneyard. He has mapped every outfall; she has never asked to see the map.",
+   "visibility": "private"
+  },
+  {
+   "a": "gilda-rockfounder",
+   "b": "thrombur-irontrack",
+   "type": "friends",
+   "label": "a century of stones",
+   "description": "Every rest-day for a century: a game of stones on Thrombur's platform bench.",
+   "visibility": "public"
+  },
+  {
+   "a": "thrombur-irontrack",
+   "b": "mara-hearthkeeper",
+   "type": "secret",
+   "label": "the unbolted door",
+   "description": "Mara's Raiders hit Thrombur's trains. He has started leaving a freight door unbolted on the 3:10, and he'd deny it on his beard.",
+   "visibility": "secret"
+  },
+  {
+   "a": "zara-flux",
+   "b": "ghost-nakamura",
+   "type": "ex-lovers",
+   "label": "former lovers",
+   "description": "She can't hide and he can't be seen. Four years together; he left the movement for money and left her for reasons he won't say.",
+   "visibility": "private"
+  },
+  {
+   "a": "zara-flux",
+   "b": "rex-nightshade",
+   "type": "debt",
+   "label": "Redlight money",
+   "description": "Rex's Redlight money funds Zara's movement. She hates where it comes from and takes it anyway.",
+   "visibility": "private"
+  },
+  {
+   "a": "zara-flux",
+   "b": "sirena-velocity-vexx",
+   "type": "mentor",
+   "label": "mentor and protégé",
+   "description": "Zara pulled Sirena out of a Neon Shadows chop shop at sixteen. Sirena calls her \"boss\" to annoy her.",
+   "visibility": "public"
+  },
+  {
+   "a": "zara-flux",
+   "b": "morgana-vale",
+   "type": "council",
+   "label": "the Council's outsiders",
+   "description": "The Council's two outsiders vote together and fight in private.",
+   "visibility": "public"
+  },
+  {
+   "a": "zara-flux",
+   "b": "dr-nova-seraph",
+   "type": "friends",
+   "label": "the voice collar",
+   "description": "Nova built Zara's voice-amplifier collar and won't take payment for it.",
+   "visibility": "public"
+  },
+  {
+   "a": "rex-nightshade",
+   "b": "dr-felix-morpho",
+   "type": "employer",
+   "label": "patron and chemist",
+   "description": "Felix cooks Hush under Rex's protection. Rex takes a cut and the blame.",
+   "visibility": "private"
+  },
+  {
+   "a": "rex-nightshade",
+   "b": "dr-nova-seraph",
+   "type": "secret",
+   "label": "the crystal's secret",
+   "description": "Rex funds the Chrysalis Clinic. Nova is the only one who knows his crystal is silt, and that it's spreading.",
+   "visibility": "secret"
+  },
+  {
+   "a": "rex-nightshade",
+   "b": "sylph-voidwalker",
+   "type": "mentor",
+   "label": "patron after the drain",
+   "description": "Rex took Sylph in after the drain. Sylph is the only sniper in the city who won't take a contract on the Redlight.",
+   "visibility": "private"
+  },
+  {
+   "a": "dr-felix-morpho",
+   "b": "ghost-nakamura",
+   "type": "friends",
+   "label": "old Shadows friends",
+   "description": "Felix patched Ghost up after every early job. Ghost is the only customer Felix ever refused to sell to.",
+   "visibility": "private"
+  },
+  {
+   "a": "dr-felix-morpho",
+   "b": "ivor-grimeshade",
+   "type": "rivals",
+   "label": "won't sell Hush",
+   "description": "Ivor refuses to sell Hush in the Breathless Bazaar. Felix takes it personally.",
+   "visibility": "public"
+  },
+  {
+   "a": "dr-felix-morpho",
+   "b": "bruni-gearhack",
+   "type": "debt",
+   "label": "dross supply",
+   "description": "Felix buys raw dross from the Stonefist tunnels. Bruni knows exactly which tunnels, and what they cost.",
+   "visibility": "private"
+  },
+  {
+   "a": "dr-nova-seraph",
+   "b": "morgana-vale",
+   "type": "debt",
+   "label": "Nova's mother",
+   "description": "Morgana sat with Nova's mother when the Gloom took her. Nova sends the Clinic's spare supplies down the hill in boxes she never signs.",
+   "visibility": "private"
+  },
+  {
+   "a": "dr-nova-seraph",
+   "b": "ivor-grimeshade",
+   "type": "employer",
+   "label": "black-market lungs",
+   "description": "Ivor brokers Nova's black-market replacement lungs to Plagued who can pay.",
+   "visibility": "private"
+  },
+  {
+   "a": "dr-nova-seraph",
+   "b": "orion-cybermind",
+   "type": "employer",
+   "label": "his body's upkeep",
+   "description": "Nova maintains Orion's body. He pays more than anyone.",
+   "visibility": "private"
+  },
+  {
+   "a": "dr-nova-seraph",
+   "b": "blaze-carmine",
+   "type": "friends",
+   "label": "the chrome arm",
+   "description": "Nova built Blaze's red-and-chrome arm. She thinks it's the most honest thing about him.",
+   "visibility": "public"
+  },
+  {
+   "a": "morgana-vale",
+   "b": "echo-the-wraith-vale",
+   "type": "kin",
+   "label": "sisters",
+   "description": "Morgana heals and Echo weaponizes. They meet once a year at their mother's ribbon in the Veil of Mist.",
+   "visibility": "private"
+  },
+  {
+   "a": "morgana-vale",
+   "b": "ivor-grimeshade",
+   "type": "ex-lovers",
+   "label": "married eleven years, apart nine",
+   "description": "Ivor funds Morgana's research through three cutouts. She knows, and has never thanked him, which is how he knows she's grateful.",
+   "visibility": "private"
+  },
+  {
+   "a": "morgana-vale",
+   "b": "mara-hearthkeeper",
+   "type": "allies",
+   "label": "closest allies",
+   "description": "Morgana treats; Mara feeds. Morgana doesn't know where the food comes from, or has decided not to.",
+   "visibility": "private"
+  },
+  {
+   "a": "morgana-vale",
+   "b": "orion-cybermind",
+   "type": "rivals",
+   "label": "the dying patients",
+   "description": "Orion offers ascension to Morgana's dying patients. Some take it. She has never decided whether to stop him.",
+   "visibility": "public"
+  },
+  {
+   "a": "mara-hearthkeeper",
+   "b": "rollo-scrapminder",
+   "type": "friends",
+   "label": "Tuesday dinners",
+   "description": "Rollo hides Raider hauls under scrap. Mara brings him dinner on Tuesdays.",
+   "visibility": "private"
+  },
+  {
+   "a": "mara-hearthkeeper",
+   "b": "jax-the-ghost-turner",
+   "type": "employer",
+   "label": "Raider freight",
+   "description": "Jax moves the Raiders' stolen goods uphill and down.",
+   "visibility": "private"
+  },
+  {
+   "a": "mara-hearthkeeper",
+   "b": "echo-the-wraith-vale",
+   "type": "secret",
+   "label": "Raider training",
+   "description": "Echo trains the Gloom Raiders' crews. Morgana doesn't know.",
+   "visibility": "secret"
+  },
+  {
+   "a": "rollo-scrapminder",
+   "b": "gael-greenwarden",
+   "type": "allies",
+   "label": "the two who are right",
+   "description": "The two men in Neonix who are right, and the two nobody listens to. Rollo's moss eats silt, and Gael's sensor proves it.",
+   "visibility": "public"
+  },
+  {
+   "a": "ivor-grimeshade",
+   "b": "jax-the-ghost-turner",
+   "type": "employer",
+   "label": "smuggled filters",
+   "description": "Jax smuggles Ivor's filters and clean-mana canisters into the Gloomscape.",
+   "visibility": "private"
+  },
+  {
+   "a": "orion-cybermind",
+   "b": "gael-greenwarden",
+   "type": "enemies",
+   "label": "the node readings",
+   "description": "Gael's sensor reads the DreamPlane nodes as the hottest silt sources in the city, and he preaches it at their doors.",
+   "visibility": "public"
+  },
+  {
+   "a": "lysanthir-altherion",
+   "b": "rex-nightshade",
+   "type": "allies",
+   "label": "the two hosts",
+   "description": "The city's two great hosts. Lysanthir buys Redlight discretion for his guests; they trade courtesies and never meet in daylight.",
+   "visibility": "private"
+  },
+  {
+   "a": "ambassador-julian-torres",
+   "b": "zara-flux",
+   "type": "debt",
+   "label": "the seat deal",
+   "description": "Julian negotiated the deal that gave Zara her Council seat. She knows he lied to both sides to get it.",
+   "visibility": "public"
+  },
+  {
+   "a": "commander-erica-stone",
+   "b": "rex-nightshade",
+   "type": "rivals",
+   "label": "the Redlight arrangement",
+   "description": "The NPD doesn't enter the Redlight without Rex's say. Erica hates the arrangement and keeps it.",
+   "visibility": "private"
+  },
+  {
+   "a": "silvyr-moondew",
+   "b": "morgana-vale",
+   "type": "rivals",
+   "label": "the no-vote rule",
+   "description": "Silvyr drafted the Fifth Chair's no-vote rule. Morgana has quoted it back to her at every session.",
+   "visibility": "public"
+  },
+  {
+   "a": "sirena-velocity-vexx",
+   "b": "max-turbo-jackson",
+   "type": "crew",
+   "label": "foot race bets",
+   "description": "Sirena races Max on foot against his car. She always wins, and he keeps betting.",
+   "visibility": "public"
+  },
+  {
+   "a": "maxwell-riggs",
+   "b": "zara-flux",
+   "type": "council",
+   "label": "the Speaker and the newest chair",
+   "description": "He campaigned against her seat and now needs her vote. Both of them find it funny, separately.",
+   "visibility": "public"
+  },
+  {
+   "a": "thrain-ironfist",
+   "b": "morgana-vale",
+   "type": "council",
+   "label": "unsigned filters",
+   "description": "Thrain sends filters to Morgana's wards in unmarked crates. He has never said why.",
+   "visibility": "private"
+  },
+  {
+   "a": "valkyrie-stroud",
+   "b": "brogan-steelbrow",
+   "type": "allies",
+   "label": "the strike marshals",
+   "description": "Valkyrie trained Local 7's strike marshals during the last lockout. Brogan paid her in beer and an IOU.",
+   "visibility": "public"
+  },
+  {
+   "a": "alex-datafist-mercer",
+   "b": "bruni-gearhack",
+   "type": "crew",
+   "label": "a suspicion",
+   "description": "Bruni suspects Alex talks to someone outside the crew. He hasn't said so yet.",
+   "visibility": "private"
+  },
+  {
+   "a": "brond-ironwheel-gravelheart",
+   "b": "jax-the-ghost-turner",
+   "type": "allies",
+   "label": "heavy loads",
+   "description": "Brond hauls the loads Jax's car can't carry. They share the middle of the napkin map.",
+   "visibility": "public"
+  },
+  {
+   "a": "rollo-scrapminder",
+   "b": "ivor-grimeshade",
+   "type": "debt",
+   "label": "the moss markup",
+   "description": "Ivor sells Rollo's moss filters in the Bazaar at a markup Rollo doesn't know about, and sends half of it to Morgana.",
+   "visibility": "private"
+  },
+  {
+   "a": "echo-the-wraith-vale",
+   "b": "valkyrie-stroud",
+   "type": "secret",
+   "label": "pulled from the fire",
+   "description": "Echo was in the burning block on the Carmine Night. Valkyrie's squad got her out before the firebreak fell. Echo knows their names; Valkyrie doesn't know hers.",
+   "visibility": "secret"
+  },
+  {
+   "a": "dr-felix-morpho",
+   "b": "rollo-scrapminder",
+   "type": "secret",
+   "label": "moss samples",
+   "description": "Felix has bought Rollo's moss twice under a false name. It eats dross, and that means it eats his business.",
+   "visibility": "private"
+  },
+  {
+   "a": "thrombur-irontrack",
+   "b": "elandor-swiftwind",
+   "type": "secret",
+   "label": "the night freight question",
+   "description": "Elandor has asked Thrombur, politely, whose seal rides the 3:10. Thrombur said he'd check the schedule.",
+   "visibility": "private"
+  },
+  {
+   "a": "blaze-carmine",
+   "b": "rollo-scrapminder",
+   "type": "secret",
+   "label": "what Blaze dropped",
+   "description": "Rollo salvaged the burned blocks after the Carmine Night. He kept the one thing Blaze dropped there.",
+   "visibility": "private"
+  },
+  {
+   "a": "lireal-moonblade",
+   "b": "orion-cybermind",
+   "type": "secret",
+   "label": "the first node",
+   "description": "Lireal built the illusion layer of the DreamPlane's first public node, before she knew what it burned. Orion still uses her work.",
+   "visibility": "private"
+  },
+  {
+   "a": "alex-datafist-mercer",
+   "b": "riley-gearshift-morgan",
+   "type": "friends",
+   "label": "the garage bouts",
+   "description": "Alex fights in the back-room bouts at Riley's garage. She patches his knuckle ports and charges him in parts.",
+   "visibility": "private"
+  },
+  {
+   "a": "borin-gravelbeard",
+   "b": "gael-greenwarden",
+   "type": "friends",
+   "label": "the corner outside",
+   "description": "Gael preaches outside Iron Spirits on rest-days. Borin sends out a mug and tells him to keep it down.",
+   "visibility": "public"
+  },
+  {
+   "a": "sylph-voidwalker",
+   "b": "gael-greenwarden",
+   "type": "secret",
+   "label": "the only sermon",
+   "description": "On slow nights Sylph watches Gael's corner sermons through his scope. Gael is the only preacher he listens to.",
+   "visibility": "private"
+  },
+  {
+   "a": "brond-ironwheel-gravelheart",
+   "b": "elandor-swiftwind",
+   "type": "crew",
+   "label": "the long way round",
+   "description": "Elandor plans the long way around; Brond prefers straight through. They have argued about it for twenty years.",
+   "visibility": "public"
+  },
+  {
+   "a": "blaze-carmine",
+   "b": "valkyrie-stroud",
+   "type": "secret",
+   "label": "the statue and the squad",
+   "description": "Blaze got the statue; her squad got a line on its base. He visits the line at night.",
+   "visibility": "private"
+  },
+  {
+   "a": "blaze-carmine",
+   "b": "ghost-nakamura",
+   "type": "rivals",
+   "label": "the city's two famous mercs",
+   "description": "Blaze is loved; Ghost is feared. Each wants the other's reputation.",
+   "visibility": "public"
+  },
+  {
+   "a": "milo-the-broker-harland",
+   "b": "blaze-carmine",
+   "type": "employer",
+   "label": "broker and client",
+   "description": "Milo is Blaze's broker and the architect of his legend.",
+   "visibility": "public"
+  },
+  {
+   "a": "milo-the-broker-harland",
+   "b": "valkyrie-stroud",
+   "type": "debt",
+   "label": "the job that killed her squad",
+   "description": "Milo brokered the job that killed Valkyrie's squad. She still takes his calls, and that's the part she can't explain.",
+   "visibility": "private"
+  },
+  {
+   "a": "milo-the-broker-harland",
+   "b": "ghost-nakamura",
+   "type": "employer",
+   "label": "broker and client",
+   "description": "Milo books Ghost for the jobs Blaze is too famous to take.",
+   "visibility": "public"
+  },
+  {
+   "a": "milo-the-broker-harland",
+   "b": "lireal-moonblade",
+   "type": "rivals",
+   "label": "won't work for him",
+   "description": "The Shade Pacers won't work through Milo. It eats at him.",
+   "visibility": "public"
+  },
+  {
+   "a": "elara-the-conductor-vance",
+   "b": "valkyrie-stroud",
+   "type": "secret",
+   "label": "the Carmine Night plan",
+   "description": "Elara planned the Carmine Night. Valkyrie doesn't know the planner's name.",
+   "visibility": "secret"
+  },
+  {
+   "a": "elara-the-conductor-vance",
+   "b": "milo-the-broker-harland",
+   "type": "allies",
+   "label": "planner and broker",
+   "description": "She plans; he staffs. Neither has ever trusted the other, which makes them reliable.",
+   "visibility": "private"
+  },
+  {
+   "a": "ghost-nakamura",
+   "b": "sylph-voidwalker",
+   "type": "rivals",
+   "label": "old crew, old grudge",
+   "description": "They came up together in the Neon Shadows. Ghost left Sylph behind on a job gone bad; Sylph waited three days in a drain. Sylph always knows where Ghost is.",
+   "visibility": "private"
+  },
+  {
+   "a": "ghost-nakamura",
+   "b": "jax-the-ghost-turner",
+   "type": "rivals",
+   "label": "two men called Ghost",
+   "description": "Jax had the name first. Ghost Nakamura has never asked about it, and Jax has never stopped mentioning it.",
+   "visibility": "public"
+  },
+  {
+   "a": "jax-the-ghost-turner",
+   "b": "elandor-swiftwind",
+   "type": "allies",
+   "label": "a treaty on a napkin",
+   "description": "Jax and the Runners split the city's illegal freight. The border is a map Elandor drew on a napkin at Iron Spirits.",
+   "visibility": "public"
+  },
+  {
+   "a": "lireal-moonblade",
+   "b": "alex-datafist-mercer",
+   "type": "crew",
+   "label": "door and illusion",
+   "description": "She builds the illusion, and he punches through the door it hides.",
+   "visibility": "public"
+  },
+  {
+   "a": "bruni-gearhack",
+   "b": "echo-the-wraith-vale",
+   "type": "crew",
+   "label": "her canisters",
+   "description": "Bruni builds Echo's canisters. He's the only one she lets close.",
+   "visibility": "public"
+  },
+  {
+   "a": "sylph-voidwalker",
+   "b": "echo-the-wraith-vale",
+   "type": "crew",
+   "label": "silent overwatch",
+   "description": "Sylph and Echo share overwatch. Neither talks, and both prefer it.",
+   "visibility": "public"
+  },
+  {
+   "a": "lireal-moonblade",
+   "b": "sylph-voidwalker",
+   "type": "crew",
+   "label": "eyes on the roof",
+   "description": "Sylph is the only Pacer Lireal has never tried to read.",
+   "visibility": "public"
+  },
+  {
+   "a": "elandor-swiftwind",
+   "b": "max-turbo-jackson",
+   "type": "crew",
+   "label": "route and driver",
+   "description": "Elandor plans the route Max ignores. Max is alive because Elandor plans for that too.",
+   "visibility": "public"
+  },
+  {
+   "a": "riley-gearshift-morgan",
+   "b": "max-turbo-jackson",
+   "type": "crew",
+   "label": "mechanic and driver",
+   "description": "Riley builds Max's cars and refuses to ride in them.",
+   "visibility": "public"
+  },
+  {
+   "a": "riley-gearshift-morgan",
+   "b": "rollo-scrapminder",
+   "type": "allies",
+   "label": "moss filter housings",
+   "description": "Riley builds housings for Rollo's moss filters in her off hours. She's the first uptown hand to take them seriously.",
+   "visibility": "private"
+  },
+  {
+   "a": "sirena-velocity-vexx",
+   "b": "rex-nightshade",
+   "type": "debt",
+   "label": "the annual job",
+   "description": "Sirena runs one Neon Shadows job a year for Rex, the price of getting out. Zara doesn't know.",
+   "visibility": "secret"
+  },
+  {
+   "a": "brond-ironwheel-gravelheart",
+   "b": "sirena-velocity-vexx",
+   "type": "crew",
+   "label": "bodyguard and friend",
+   "description": "Brond guards Sirena on jobs and pretends he isn't her friend.",
+   "visibility": "public"
+  },
+  {
+   "a": "riley-gearshift-morgan",
+   "b": "elandor-swiftwind",
+   "type": "crew",
+   "label": "engine and map",
+   "description": "Elandor tells her what the road needs; Riley tells him what the engine can give. They're never both happy.",
+   "visibility": "public"
+  }
+ ]
+}
