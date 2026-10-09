@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#101312"><meta name="description" content="Explore Neonix: a city of circuitry, old magic, and lives in the shadows."><title>NEONIX — The living archive</title><link rel="stylesheet" href="style.css"><script type="module" src="app.js"></script></head>
+<body>
+<a class="skip" href="#content">Skip to archive</a>
+<aside class="sidebar">
+ <a class="brand" href="#"><span class="brand-mark">N<span>↗</span></span><span>NEONIX<small>THE LIVING ARCHIVE</small></span></a>
+ <div class="workspace"><span class="status-dot"></span> WORLD EDITION <span>001</span></div>
+ <p class="nav-label">EXPLORE THE CITY</p>
+ <nav aria-label="Archive navigation" id="nav"></nav>
+ <div class="side-note"><span class="eyebrow">FROM THE CITY FILES</span><p>Old magic.<br>New machinery.<br>Same fight to survive.</p><a href="Neonix.txt" target="_blank">Read the original world notes ↗</a></div>
+ <div class="side-bottom"><span class="status-dot"></span> World archive <span>v0.1</span></div>
+</aside>
+<div class="shell">
+ <header class="topbar"><div class="breadcrumb">NEONIX <span>/</span> <span id="crumb">Overview</span></div><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search the archive…" aria-label="Search the archive"><kbd>/</kbd></label><button id="saved" class="saved-button" title="View saved entries">☆ <span>Saved</span><b id="saved-count">0</b></button></header>
+ <main id="content" tabindex="-1"><p class="loading">Connecting to the city archive…</p></main>
+ <footer><span>NEONIX / WORLD ARCHIVE</span><span>Built from your world. Still becoming.</span><span>WORLD · 001</span></footer>
+</div>
+<dialog id="dossier" aria-labelledby="dossier-title"><div id="dossier-content"></div></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+</body></html>

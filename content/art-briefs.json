@@ -1,0 +1,121 @@
+{
+  "direction": "Manhwa / graphic novel cyberpunk fantasy",
+  "checkpoint": "prefectIllustriousXL_v20p.safetensors",
+  "style": "manhwa, graphic novel illustration, ink drawing, crisp black lineart, flat cel shading, adult character, full body, plain dark background",
+  "studies": [
+    {
+      "id": "elves",
+      "width": 832,
+      "height": 1216,
+      "subject": "(glowing blue energy flowing through exposed cybernetic arms:1.2), luminous cyan channels between mechanical plates, 1woman, adult elf, long pointed ears, lean elegant physique, swept-back dark hair, sleek black sleeveless technical top and tapered trousers, visible silver cybernetic forearm and temple implants, bright blue magical mana veins connecting mechanical wrist elbow and collarbone, arcane blue wisps threading between metal components, poised relaxed stance",
+      "designNotes": "Elegant integrated cyberware with blue mana flowing between visible components. Ear shape, implant geometry, and clothing are proposed designs.",
+      "negative": ""
+    },
+    {
+      "id": "humans",
+      "width": 832,
+      "height": 1216,
+      "subject": "(glowing blue energy flowing through exposed cybernetic arms:1.2), luminous cyan channels between mechanical plates, 1woman, adult human, brown skin, short curly black hair, urban cropped utility jacket with sleeves rolled up, gray cargo trousers and sturdy boots, visible segmented cybernetic left forearm, small metal temple socket, bright electric blue mana currents flowing between forearm plates and along the collarbone, relaxed confident stance, ordinary city resident",
+      "designNotes": "Common everyday augmentation: a visible prosthetic forearm and temple interface, linked by blue mana. One representative human design.",
+      "negative": ""
+    },
+    {
+      "id": "dwarves",
+      "width": 832,
+      "height": 1216,
+      "subject": "(short stocky fantasy dwarf with short legs and thick beard:1.3), (glowing blue energy flowing through exposed cybernetic arms:1.2), luminous cyan channels between mechanical plates, 1man, male focus, short stocky fantasy dwarf, short legs broad powerful torso, thick braided beard, modern black sleeveless work shirt, industrial trousers and safety boots, heavy mechanical forearms and reinforced cybernetic hands, bright blue mana flowing through open channels between metal knuckles wrist and elbow plates, practical worker stance",
+      "negative": "tall, long legs, slender, female",
+      "designNotes": "Compact industrial cyberware adapted to a dwarf\u00e2\u20ac\u2122s proportions. Blue mana remains visible between robust components; workwear and hardware are exploratory."
+    },
+    {
+      "id": "mutants",
+      "width": 832,
+      "height": 1216,
+      "subject": "(green skinned mutant man with an organic reptilian face:1.25), visible mouth and nose, rugged adult face, asymmetrical bone ridges, black sleeveless work shirt, gray cargo pants and boots, one metal prosthetic arm with luminous blue mana channels between plates, relaxed standing pose",
+      "designNotes": "A restrained humanoid mutant exploration with green skin and one prosthetic arm. This draft understates the requested blue mana and biological variation; both need further refinement. It does not define the broader mutant population.",
+      "negative": "full robot, android, extra limbs, helmet, mask, faceplate, metal face, bodysuit"
+    },
+    {
+      "id": "the-plagued",
+      "width": 832,
+      "height": 1216,
+      "subject": "(glowing blue energy flowing through exposed cybernetic arms:1.2), luminous cyan channels between mechanical plates, 1man, middle-aged adult man, tired resolute face, ash-gray skin, lean physique, repaired sleeveless shirt and patched dark trousers, battered prosthetic forearm with mismatched metal panels, old metal collarbone ports, blue mana visibly winding between salvaged implants, worn practical boots, ordinary living person",
+      "negative": "",
+      "designNotes": "Repaired and mismatched cyberware proposes an access-and-maintenance contrast. Blue mana is visible. Pallor is exploratory; neither implant damage nor mana is established as the cause of The Gloom."
+    },
+    {
+      "id": "the-dreamplane-ascendants",
+      "width": 832,
+      "height": 1216,
+      "subject": "(glowing blue energy flowing through exposed cybernetic arms:1.2), luminous cyan channels between mechanical plates, 1woman, adult digital mystic, long off-white hooded technical coat over black fitted streetwear, sleeves open to reveal segmented cybernetic arms, metallic temple and neck ports, flowing blue mana linking temples collarbone and wrist interfaces, small eye pendant, contemplative upright pose",
+      "designNotes": "Open interface points and visible blue mana suggest the Ascendants\u00e2\u20ac\u2122 digital rituals. Pale layers and a circuit-eye motif remain costume proposals.",
+      "negative": ""
+    },
+    {
+      "id": "the-purists",
+      "width": 832,
+      "height": 1216,
+      "subject": "1woman, adult unaugmented human woman, olive canvas jacket over natural linen shirt, brown practical trousers and leather boots, natural bare human hands, simple cloth medicine satchel, stitched hand-and-eye patch, entirely organic unmodified body, restrained warm earth colors, serious determined face",
+      "designNotes": "The deliberate contrast: unmodified bodies and natural-fiber clothing, consistent with their opposition to cybernetics. Common cyberware makes that refusal visibly distinctive.",
+      "negative": "cybernetics, prosthetic limb, implant, mechanical arm, robotic hand, glowing skin, mana veins"
+    },
+    {
+      "id": "the-terra-guardians",
+      "width": 832,
+      "height": 1216,
+      "subject": "(1man:1.3), male focus, (blue mana flowing between metal prosthetic arm plates:1.25), adult ecological worker, green work jacket with rolled sleeves, brown cargo pants, tool bag, sturdy boots, relaxed standing",
+      "designNotes": "Practical green workwear, cargo trousers, carrying gear, and a mechanical arm. This draft establishes clothing; visible blue mana paths need strengthening in the next refinement.",
+      "negative": ", woman, female, girl, breasts, swimsuit, bodysuit, leotard, bare legs, cape"
+    },
+    {
+      "id": "the-neon-runners",
+      "width": 832,
+      "height": 1216,
+      "subject": "(glowing blue energy flowing through exposed cybernetic arms:1.2), luminous cyan channels between mechanical plates, 1woman, adult street courier, short hair, open graphite riding jacket with orange accents, reinforced trousers and motorcycle boots, helmet held at side, compact locked delivery bag, mechanical forearms and articulated cybernetic knees, electric blue mana flowing between exposed arm and knee plates, agile confident silhouette",
+      "designNotes": "Blue mana through exposed joint hardware, with orange riding gear and secure cargo. This is an ordinary courier costume proposal, not a named racer.",
+      "negative": ""
+    },
+    {
+      "id": "the-shade-pacers",
+      "width": 832,
+      "height": 1216,
+      "subject": "(glowing blue energy flowing through exposed cybernetic arms:1.2), luminous cyan channels between mechanical plates, 1man, male focus, adult hacker, asymmetric charcoal street jacket with one sleeve rolled up, matte technical trousers and quiet boots, exposed slim cybernetic hand and temple data ports, thin vivid blue mana currents visibly linking hand wrist and temple hardware, small internal tools, face visible, reserved vigilant stance",
+      "negative": "",
+      "designNotes": "Fine blue mana channels and compact exposed interfaces preserve the common augmentation language. Matte layers keep the broader silhouette discreet."
+    },
+    {
+      "id": "the-iron-syndicate",
+      "width": 832,
+      "height": 1216,
+      "subject": "(glowing blue energy flowing through exposed cybernetic arms:1.2), luminous cyan channels between mechanical plates, 1man, adult human syndicate member, disciplined angular silhouette, charcoal tailored work jacket over oxblood shirt, industrial trousers and heavy boots, rolled sleeves revealing metal reinforced forearms, bright blue mana between segmented mechanical hand wrist and elbow components, small crossed guns and gear badge",
+      "negative": "",
+      "designNotes": "Disciplined workwear, heavy visible forearm hardware, and blue mana conduits. Oxblood accents and hardware placement remain proposals."
+    },
+    {
+      "id": "the-stonefist-clan",
+      "width": 832,
+      "height": 1216,
+      "subject": "(short stocky fantasy dwarf with short legs and thick beard:1.3), (glowing blue energy flowing through exposed cybernetic arms:1.2), luminous cyan channels between mechanical plates, 1man, short stocky dwarf, thick beard, brown mining work vest over sleeveless shirt, dusty utility trousers and steel toe boots, reinforced mechanical hands and heavy cybernetic forearms, bright blue mana visibly threading between rugged metal knuckles and wrist plates, mineral sample pouches stone fist badge",
+      "negative": "tall, long legs, slender, female",
+      "designNotes": "Mining clothing and heavy-duty cyberware with readable blue mana paths. Stone-fist symbolism comes from the notes; exact equipment is a proposal."
+    },
+    {
+      "id": "the-neon-shadows",
+      "width": 832,
+      "height": 1216,
+      "subject": "1woman, adult information broker, violet short hair, slate street coat and dark trousers, (blue mana lines between small metal wrist implants:1.15), natural bare hands, subtle iridescent skin, small chameleon pin, relaxed standing",
+      "designNotes": "A dark street coat and compact forearm hardware for an information broker. This draft keeps the clothing readable; the proposed violet accents and visible blue mana are not yet resolved.",
+      "negative": ", halo, wings, giant arms, blades, large gauntlets"
+    },
+    {
+      "id": "the-gloom-raiders",
+      "width": 832,
+      "height": 1216,
+      "subject": "(glowing blue energy flowing through exposed cybernetic arms:1.2), luminous cyan channels between mechanical plates, 1man, adult resource smuggler, weary determined face, patched hooded raincoat with one sleeve rolled up, repaired cargo trousers and mismatched boots, improvised salvaged metal forearm, bright blue mana flowing between mismatched prosthetic plates and neck ports, large repurposed supply satchel, mask hanging at neck",
+      "negative": "",
+      "designNotes": "Salvaged cyberware and supply-carrying clothing, with blue mana through mismatched components. Maintenance differences are exploratory and do not explain The Gloom."
+    }
+  ],
+  "revision": 2,
+  "negative": "photograph, photorealistic, 3d, render, realistic skin texture, oil painting, blurry, watermark, text, lettering, title, frame, border, diagram, magic circle, large aura, duplicate, multiple people, cropped, child, teenager, childlike face, medieval armor, fur trim, sword, weapon, staff"
+}

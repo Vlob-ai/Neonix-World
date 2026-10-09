@@ -1,0 +1,1179 @@
+{
+  "version": 1,
+  "source": "Neonix.txt",
+  "importNotes": "42 distinct key players imported from entries 1–42. Repeated entries 43–50 and repeated location descriptions are preserved in the original source; not duplicated in this index. The short-name Blaze entry is treated as a repeat of Blaze Carmine. Artwork is exploratory and does not establish character appearance as canon.",
+  "entries": [
+    {
+      "id": "neonix",
+      "name": "Neonix",
+      "type": "Lore",
+      "body": "A sprawling, neon-lit metropolis embodying the quintessence of a cyberpunk future. Skyscrapers pierce the smoggy sky, adorned with holographic billboards and neon signs. The city is a melting pot of technology, magic, and diverse cultures, yet riddled with stark socioeconomic divides.",
+      "source": "Neonix.txt",
+      "links": [
+        "elven-heights",
+        "humanity-central",
+        "dwarf-district",
+        "mutant-quarters",
+        "the-gloomscape",
+        "the-plagued",
+        "maxwell-riggs",
+        "silvyr-moondew",
+        "commander-erica-stone",
+        "rollo-scrapminder",
+        "blaze-carmine",
+        "milo-the-broker-harland",
+        "techtown-marketplace",
+        "ironheart-foundry",
+        "the-terra-guardians",
+        "the-neon-runners",
+        "the-shade-pacers",
+        "the-stonefist-clan",
+        "cyberware-and-blue-mana"
+      ],
+      "image": "neonix"
+    },
+    {
+      "id": "elven-heights",
+      "name": "Elven Heights",
+      "type": "Boroughs",
+      "body": "An affluent area with sleek, high-tech buildings, lush gardens, and ancient elven architecture. It's predominantly inhabited by Elves, known for their wealth, grace, and age-old traditions.",
+      "source": "Neonix.txt",
+      "color": "#d9bd77",
+      "image": "elven-heights",
+      "links": [
+        "elves",
+        "neonix",
+        "neon-nirvana",
+        "elven-bathhouses-aqua-elysium",
+        "the-crystal-conservatory",
+        "the-archive-of-ages"
+      ]
+    },
+    {
+      "id": "humanity-central",
+      "name": "Humanity Central",
+      "type": "Boroughs",
+      "body": "A bustling, diverse hub of innovation and culture. This borough is a testament to human resilience and ingenuity, featuring a mix of modern architecture and historical sites.",
+      "source": "Neonix.txt",
+      "color": "#78cbd0",
+      "image": "humanity-central",
+      "links": [
+        "humans",
+        "neonix",
+        "mia-sanchez",
+        "the-human-touch",
+        "techtown-marketplace",
+        "the-unity-plaza",
+        "neonix-university",
+        "the-iron-syndicate"
+      ]
+    },
+    {
+      "id": "dwarf-district",
+      "name": "Dwarf District",
+      "type": "Boroughs",
+      "body": "Characterized by industrial complexes and sturdy, functional architecture. This borough is home to the hardworking dwarves and a segment of human society, known for their craftsmanship and labor.",
+      "source": "Neonix.txt",
+      "color": "#df955d",
+      "image": "dwarf-district",
+      "links": [
+        "dwarves",
+        "neonix",
+        "borin-gravelbeard",
+        "iron-spirits",
+        "ironheart-foundry",
+        "the-underforge",
+        "stonehall-stadium"
+      ]
+    },
+    {
+      "id": "mutant-quarters",
+      "name": "Mutant Quarters",
+      "type": "Boroughs",
+      "body": "A gritty, neon-soaked area with a mix of beauty and decay. Populated mostly by mutants, it's a place of harsh contrasts, where the struggle for survival meets the allure of the forbidden.",
+      "source": "Neonix.txt",
+      "color": "#bd98dd",
+      "image": "mutant-quarters",
+      "links": [
+        "mutants",
+        "neonix",
+        "rex-nightshade",
+        "the-neon-labyrinth",
+        "the-chrysalis-clinic",
+        "the-fringe-theatre",
+        "the-neon-shadows"
+      ]
+    },
+    {
+      "id": "the-gloomscape",
+      "name": "The Gloomscape",
+      "type": "Boroughs",
+      "body": "The poorest area, shrouded in pollution and despair. Inhabitants, known as The Plagued, live in dilapidated buildings, suffering from the city's pervasive ailment, \"The Gloom.\"",
+      "source": "Neonix.txt",
+      "color": "#9aaea8",
+      "image": "the-gloomscape",
+      "links": [
+        "the-plagued",
+        "neonix",
+        "the-boneyard",
+        "the-breathless-bazaar",
+        "the-veil-of-mist",
+        "the-gloom-raiders"
+      ]
+    },
+    {
+      "id": "elves",
+      "name": "Elves",
+      "type": "Peoples",
+      "body": "Immortal beings with a rich heritage, they possess a natural affinity for magic and are often seen as aloof yet graceful.",
+      "source": "Neonix.txt",
+      "color": "#d9bd77",
+      "links": [
+        "elven-heights",
+        "lysanthir-altherion",
+        "elandra-silvershade",
+        "aerendir-leafgold",
+        "silvyr-moondew",
+        "faelar-shadowsong",
+        "lireal-moonblade",
+        "elandor-swiftwind",
+        "cyberware-and-blue-mana"
+      ]
+    },
+    {
+      "id": "humans",
+      "name": "Humans",
+      "type": "Peoples",
+      "body": "Known for their adaptability and innovation, humans are the driving force behind much of the city's progress.",
+      "source": "Neonix.txt",
+      "color": "#78cbd0",
+      "links": [
+        "humanity-central",
+        "mia-sanchez",
+        "maxwell-riggs",
+        "dr-lena-kovalenko",
+        "ambassador-julian-torres",
+        "eva-trueborn",
+        "alex-datafist-mercer",
+        "max-turbo-jackson",
+        "riley-gearshift-morgan",
+        "cyberware-and-blue-mana"
+      ]
+    },
+    {
+      "id": "dwarves",
+      "name": "Dwarves",
+      "type": "Peoples",
+      "body": "Sturdy and industrious, dwarves are renowned for their craftsmanship and strength, often working in the city's numerous factories.",
+      "source": "Neonix.txt",
+      "color": "#df955d",
+      "links": [
+        "dwarf-district",
+        "borin-gravelbeard",
+        "thrain-ironfist",
+        "brogan-steelbrow",
+        "gilda-rockfounder",
+        "thrombur-irontrack",
+        "bruni-gearhack",
+        "brond-ironwheel-gravelheart",
+        "the-underforge",
+        "cyberware-and-blue-mana"
+      ]
+    },
+    {
+      "id": "mutants",
+      "name": "Mutants",
+      "type": "Peoples",
+      "body": "A diverse group ranging from stunningly beautiful to grotesquely monstrous, often marginalized and forced into less desirable jobs.",
+      "source": "Neonix.txt",
+      "color": "#bd98dd",
+      "links": [
+        "mutant-quarters",
+        "zara-flux",
+        "rex-nightshade",
+        "dr-felix-morpho",
+        "ghost-nakamura",
+        "sylph-voidwalker",
+        "sirena-velocity-vexx",
+        "the-neon-labyrinth",
+        "the-chrysalis-clinic",
+        "the-fringe-theatre",
+        "cyberware-and-blue-mana"
+      ]
+    },
+    {
+      "id": "the-plagued",
+      "name": "The Plagued",
+      "type": "Peoples",
+      "body": "Victims of The Gloom, they are the forgotten ones of Neonix, struggling for survival in the city's underbelly.",
+      "source": "Neonix.txt",
+      "color": "#9aaea8",
+      "links": [
+        "the-gloomscape",
+        "neonix",
+        "morgana-vale",
+        "ivor-grimeshade",
+        "mara-hearthkeeper",
+        "echo-the-wraith-vale",
+        "the-boneyard",
+        "the-breathless-bazaar",
+        "the-veil-of-mist",
+        "the-gloom-raiders",
+        "cyberware-and-blue-mana"
+      ]
+    },
+    {
+      "id": "lysanthir-altherion",
+      "name": "Lysanthir Altherion",
+      "type": "Characters",
+      "body": "An elegant elf with a rich heritage and a penchant for hosting sophisticated gatherings.",
+      "source": "Neonix.txt",
+      "age": 237,
+      "gender": "Male",
+      "people": "Elves",
+      "links": [
+        "elves"
+      ],
+      "image": null
+    },
+    {
+      "id": "mia-sanchez",
+      "name": "Mia Sanchez",
+      "type": "Characters",
+      "body": "A vibrant human known for her adaptability and her role as a charismatic bartender in Humanity Central.",
+      "source": "Neonix.txt",
+      "age": 28,
+      "gender": "Female",
+      "people": "Humans",
+      "links": [
+        "humans",
+        "humanity-central"
+      ],
+      "image": null
+    },
+    {
+      "id": "borin-gravelbeard",
+      "name": "Borin Gravelbeard",
+      "type": "Characters",
+      "body": "A dwarven figure of strength and tradition, operating a cozy bar in the Dwarf District.",
+      "source": "Neonix.txt",
+      "age": 157,
+      "gender": "Male",
+      "people": "Dwarves",
+      "links": [
+        "dwarves",
+        "dwarf-district"
+      ],
+      "image": "borin-gravelbeard"
+    },
+    {
+      "id": "elandra-silvershade",
+      "name": "Elandra Silvershade",
+      "type": "Characters",
+      "body": "A revered elven leader with a deep connection to her lineage and a strategic mind.",
+      "source": "Neonix.txt",
+      "age": 451,
+      "gender": "Female",
+      "people": "Elves",
+      "links": [
+        "elves"
+      ],
+      "image": "elandra-silvershade"
+    },
+    {
+      "id": "maxwell-riggs",
+      "name": "Maxwell Riggs",
+      "type": "Characters",
+      "body": "A visionary human leader driving innovation and unity among the races of Neonix.",
+      "source": "Neonix.txt",
+      "age": 52,
+      "gender": "Male",
+      "people": "Humans",
+      "links": [
+        "humans",
+        "neonix"
+      ],
+      "image": null
+    },
+    {
+      "id": "thrain-ironfist",
+      "name": "Thrain Ironfist",
+      "type": "Characters",
+      "body": "The steadfast dwarven leader known for his dedication to craftsmanship and his community.",
+      "source": "Neonix.txt",
+      "age": 210,
+      "gender": "Male",
+      "people": "Dwarves",
+      "links": [
+        "dwarves"
+      ],
+      "image": null
+    },
+    {
+      "id": "zara-flux",
+      "name": "Zara Flux",
+      "type": "Characters",
+      "body": "Charismatic mutant leader advocating for mutant rights and challenging societal norms.",
+      "source": "Neonix.txt",
+      "age": 35,
+      "gender": "Female",
+      "people": "Mutants",
+      "links": [
+        "mutants"
+      ],
+      "image": "zara-flux"
+    },
+    {
+      "id": "morgana-vale",
+      "name": "Morgana Vale",
+      "type": "Characters",
+      "body": "Revered leader of The Plagued, dedicated to finding a cure for The Gloom.",
+      "source": "Neonix.txt",
+      "age": 47,
+      "gender": "Female",
+      "people": "The Plagued",
+      "links": [
+        "the-plagued"
+      ],
+      "image": null
+    },
+    {
+      "id": "aerendir-leafgold",
+      "name": "Aerendir Leafgold",
+      "type": "Characters",
+      "body": "An elven hedge fund manager known for his shrewd financial strategies and luxurious lifestyle.",
+      "source": "Neonix.txt",
+      "age": 312,
+      "gender": "Male",
+      "people": "Elves",
+      "links": [
+        "elves"
+      ],
+      "image": null
+    },
+    {
+      "id": "silvyr-moondew",
+      "name": "Silvyr Moondew",
+      "type": "Characters",
+      "body": "Influential elven lawmaker dedicated to integrating elven ideals into Neonix's governance.",
+      "source": "Neonix.txt",
+      "age": 279,
+      "gender": "Female",
+      "people": "Elves",
+      "links": [
+        "elves",
+        "neonix"
+      ],
+      "image": null
+    },
+    {
+      "id": "faelar-shadowsong",
+      "name": "Faelar Shadowsong",
+      "type": "Characters",
+      "body": "The enigmatic head of the elven spy network, adept in intelligence gathering.",
+      "source": "Neonix.txt",
+      "age": 325,
+      "gender": "Male",
+      "people": "Elves",
+      "links": [
+        "elves"
+      ],
+      "image": null
+    },
+    {
+      "id": "dr-lena-kovalenko",
+      "name": "Dr. Lena Kovalenko",
+      "type": "Characters",
+      "body": "A leading human researcher at the forefront of technological and magical innovation.",
+      "source": "Neonix.txt",
+      "age": 46,
+      "gender": "Female",
+      "people": "Humans",
+      "links": [
+        "humans"
+      ],
+      "image": null
+    },
+    {
+      "id": "ambassador-julian-torres",
+      "name": "Ambassador Julian Torres",
+      "type": "Characters",
+      "body": "A human diplomat skillful in mediating disputes and promoting inter-racial harmony.",
+      "source": "Neonix.txt",
+      "age": 54,
+      "gender": "Male",
+      "people": "Humans",
+      "links": [
+        "humans"
+      ],
+      "image": null
+    },
+    {
+      "id": "commander-erica-stone",
+      "name": "Commander Erica Stone",
+      "type": "Characters",
+      "body": "Formidable head of Neonix's police force, known for her tactical skills and integrity.",
+      "source": "Neonix.txt",
+      "age": 39,
+      "gender": "Female",
+      "people": null,
+      "links": [
+        "neonix"
+      ],
+      "image": null
+    },
+    {
+      "id": "brogan-steelbrow",
+      "name": "Brogan Steelbrow",
+      "type": "Characters",
+      "body": "A dwarven union leader passionate about workers' rights and safety.",
+      "source": "Neonix.txt",
+      "age": 178,
+      "gender": "Male",
+      "people": "Dwarves",
+      "links": [
+        "dwarves"
+      ],
+      "image": null
+    },
+    {
+      "id": "gilda-rockfounder",
+      "name": "Gilda Rockfounder",
+      "type": "Characters",
+      "body": "Dwarven construction planner known for her innovative designs and meticulous work.",
+      "source": "Neonix.txt",
+      "age": 153,
+      "gender": "Female",
+      "people": "Dwarves",
+      "links": [
+        "dwarves"
+      ],
+      "image": null
+    },
+    {
+      "id": "thrombur-irontrack",
+      "name": "Thrombur Irontrack",
+      "type": "Characters",
+      "body": "The efficient dwarven master of the city's trains and postal service.",
+      "source": "Neonix.txt",
+      "age": 165,
+      "gender": "Male",
+      "people": "Dwarves",
+      "links": [
+        "dwarves"
+      ],
+      "image": null
+    },
+    {
+      "id": "rex-nightshade",
+      "name": "Rex Nightshade",
+      "type": "Characters",
+      "body": "Influential overseer of the Mutant Quarters' Redlight District, blending beauty and decay.",
+      "source": "Neonix.txt",
+      "age": 42,
+      "gender": "Male",
+      "people": "Mutants",
+      "links": [
+        "mutants",
+        "mutant-quarters"
+      ],
+      "image": null
+    },
+    {
+      "id": "dr-felix-morpho",
+      "name": "Dr. Felix Morpho",
+      "type": "Characters",
+      "body": "A mutant chemist and mastermind behind a range of exotic, sought-after substances.",
+      "source": "Neonix.txt",
+      "age": 37,
+      "gender": "Male",
+      "people": "Mutants",
+      "links": [
+        "mutants"
+      ],
+      "image": null
+    },
+    {
+      "id": "dr-nova-seraph",
+      "name": "Dr. Nova Seraph",
+      "type": "Characters",
+      "body": "Renowned biohacker and surgeon specializing in transformative body modifications.",
+      "source": "Neonix.txt",
+      "age": 39,
+      "gender": "Female",
+      "people": null,
+      "links": [],
+      "image": null
+    },
+    {
+      "id": "ivor-grimeshade",
+      "name": "Ivor Grimeshade",
+      "type": "Characters",
+      "body": "The elusive leader of The Plagued's black market, operating in shadows and secrecy.",
+      "source": "Neonix.txt",
+      "age": 55,
+      "gender": "Male",
+      "people": "The Plagued",
+      "links": [
+        "the-plagued"
+      ],
+      "image": null
+    },
+    {
+      "id": "mara-hearthkeeper",
+      "name": "Mara Hearthkeeper",
+      "type": "Characters",
+      "body": "Compassionate distributor of rations among The Plagued, ensuring sustenance for her community.",
+      "source": "Neonix.txt",
+      "age": 48,
+      "gender": "Female",
+      "people": "The Plagued",
+      "links": [
+        "the-plagued"
+      ],
+      "image": null
+    },
+    {
+      "id": "rollo-scrapminder",
+      "name": "Rollo Scrapminder",
+      "type": "Characters",
+      "body": "Resourceful junk master managing Neonix's scrap heaps with ingenuity and environmental consciousness.",
+      "source": "Neonix.txt",
+      "age": 60,
+      "gender": "Male",
+      "people": null,
+      "links": [
+        "neonix"
+      ],
+      "image": null
+    },
+    {
+      "id": "orion-cybermind",
+      "name": "Orion Cybermind",
+      "type": "Characters",
+      "body": "The Digital Oracle of The DreamPlane Ascendants, seeking digital transcendence.",
+      "source": "Neonix.txt",
+      "age": 45,
+      "gender": "Male",
+      "people": null,
+      "faction": "The DreamPlane Ascendants",
+      "links": [
+        "the-dreamplane-ascendants"
+      ],
+      "image": null
+    },
+    {
+      "id": "eva-trueborn",
+      "name": "Eva Trueborn",
+      "type": "Characters",
+      "body": "Leader of The Purists, advocating for the sanctity of unaltered human form.",
+      "source": "Neonix.txt",
+      "age": 52,
+      "gender": "Female",
+      "people": "Humans",
+      "faction": "The Purists",
+      "links": [
+        "humans",
+        "the-purists"
+      ],
+      "image": null
+    },
+    {
+      "id": "gael-greenwarden",
+      "name": "Gael Greenwarden",
+      "type": "Characters",
+      "body": "Doomsayer of The Terra Guardians, warning of ecological disaster and advocating for environmental harmony.",
+      "source": "Neonix.txt",
+      "age": 47,
+      "gender": "Male",
+      "people": null,
+      "faction": "The Terra Guardians",
+      "links": [
+        "the-terra-guardians"
+      ],
+      "image": null
+    },
+    {
+      "id": "blaze-carmine",
+      "name": "Blaze Carmine",
+      "type": "Characters",
+      "body": "A renowned mercenary known for his bravery and daring feats in Neonix, celebrated as a folk hero by many.",
+      "source": "Neonix.txt",
+      "age": 35,
+      "gender": "Male",
+      "people": null,
+      "links": [
+        "neonix"
+      ],
+      "image": null
+    },
+    {
+      "id": "ghost-nakamura",
+      "name": "Ghost Nakamura",
+      "type": "Characters",
+      "body": "A mutant mercenary famed for his stealth and infiltration skills, equally seen as a menace and a savior.",
+      "source": "Neonix.txt",
+      "age": 29,
+      "gender": "Male",
+      "people": "Mutants",
+      "links": [
+        "mutants"
+      ],
+      "image": "ghost-nakamura"
+    },
+    {
+      "id": "valkyrie-stroud",
+      "name": "Valkyrie Stroud",
+      "type": "Characters",
+      "body": "A veteran mercenary known for her tactical prowess and commanding presence on the battlefield.",
+      "source": "Neonix.txt",
+      "age": 42,
+      "gender": "Female",
+      "people": null,
+      "links": [],
+      "image": null
+    },
+    {
+      "id": "elara-the-conductor-vance",
+      "name": "Elara 'The Conductor' Vance",
+      "type": "Characters",
+      "body": "A master planner renowned for orchestrating complex criminal operations with precision.",
+      "source": "Neonix.txt",
+      "age": 38,
+      "gender": "Female",
+      "people": null,
+      "links": [],
+      "image": null
+    },
+    {
+      "id": "milo-the-broker-harland",
+      "name": "Milo 'The Broker' Harland",
+      "type": "Characters",
+      "body": "A savvy negotiator known for providing the perfect mercenary for any task in Neonix.",
+      "source": "Neonix.txt",
+      "age": 45,
+      "gender": "Male",
+      "people": null,
+      "links": [
+        "neonix"
+      ],
+      "image": null
+    },
+    {
+      "id": "jax-the-ghost-turner",
+      "name": "Jax 'The Ghost' Turner",
+      "type": "Characters",
+      "body": "An expert in transportation and smuggling, known for his ability to move goods and people unnoticed.",
+      "source": "Neonix.txt",
+      "age": 40,
+      "gender": "Male",
+      "people": null,
+      "links": [],
+      "image": null
+    },
+    {
+      "id": "lireal-moonblade",
+      "name": "Lireal Moonblade",
+      "type": "Characters",
+      "body": "An elf in the Shade Pacers, excelling in digital illusion and espionage with elegance.",
+      "source": "Neonix.txt",
+      "age": 210,
+      "gender": "Female",
+      "people": "Elves",
+      "faction": "The Shade Pacers",
+      "links": [
+        "elves",
+        "the-shade-pacers"
+      ],
+      "image": null
+    },
+    {
+      "id": "alex-datafist-mercer",
+      "name": "Alex 'Datafist' Mercer",
+      "type": "Characters",
+      "body": "A human member of the Shade Pacers, a master of data manipulation and hand-to-hand combat.",
+      "source": "Neonix.txt",
+      "age": 32,
+      "gender": "Male",
+      "people": "Humans",
+      "faction": "The Shade Pacers",
+      "links": [
+        "humans",
+        "the-shade-pacers"
+      ],
+      "image": null
+    },
+    {
+      "id": "bruni-gearhack",
+      "name": "Bruni Gearhack",
+      "type": "Characters",
+      "body": "A dwarven hardware hacking specialist in the Shade Pacers, known for his expertise in explosives.",
+      "source": "Neonix.txt",
+      "age": 156,
+      "gender": "Male",
+      "people": "Dwarves",
+      "faction": "The Shade Pacers",
+      "links": [
+        "dwarves",
+        "the-shade-pacers"
+      ],
+      "image": null
+    },
+    {
+      "id": "sylph-voidwalker",
+      "name": "Sylph Voidwalker",
+      "type": "Characters",
+      "body": "A mutant in the Shade Pacers, specializing in stealth and surveillance, skilled with sniper rifles.",
+      "source": "Neonix.txt",
+      "age": 27,
+      "gender": "Male",
+      "people": "Mutants",
+      "faction": "The Shade Pacers",
+      "links": [
+        "mutants",
+        "the-shade-pacers"
+      ],
+      "image": null
+    },
+    {
+      "id": "echo-the-wraith-vale",
+      "name": "Echo 'The Wraith' Vale",
+      "type": "Characters",
+      "body": "A member of The Plagued in the Shade Pacers, specializing in guerilla tactics and toxic weaponry.",
+      "source": "Neonix.txt",
+      "age": 40,
+      "gender": "Female",
+      "people": "The Plagued",
+      "faction": "The Shade Pacers",
+      "links": [
+        "the-plagued",
+        "the-shade-pacers"
+      ],
+      "image": null
+    },
+    {
+      "id": "elandor-swiftwind",
+      "name": "Elandor Swiftwind",
+      "type": "Characters",
+      "body": "Elven strategist and chief navigator of The Neon Runners, planning efficient routes and escape paths.",
+      "source": "Neonix.txt",
+      "age": 189,
+      "gender": "Male",
+      "people": "Elves",
+      "faction": "The Neon Runners",
+      "links": [
+        "elves",
+        "the-neon-runners"
+      ],
+      "image": null
+    },
+    {
+      "id": "max-turbo-jackson",
+      "name": "Max 'Turbo' Jackson",
+      "type": "Characters",
+      "body": "The adrenaline-fueled human face of The Neon Runners, known for his breathtaking stunts and speed.",
+      "source": "Neonix.txt",
+      "age": 27,
+      "gender": "Male",
+      "people": "Humans",
+      "faction": "The Neon Runners",
+      "links": [
+        "humans",
+        "the-neon-runners"
+      ],
+      "image": null
+    },
+    {
+      "id": "riley-gearshift-morgan",
+      "name": "Riley 'Gearshift' Morgan",
+      "type": "Characters",
+      "body": "The human mechanic and vehicle modification expert of The Neon Runners, a genius in racing tech.",
+      "source": "Neonix.txt",
+      "age": 30,
+      "gender": "Female",
+      "people": "Humans",
+      "faction": "The Neon Runners",
+      "links": [
+        "humans",
+        "the-neon-runners"
+      ],
+      "image": null
+    },
+    {
+      "id": "brond-ironwheel-gravelheart",
+      "name": "Brond 'Ironwheel' Gravelheart",
+      "type": "Characters",
+      "body": "The dwarven enforcer of The Neon Runners, handling robust transports and ensuring safety.",
+      "source": "Neonix.txt",
+      "age": 168,
+      "gender": "Male",
+      "people": "Dwarves",
+      "faction": "The Neon Runners",
+      "links": [
+        "dwarves",
+        "the-neon-runners"
+      ],
+      "image": null
+    },
+    {
+      "id": "sirena-velocity-vexx",
+      "name": "Sirena 'Velocity' Vexx",
+      "type": "Characters",
+      "body": "A mutant jacker in The Neon Runners, specializing in acquiring experimental vehicle parts.",
+      "source": "Neonix.txt",
+      "age": 26,
+      "gender": "Female",
+      "people": "Mutants",
+      "faction": "The Neon Runners",
+      "links": [
+        "mutants",
+        "the-neon-runners"
+      ],
+      "image": null
+    },
+    {
+      "id": "neon-nirvana",
+      "name": "Neon Nirvana",
+      "type": "Places",
+      "body": "Located in Elven Heights, it's a luxurious bar with an ethereal ambiance, serving exotic drinks infused with magical essences.",
+      "source": "Neonix.txt",
+      "borough": "Elven Heights",
+      "links": [
+        "elven-heights"
+      ],
+      "color": "#d9bd77"
+    },
+    {
+      "id": "the-human-touch",
+      "name": "The Human Touch",
+      "type": "Places",
+      "body": "In the heart of Humanity Central, this bar is known for its innovative cocktails and a warm, inclusive atmosphere.",
+      "source": "Neonix.txt",
+      "borough": "Humanity Central",
+      "links": [
+        "humanity-central"
+      ],
+      "color": "#78cbd0"
+    },
+    {
+      "id": "iron-spirits",
+      "name": "Iron Spirits",
+      "type": "Places",
+      "body": "Dwarf District's pride, this bar offers a robust selection of craft beers and a cozy, earthy interior.",
+      "source": "Neonix.txt",
+      "borough": "Dwarf District",
+      "links": [
+        "dwarf-district"
+      ],
+      "color": "#df955d"
+    },
+    {
+      "id": "elven-bathhouses-aqua-elysium",
+      "name": "Elven Bathhouses (Aqua Elysium)",
+      "type": "Places",
+      "body": "Luxurious and serene, these bathhouses are a blend of ancient elven mysticism and modern technology. They offer rejuvenating experiences, with enchanted waters said to heal and invigorate.",
+      "source": "Neonix.txt",
+      "borough": "Elven Heights",
+      "links": [
+        "elven-heights"
+      ],
+      "color": "#d9bd77"
+    },
+    {
+      "id": "the-crystal-conservatory",
+      "name": "The Crystal Conservatory",
+      "type": "Places",
+      "body": "A breathtaking botanical garden enclosed in a massive crystal dome. It showcases rare magical flora and fauna, a testament to elven harmony with nature.",
+      "source": "Neonix.txt",
+      "borough": "Elven Heights",
+      "links": [
+        "elven-heights"
+      ],
+      "color": "#d9bd77"
+    },
+    {
+      "id": "the-archive-of-ages",
+      "name": "The Archive of Ages",
+      "type": "Places",
+      "body": "An ancient library and museum that holds the history and knowledge of the elven lineage. It's a marvel of architecture, combining holographic technology with traditional elven designs.",
+      "source": "Neonix.txt",
+      "borough": "Elven Heights",
+      "links": [
+        "elven-heights"
+      ],
+      "color": "#d9bd77"
+    },
+    {
+      "id": "techtown-marketplace",
+      "name": "TechTown Marketplace",
+      "type": "Places",
+      "body": "A bustling hub of innovation and commerce. Here, one can find the latest gadgets, cybernetic enhancements, and various cultural artifacts from across Neonix.",
+      "source": "Neonix.txt",
+      "borough": "Humanity Central",
+      "links": [
+        "humanity-central",
+        "neonix"
+      ],
+      "color": "#78cbd0"
+    },
+    {
+      "id": "the-unity-plaza",
+      "name": "The Unity Plaza",
+      "type": "Places",
+      "body": "A large public space hosting events, festivals, and demonstrations that celebrate the diversity and resilience of humanity. It features monuments dedicated to human achievements.",
+      "source": "Neonix.txt",
+      "borough": "Humanity Central",
+      "links": [
+        "humanity-central"
+      ],
+      "color": "#78cbd0"
+    },
+    {
+      "id": "neonix-university",
+      "name": "Neonix University",
+      "type": "Places",
+      "body": "A prestigious institution at the forefront of human-led research in technology, magic, and socio-political studies. It's a melting pot of ideas and a bridge between different cultures.",
+      "source": "Neonix.txt",
+      "borough": "Humanity Central",
+      "links": [
+        "humanity-central"
+      ],
+      "color": "#78cbd0"
+    },
+    {
+      "id": "ironheart-foundry",
+      "name": "Ironheart Foundry",
+      "type": "Places",
+      "body": "The largest steel mill in Neonix, known for its impressive forges and skilled dwarven metallurgists. It's a center of industry and craftsmanship.",
+      "source": "Neonix.txt",
+      "borough": "Dwarf District",
+      "links": [
+        "dwarf-district",
+        "neonix"
+      ],
+      "color": "#df955d"
+    },
+    {
+      "id": "the-underforge",
+      "name": "The Underforge",
+      "type": "Places",
+      "body": "A subterranean complex of workshops where dwarves create masterful artifacts and weaponry. It's a blend of traditional techniques and modern industrial magic.",
+      "source": "Neonix.txt",
+      "borough": "Dwarf District",
+      "links": [
+        "dwarf-district",
+        "dwarves"
+      ],
+      "color": "#df955d"
+    },
+    {
+      "id": "stonehall-stadium",
+      "name": "Stonehall Stadium",
+      "type": "Places",
+      "body": "A massive arena where various competitions, from mech battles to traditional dwarven wrestling, take place, showcasing physical prowess and engineering marvels.",
+      "source": "Neonix.txt",
+      "borough": "Dwarf District",
+      "links": [
+        "dwarf-district"
+      ],
+      "color": "#df955d"
+    },
+    {
+      "id": "the-neon-labyrinth",
+      "name": "The Neon Labyrinth",
+      "type": "Places",
+      "body": "An expansive network of alleyways and marketplaces, famous for its street art, underground music scene, and exotic nightlife. It's a place where mutants express their unique identities.",
+      "source": "Neonix.txt",
+      "borough": "Mutant Quarters",
+      "links": [
+        "mutant-quarters",
+        "mutants"
+      ],
+      "color": "#bd98dd"
+    },
+    {
+      "id": "the-chrysalis-clinic",
+      "name": "The Chrysalis Clinic",
+      "type": "Places",
+      "body": "A medical facility specializing in treatments and enhancements for mutants. It's a beacon of hope for those seeking to embrace or change their unique physiologies.",
+      "source": "Neonix.txt",
+      "borough": "Mutant Quarters",
+      "links": [
+        "mutant-quarters",
+        "mutants"
+      ],
+      "color": "#bd98dd"
+    },
+    {
+      "id": "the-fringe-theatre",
+      "name": "The Fringe Theatre",
+      "type": "Places",
+      "body": "An avant-garde performance space where mutants and other artists challenge norms and explore the boundaries of expression, often through radical and provocative shows.",
+      "source": "Neonix.txt",
+      "borough": "Mutant Quarters",
+      "links": [
+        "mutant-quarters",
+        "mutants"
+      ],
+      "color": "#bd98dd"
+    },
+    {
+      "id": "the-boneyard",
+      "name": "The Boneyard",
+      "type": "Places",
+      "body": "A sprawling junkyard and recycling center, where The Plagued salvage and repurpose materials. It's a testament to their resilience and resourcefulness.",
+      "source": "Neonix.txt",
+      "borough": "The Gloomscape",
+      "links": [
+        "the-gloomscape",
+        "the-plagued"
+      ],
+      "color": "#9aaea8"
+    },
+    {
+      "id": "the-breathless-bazaar",
+      "name": "The Breathless Bazaar",
+      "type": "Places",
+      "body": "An underground market where The Plagued trade in rare and illicit goods. It's a shadowy place, shrouded in mystery and desperation.",
+      "source": "Neonix.txt",
+      "borough": "The Gloomscape",
+      "links": [
+        "the-gloomscape",
+        "the-plagued"
+      ],
+      "color": "#9aaea8"
+    },
+    {
+      "id": "the-veil-of-mist",
+      "name": "The Veil of Mist",
+      "type": "Places",
+      "body": "A hauntingly beautiful park enveloped in a perpetual, artificial mist, where The Plagued find solace and a brief escape from their harsh realities.",
+      "source": "Neonix.txt",
+      "borough": "The Gloomscape",
+      "links": [
+        "the-gloomscape",
+        "the-plagued"
+      ],
+      "color": "#9aaea8"
+    },
+    {
+      "id": "the-dreamplane-ascendants",
+      "name": "The DreamPlane Ascendants",
+      "type": "Factions",
+      "body": "Beliefs and Practices: The DreamPlane Ascendants worship the DreamPlane, which they see as a digital realm of enlightenment and transcendence. They believe in achieving a higher state of consciousness by merging their minds with this digital dimension. Their practices include meditation, coding rituals, and connecting to the DreamPlane for prolonged periods, seeking to blur the lines between physical reality and the digital world.\nSymbolism and Iconography: Their symbol is a stylized representation of an eye with digital circuit patterns emanating from it, signifying insight into the digital realm.\nGoals and Philosophy: The Ascendants aim to transcend physical limitations and achieve a form of digital immortality. They view the DreamPlane as a utopian sanctuary and the next evolutionary step for humankind.",
+      "source": "Neonix.txt",
+      "links": [
+        "orion-cybermind"
+      ]
+    },
+    {
+      "id": "the-purists",
+      "name": "The Purists",
+      "type": "Factions",
+      "body": "Beliefs and Practices: The Purists vehemently oppose body modifications and cybernetics, preaching the sanctity of the unaltered human form. They believe that cybernetic enhancements corrupt the soul and lead to a loss of humanity. Their practices include traditional healing methods, rallies against cybernetic corporations, and community support groups for those who resist or reverse modifications.\nSymbolism and Iconography: Their symbol is a human hand and eye in their natural state, representing purity and rejection of artificial enhancements.\nGoals and Philosophy: The Purists aim to preserve what they consider the natural course of human evolution. They campaign against the widespread use of cybernetics, promoting organic living and spiritual purity over technological advancement.",
+      "source": "Neonix.txt",
+      "links": [
+        "eva-trueborn",
+        "cyberware-and-blue-mana"
+      ]
+    },
+    {
+      "id": "the-terra-guardians",
+      "name": "The Terra Guardians",
+      "type": "Factions",
+      "body": "Beliefs and Practices: The Terra Guardians worship the planet and are deeply concerned about the environmental impact of urbanization and pollution. They foresee a catastrophic future if current trends continue. Their practices include environmental activism, nature-based rituals, and the promotion of sustainable living within the urban sprawl of Neonix.\nSymbolism and Iconography: Their symbol is a green leaf intertwined with a blue water drop, representing the harmony of nature and the need for ecological balance.\nGoals and Philosophy: The Terra Guardians' primary goal is to avert the looming ecological disaster they foresee. They emphasize the interconnectedness of all life and advocate for significant changes in the way the city interacts with the natural world.",
+      "source": "Neonix.txt",
+      "links": [
+        "neonix",
+        "gael-greenwarden"
+      ]
+    },
+    {
+      "id": "the-neon-runners",
+      "name": "The Neon Runners",
+      "type": "Factions",
+      "body": "The Neon Runners are a high-octane, thrill-seeking group renowned for their expertise in rapid package delivery across the intricate and dangerous roads of Neonix. Equipped with the fastest and most technologically advanced vehicles, they dominate the city's racing scene and have become the unofficial patrol of the sprawling highways. Beyond their love for speed and adrenaline, the Neon Runners play a critical role in the underground economy, moving items that can’t be transported through regular channels. They also have a hand in vehicular acquisitions, often involving high-risk heists of experimental vehicle parts and technology. Each member, regardless of their specific role, shares a deep passion for the road and the freedom it represents.",
+      "source": "Neonix.txt",
+      "links": [
+        "neonix",
+        "elandor-swiftwind",
+        "max-turbo-jackson",
+        "riley-gearshift-morgan",
+        "brond-ironwheel-gravelheart",
+        "sirena-velocity-vexx"
+      ]
+    },
+    {
+      "id": "the-shade-pacers",
+      "name": "The Shade Pacers",
+      "type": "Factions",
+      "body": "The Shade Pacers are a notorious collective of elite hackers and crackers, known for their independence and formidable skills. Operating in the shadows of Neonix, they are untethered to any major faction or gang, valuing their autonomy above all. Each member hails from a different race, bringing unique perspectives and abilities to the group. As weapon specialists, they are not just digital warriors but also adept in physical combat. Their primary goal is to gather information, manipulate digital networks, and influence the power dynamics within the city, all while maintaining their secretive existence. The Shade Pacers are often sought after for high-stakes jobs that require a delicate balance of finesse and firepower. They are seen as enigmas, with each member having a distinct reputation in their respective communities.",
+      "source": "Neonix.txt",
+      "links": [
+        "neonix",
+        "lireal-moonblade",
+        "alex-datafist-mercer",
+        "bruni-gearhack",
+        "sylph-voidwalker",
+        "echo-the-wraith-vale"
+      ]
+    },
+    {
+      "id": "the-iron-syndicate",
+      "name": "The Iron Syndicate",
+      "type": "Factions",
+      "body": "Operations: The Iron Syndicate specializes in weapons trafficking, dealing in everything from conventional firearms to advanced experimental armaments. They have connections with various black market arms dealers and are known for their involvement in underground combat rings.\nSymbol: Their symbol is a pair of crossed, stylized guns over a gear, signifying their focus on weaponry and a nod to their industrial roots in Humanity Central.\nSynopsis: The Iron Syndicate operates with a mix of street smarts and business acumen. They have a strict code of conduct and are known for their disciplined approach to crime. Their influence extends into the political sphere, where they occasionally exert pressure to sway decisions in their favor.",
+      "source": "Neonix.txt",
+      "links": [
+        "humanity-central"
+      ]
+    },
+    {
+      "id": "the-stonefist-clan",
+      "name": "The Stonefist Clan",
+      "type": "Factions",
+      "body": "Operations: The Stonefist Clan is deeply involved in illegal mining and the black market trade of precious metals and gems. They also have a significant stake in illicit construction projects, offering unauthorized modifications and expansions in the city’s infrastructure.\nSymbol: Their symbol is a clenched fist made of stone, representing their strength and unyielding nature, as well as their control over the underground resources of Neonix.\nSynopsis: The Stonefist Clan is known for their resilience and stubbornness. They are fiercely loyal to their members and have a longstanding rivalry with other gangs over territorial disputes. Their operations are often hidden beneath a veneer of legitimate business fronts.",
+      "source": "Neonix.txt",
+      "links": [
+        "neonix"
+      ]
+    },
+    {
+      "id": "the-neon-shadows",
+      "name": "The Neon Shadows",
+      "type": "Factions",
+      "body": "Operations: The Neon Shadows are engaged in information brokering and espionage. They leverage their unique abilities for surveillance and data theft, selling secrets to the highest bidder. They are also involved in the illegal drug trade, utilizing their knowledge of chemistry to create and distribute exotic substances.\nSymbol: Their symbol is a neon-hued chameleon, indicative of their adaptability and skill in remaining unseen, while also highlighting their mutant identity.\nSynopsis: The Neon Shadows are a tight-knit group known for their cunning and resourcefulness. They thrive in the chaotic underbelly of the Mutant Quarters, using their connections and skills to stay one step ahead of their rivals and law enforcement.",
+      "source": "Neonix.txt",
+      "links": [
+        "mutant-quarters"
+      ]
+    },
+    {
+      "id": "the-gloom-raiders",
+      "name": "The Gloom Raiders",
+      "type": "Factions",
+      "body": "Operations: The Gloom Raiders are primarily involved in theft and smuggling. They specialize in acquiring scarce resources and goods from other parts of the city and distributing them among The Plagued. They also engage in hijacking supply shipments and repurposing them for their needs.\nSymbol: Their symbol is a stylized, shadowy figure enveloped in mist, embodying their ability to navigate the hazardous environment of The Gloomscape and their status as outcasts.\nSynopsis: The Gloom Raiders are seen as both outlaws and heroes within their community. They are adept at moving unseen through the foggy streets of The Gloomscape, and their activities, though illegal, often provide much-needed resources to The Plagued. Their members are fiercely loyal to their cause, viewing their actions as a necessary means of survival in a city that has forgotten them.",
+      "source": "Neonix.txt",
+      "links": [
+        "the-gloomscape",
+        "the-plagued"
+      ]
+    },
+    {
+      "id": "cyberware-and-blue-mana",
+      "name": "Cyberware & blue mana",
+      "type": "Lore",
+      "body": "Cyberware is common in Neonix. Technology and magic visibly coexist on people’s bodies, with blue mana flowing between cybernetic components. This is an everyday feature of the city’s visual identity.\n\nThe Purists’ established opposition to body modification remains an exception to this widespread practice. Exact implant designs, costs, capabilities, and the mechanics of mana flow are still open for development.",
+      "source": "Creator direction · 2026-10-09; Purist beliefs from Neonix.txt",
+      "links": [
+        "neonix",
+        "elves",
+        "humans",
+        "dwarves",
+        "mutants",
+        "the-plagued",
+        "the-purists"
+      ]
+    }
+  ]
+}

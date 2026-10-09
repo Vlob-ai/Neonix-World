@@ -1,0 +1,13 @@
+{
+  "source": "Creator direction · 2026-10-09",
+  "entries": [
+    {
+      "id": "cyberware-and-blue-mana",
+      "name": "Cyberware & blue mana",
+      "type": "Lore",
+      "body": "Cyberware is common in Neonix. Technology and magic visibly coexist on people’s bodies, with blue mana flowing between cybernetic components. This is an everyday feature of the city’s visual identity.\n\nThe Purists’ established opposition to body modification remains an exception to this widespread practice. Exact implant designs, costs, capabilities, and the mechanics of mana flow are still open for development.",
+      "source": "Creator direction · 2026-10-09; Purist beliefs from Neonix.txt",
+      "links": ["neonix", "elves", "humans", "dwarves", "mutants", "the-plagued", "the-purists"]
+    }
+  ]
+}
