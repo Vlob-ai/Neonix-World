@@ -1,0 +1,34 @@
+{
+  "2": {
+    "class_type": "OpenRouterStudioImage",
+    "inputs": {
+      "strict_validation": true,
+      "save_raw_artifacts": true,
+      "reference_max_megapixels": 16.0,
+      "request_timeout_seconds": 600,
+      "studio_reference_manifest": "",
+      "rerun_nonce": 0,
+      "model": "google/gemini-3.1-flash-image",
+      "model.prompt": "Neonix adult character identity concept, manhwa / graphic novel illustration, confident crisp ink contours, controlled cel shading, selective painterly material texture, expressive mature face, gritty lived-in cyberpunk fantasy. Restrained cinematic light with readable local colors; no photorealism, no 3D render. One person only, complete head-to-toe body and footwear visible with margin, near-frontal three-quarter standing pose, hands separated and readable, natural adult anatomy and the specified build. Plain cool grey studio background with a soft grounding shadow. No captions, labels, lettering, logo, watermark, panels, or duplicated views. Left and right always mean the character own left and right; do not mirror asymmetrical details. Elandra Silvershade, adult elven woman age 451 with a clearly adult youthful appearance, tall slender regal proportions and still composed posture. Deep umber skin #4A2C21, oval face, high cheekbones, long neck, straight elegant nose, full serene lips and fine straight black brows. Her RIGHT eye is natural dark amber #5A3A1E; her LEFT eye alone is a glowing crystal-and-silver ocular #8FD3FF. Very long upswept elven ears with silver chain cuffs. Floor-length straight ink-black hair #0F0F14, centre part, two slender temple braids threaded with silver; otherwise loose, ending at floor. Low plain silver circlet. Elegant layered off-white #F4F2EE and indigo #2B2F5A robes, open sleeve ends allow wrists and forearm rune details to remain visible, modest drape reveals bare feet and ankles. Silver rune tattoos from shoulders to fingertips and hips to toes; visible silver runes on hands, forearms, ankles and feet carry a subtle blue mana glow #3FA9FF. Empty hands held calmly at waist, faintly authoritative serene expression. No implant other than LEFT ocular; no shoes, armor, weapons, staff or giant magical aura. Do not lighten her skin or shorten her hair.",
+      "model.size": "",
+      "model.resolution": "2K",
+      "model.aspect_ratio": "2:3",
+      "model.n": 1,
+      "model.provider_route": "automatic routing",
+      "model.allow_fallbacks": "provider default",
+      "model.provider_sort": "provider default",
+      "model.special__cachedContent": "",
+      "model.provider_options_json": ""
+    }
+  },
+  "3": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "2",
+        0
+      ],
+      "filename_prefix": "Neonix/production/elandra-silvershade-identity-v1"
+    }
+  }
+}

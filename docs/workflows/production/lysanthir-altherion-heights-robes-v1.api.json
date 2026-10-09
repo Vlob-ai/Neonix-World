@@ -1,0 +1,44 @@
+{
+  "2": {
+    "class_type": "OpenRouterStudioImage",
+    "inputs": {
+      "strict_validation": true,
+      "save_raw_artifacts": true,
+      "reference_max_megapixels": 16.0,
+      "request_timeout_seconds": 600,
+      "studio_reference_manifest": "",
+      "rerun_nonce": 0,
+      "model": "google/gemini-3.1-flash-image",
+      "model.prompt": "Create the Elven Heights wardrobe variant of the exact adult elf man in the identity reference. Preserve the same mature narrow face, porcelain skin with faint violet undertone, pale-gold almond eyes, tall slender proportions, reserved closed-mouth expression and manhwa ink/cel-shaded style. Preserve his silver-white hair gathered into a LOW tail through a platinum ring at nape, only two thin face-framing strands, single platinum cuff on HIS LEFT ear, signet ring on HIS RIGHT index finger, precisely glowing blue engraved grooves across backs of bare hands and along both jaws. Change clothing to an elegant floor-length CHARCOAL high-collared magical robe with subtle silver-thread etched channel motifs and refined layered drape, appropriate to a poised elven host in the Heights. This robe is an authentic everyday wardrobe for this setting, not a ceremonial armor costume. Same dark formal footwear beneath hem. Hold the untouched crystal stemmed glass in his LEFT hand; RIGHT ungloved hand is clear. Near-front view: left-ear cuff and left-hand glass appear on viewer RIGHT; right-index signet is on viewer LEFT. Keep full head-to-toe framing with margins on neutral cool-grey studio background. No suit jacket, trousers dominating silhouette, crown, weapon, armor, chrome ports, giant aura, toothy grin, captions, lettering, multiple views or extra person. No invented history or symbols beyond existing ring motif.",
+      "model.size": "",
+      "model.resolution": "2K",
+      "model.aspect_ratio": "2:3",
+      "model.n": 1,
+      "model.provider_route": "automatic routing",
+      "model.allow_fallbacks": "provider default",
+      "model.provider_sort": "provider default",
+      "model.special__cachedContent": "",
+      "model.provider_options_json": "",
+      "model.reference_images.reference_1": [
+        "11",
+        0
+      ]
+    }
+  },
+  "3": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "2",
+        0
+      ],
+      "filename_prefix": "Neonix/production/lysanthir-altherion-heights-robes-v1"
+    }
+  },
+  "11": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "neonix-production/lysanthir-altherion-city-suit-identity-v3.png"
+    }
+  }
+}

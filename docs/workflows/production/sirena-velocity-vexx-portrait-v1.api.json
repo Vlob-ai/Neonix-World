@@ -1,0 +1,34 @@
+{
+  "2": {
+    "class_type": "OpenRouterStudioImage",
+    "inputs": {
+      "strict_validation": true,
+      "save_raw_artifacts": true,
+      "reference_max_megapixels": 16.0,
+      "request_timeout_seconds": 600,
+      "studio_reference_manifest": "",
+      "rerun_nonce": 0,
+      "model": "google/gemini-3.1-flash-image",
+      "model.prompt": "Neonix adult character identity concept, manhwa / graphic novel illustration, confident crisp ink contours, controlled cel shading, selective painterly material texture, expressive mature face, gritty lived-in cyberpunk fantasy. Restrained cinematic light with readable local colors; no photorealism, no 3D render. One person only, head-and-shoulders portrait ending at upper chest, near-frontal three-quarter view; hair and ears fully visible. Plain cool grey background. No legs, knees, feet, full-body inset, panels, captions, labels, lettering, logo, or watermark. Sirena 'Velocity' Vexx, adult female mutant age 26, lean energetic upper-body build. Heart-shaped face, light warm skin #EAD0B0 with natural soft spotted pigmentation #8A5A2E, amber eyes, thin brows, small nose and normal rounded ears. Short spiky copper hair #C8642E; cheeky confident grin and lively alert expression. Cropped charcoal jacket #2E2E3A, collar and shoulder seams visible, with sleeves pushed up where in frame. Entirely biological, no cyberware, no face implant, no mechanical limbs; no blue facial or torso glow, as her mana effect is specified on legs during sprinting. Humanlike upper body and normal ears; do not add animal muzzle, horns, cat ears or tail. Her explicitly reverse-kneed mutant legs are intentionally OUTSIDE this portrait; do not depict, infer, normalize or include a leg diagram in this image.",
+      "model.size": "",
+      "model.resolution": "2K",
+      "model.aspect_ratio": "3:4",
+      "model.n": 1,
+      "model.provider_route": "automatic routing",
+      "model.allow_fallbacks": "provider default",
+      "model.provider_sort": "provider default",
+      "model.special__cachedContent": "",
+      "model.provider_options_json": ""
+    }
+  },
+  "3": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "2",
+        0
+      ],
+      "filename_prefix": "Neonix/production/sirena-velocity-vexx-portrait-v1"
+    }
+  }
+}

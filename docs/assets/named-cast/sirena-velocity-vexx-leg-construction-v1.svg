@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1100" viewBox="0 0 1800 1100" role="img" aria-labelledby="title desc">
+  <title id="title">Sirena — reverse-knee construction study</title>
+  <desc id="desc">Two right-facing biological-leg construction diagrams. The actual knee joint bends toward the back, to the left, while toes point right. Hip and ankle remain to the right of the knee in the flexed view. This is a fictional shape guide, not realistic anatomy or mechanical prostheses.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="10" refX="10" refY="5" orient="auto"><path d="M0 0L10 5L0 10" fill="none" stroke="#172936" stroke-width="1.8"/></marker>
+    <style>
+      text{font-family:Arial,sans-serif;fill:#172936}
+      .heading{font-size:42px;font-weight:700;letter-spacing:1px}
+      .sub{font-size:24px;fill:#516775}
+      .label{font-size:23px;font-weight:700}
+      .small{font-size:21px;fill:#516775}
+      .joint{fill:#f7f9f8;stroke:#148aaf;stroke-width:4}
+      .guide{fill:none;stroke:#148aaf;stroke-width:4;stroke-linejoin:round;stroke-dasharray:10 8}
+      .leader{fill:none;stroke:#516775;stroke-width:2}
+      .outline{fill:none;stroke:#172936;stroke-width:95;stroke-linecap:round;stroke-linejoin:round}
+      .skin{fill:none;stroke:#e7c29e;stroke-width:87;stroke-linecap:round;stroke-linejoin:round}
+      .cap{fill:#ce8c6f;stroke:#172936;stroke-width:3}
+    </style>
+  </defs>
+  <rect width="1800" height="1100" fill="#f4f5f1"/>
+  <text x="70" y="74" class="heading">SIRENA / REVERSE-KNEE CONSTRUCTION</text>
+  <text x="70" y="118" class="sub">Right-facing side views • shape proposal for the creator’s fictional anatomy</text>
+  <path d="M70 155H1730" stroke="#bbc9cc" stroke-width="2"/>
+  <text x="275" y="218" class="label">EXTENDED</text>
+  <text x="1175" y="218" class="label">FLEXED</text>
+  <text x="626" y="263" class="label">FRONT</text><path d="M720 254H866" fill="none" stroke="#172936" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="1530" y="263" class="label">FRONT</text><path d="M1623 254H1731" fill="none" stroke="#172936" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M902 190V970" stroke="#d1dcdb" stroke-width="2"/>
+
+  <!-- Exactly one hip, actual knee, and lower ankle. Near-extended leg. -->
+  <path d="M420 330L395 605L420 880" class="outline"/>
+  <path d="M420 330L395 605L420 880" class="skin"/>
+  <path d="M378 857Q366 909 389 935H588Q613 934 616 917Q576 904 527 897L465 864Z" fill="#e7c29e" stroke="#172936" stroke-width="4"/>
+  <path d="M349 588Q321 604 349 624L360 620Q348 604 360 592Z" class="cap"/>
+  <path d="M420 330L395 605L420 880" class="guide"/>
+  <circle cx="420" cy="330" r="13" class="joint"/><circle cx="395" cy="605" r="13" class="joint"/><circle cx="420" cy="880" r="13" class="joint"/>
+  <path d="M170 940H772" stroke="#172936" stroke-width="3"/>
+  <path d="M434 330H586" class="leader"/><text x="604" y="338" class="label">HIP</text>
+  <path d="M409 605H589" class="leader"/><text x="606" y="614" class="label">ACTUAL KNEE</text>
+  <path d="M434 880H636" class="leader"/><text x="652" y="888" class="label">ANKLE</text>
+  <path d="M335 605H102V578" class="leader"/><text x="74" y="540" class="label">POSTERIOR</text><text x="74" y="567" class="label">KNEECAP</text>
+  <path d="M389 933L332 983" class="leader"/><text x="234" y="1002" class="small">HEEL</text>
+  <path d="M589 930L641 983" class="leader"/><text x="647" y="1002" class="small">TOES →</text>
+
+  <!-- Flexed centerline: hip upper-right, knee middle-left, ankle lower-right. -->
+  <path d="M1300 470L1090 675L1300 880" class="outline"/>
+  <path d="M1300 470L1090 675L1300 880" class="skin"/>
+  <path d="M1258 857Q1246 909 1269 935H1468Q1493 934 1496 917Q1456 904 1407 897L1345 864Z" fill="#e7c29e" stroke="#172936" stroke-width="4"/>
+  <path d="M1044 658Q1016 674 1044 694L1056 689Q1043 675 1056 663Z" class="cap"/>
+  <path d="M1300 470L1090 675L1300 880" class="guide"/>
+  <circle cx="1300" cy="470" r="13" class="joint"/><circle cx="1090" cy="675" r="13" class="joint"/><circle cx="1300" cy="880" r="13" class="joint"/>
+  <path d="M993 940H1710" stroke="#172936" stroke-width="3"/>
+  <path d="M1314 470H1495" class="leader"/><text x="1512" y="478" class="label">HIP</text>
+  <path d="M1105 675H1495" class="leader"/><text x="1512" y="683" class="label">ACTUAL KNEE</text>
+  <path d="M1314 880H1550" class="leader"/><text x="1567" y="888" class="label">ANKLE</text>
+  <path d="M1030 674H973V578" class="leader"/><text x="947" y="540" class="label">POSTERIOR</text><text x="947" y="567" class="label">KNEECAP</text>
+  <path d="M1269 933L1212 983" class="leader"/><text x="1114" y="1002" class="small">HEEL</text>
+  <path d="M1469 930L1521 983" class="leader"/><text x="1527" y="1002" class="small">TOES →</text>
+  <text x="1040" y="354" class="sub">Hip ↙ knee ↘ ankle</text>
+  <text x="1040" y="389" class="small">Knee bends toward the back; toes face front.</text>
+  <text x="70" y="1067" class="small">Joint-center schematic • biological limbs • no additional knee or raised hock • proportions and muscle contours remain exploratory</text>
+</svg>

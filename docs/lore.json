@@ -234,7 +234,11 @@
       "links": [
         "elves"
       ],
-      "image": null
+      "image": null,
+      "visualDirection": {
+        "body": "Lysanthir normally wears suits for business in the city and robes in Elven Heights. Both are his usual wardrobe, reflecting his life in both worlds.",
+        "source": "Creator clarification · 2026-10-09"
+      }
     },
     {
       "id": "mia-sanchez",
@@ -717,7 +721,11 @@
         "dwarves",
         "the-shade-pacers"
       ],
-      "image": null
+      "image": null,
+      "visualDirection": {
+        "body": "Bruni’s left thumb and left index finger are mechanical.",
+        "source": "Creator clarification · 2026-10-09"
+      }
     },
     {
       "id": "sylph-voidwalker",
@@ -829,7 +837,11 @@
         "mutants",
         "the-neon-runners"
       ],
-      "image": null
+      "image": null,
+      "visualDirection": {
+        "body": "Sirena has actual backward-facing knees at the back of her legs. This is her intended anatomy. Her visual development begins with a portrait, with a separate mechanical-style leg diagram to work through the joint construction.",
+        "source": "Creator clarification · 2026-10-09"
+      }
     },
     {
       "id": "neon-nirvana",
