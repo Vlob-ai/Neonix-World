@@ -5,7 +5,7 @@ Neonix is a cyberpunk fantasy world of old magic, new machinery, and lives in th
 
 ## Explore
 
-The website is prepared for **https://vlob-ai.github.io/Neonix-World/**. GitHub Pages must be enabled with **Deploy from a branch → main → /docs** before that address becomes available.
+Explore the live archive at **https://vlob-ai.github.io/Neonix-World/**. GitHub Pages publishes from **main → /docs** whenever site updates are pushed.
 
 The site has no build step or external dependencies. `docs/` contains the complete website, original world notes, artwork, and downloadable ComfyUI workflows. With Node.js installed, run `node serve.mjs` and open **http://127.0.0.1:4174/Neonix-World/** to preview it. Opening the HTML directly from disk will not load its JSON data.
 
