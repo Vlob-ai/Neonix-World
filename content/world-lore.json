@@ -1,0 +1,213 @@
+{
+  "source": "Proposal · 2026-10-09 · lore expansion draft for creator review",
+  "about": "New world-lore records in the same shape as content/lore-updates.json. Records with spoiler: true reveal the core secret (the Gloom is spent-mana runoff) and should stay hidden on the public site unless you choose to reveal them.",
+  "entries": [
+    {
+      "id": "the-gloom-truth",
+      "name": "The truth of the Gloom",
+      "type": "Lore",
+      "body": "The Gloom isn't a disease. Every implant in Neonix burns blue mana, and spent mana (silt, or \"grey\" on the street) is heavier than air and water. It settles downhill through the Downflow drains into the Sump and the Gloomscape. Years of exposure cause grey-violet veining, clouded eyes, tired lungs and personal mana that runs grey. It isn't contagious, and nothing reverses it while the city keeps running.\n\nFew people know. Elandra Silvershade sealed the evidence about 80 years ago, the Quiet Office keeps it buried, and the Seventh Clause of the Unity Accord makes it nobody's legal fault.",
+      "source": "Proposal · 2026-10-09 · lore expansion draft for creator review",
+      "spoiler": true,
+      "links": [
+        "the-gloomscape",
+        "the-plagued",
+        "cyberware-and-blue-mana",
+        "elandra-silvershade",
+        "faelar-shadowsong",
+        "dr-lena-kovalenko",
+        "the-wells",
+        "the-sump"
+      ]
+    },
+    {
+      "id": "the-wells",
+      "name": "The Wells",
+      "type": "Lore",
+      "body": "Ley-wells beneath Elven Heights, held by the old elven houses for more than a thousand years. They are the source of the city's blue mana and the root of elven wealth \"through ancient lineage.\" House Silvershade holds the largest. The Altherion well ran dry three centuries ago, and House Leafgold holds a minor one.",
+      "source": "Proposal · 2026-10-09 · lore expansion draft for creator review",
+      "spoiler": false,
+      "links": [
+        "elven-heights",
+        "elves",
+        "elandra-silvershade",
+        "lysanthir-altherion",
+        "aerendir-leafgold",
+        "the-lattice"
+      ]
+    },
+    {
+      "id": "the-lattice",
+      "name": "The Lattice",
+      "type": "Lore",
+      "body": "The citywide conduit grid that carries well-mana to every implant, tram and billboard in Neonix. It's built from dwarven steel out of Ironheart Foundry, with human engineering from Neonix University. Thrombur Irontrack's rail lines run along its right-of-way. Thrain Ironfist's father signed the contract to build it, and that contract split Clan Ironfist in two.",
+      "source": "Proposal · 2026-10-09 · lore expansion draft for creator review",
+      "spoiler": false,
+      "links": [
+        "ironheart-foundry",
+        "neonix-university",
+        "thrain-ironfist",
+        "thrombur-irontrack",
+        "the-stonefist-clan",
+        "the-wells"
+      ]
+    },
+    {
+      "id": "the-sump",
+      "name": "The Downflow and the Sump",
+      "type": "Lore",
+      "body": "The Downflow is the storm-drain system Gilda Rockfounder designed forty years ago to carry the city's runoff downhill. It empties into the Boneyard and into the Sump, a silt reservoir under the old refinery district beneath the Gloomscape and the lower Mutant Quarters. The Sump is rising. The Stonefist Clan mines dross, crystallized silt, from its edges, and Felix Morpho refines it into the street drug Hush.",
+      "source": "Proposal · 2026-10-09 · lore expansion draft for creator review",
+      "spoiler": true,
+      "links": [
+        "gilda-rockfounder",
+        "the-boneyard",
+        "the-stonefist-clan",
+        "dr-felix-morpho",
+        "the-gloomscape",
+        "mutant-quarters",
+        "rollo-scrapminder"
+      ]
+    },
+    {
+      "id": "the-unity-accord",
+      "name": "The Unity Accord",
+      "type": "Lore",
+      "body": "Signed twelve years ago by Elandra Silvershade and Maxwell Riggs, with Ambassador Julian Torres drafting. It licensed well-mana to every borough at fixed rates and set off the cyberware boom. It also created the Council of Five Chairs, where the Gloomscape's Fifth Chair can speak but not vote. Its Seventh Clause indemnifies well-owners for \"downstream effects\"; few have read it, and fewer know what it covers.",
+      "source": "Proposal · 2026-10-09 · lore expansion draft for creator review",
+      "spoiler": false,
+      "links": [
+        "elandra-silvershade",
+        "maxwell-riggs",
+        "ambassador-julian-torres",
+        "the-council",
+        "the-mana-rights-act",
+        "the-unity-plaza"
+      ]
+    },
+    {
+      "id": "the-council",
+      "name": "The Council of Five Chairs",
+      "type": "Lore",
+      "body": "Neonix's governing body. The chairs are Elandra Silvershade (Elven Heights), Maxwell Riggs (Humanity Central and Speaker), Thrain Ironfist (Dwarf District), Zara Flux (Mutant Quarters, seated three years ago) and Morgana Vale (the Gloomscape, which speaks without a vote). Silvyr Moondew drafts its law, Julian Torres carries its messages, and Commander Erica Stone's NPD answers to it. The Quiet Office answers to no charter.",
+      "source": "Proposal · 2026-10-09 · lore expansion draft for creator review",
+      "spoiler": false,
+      "links": [
+        "elandra-silvershade",
+        "maxwell-riggs",
+        "thrain-ironfist",
+        "zara-flux",
+        "morgana-vale",
+        "silvyr-moondew",
+        "ambassador-julian-torres",
+        "commander-erica-stone"
+      ]
+    },
+    {
+      "id": "the-mana-rights-act",
+      "name": "The Mana Rights Act",
+      "type": "Lore",
+      "body": "Silvyr Moondew's bill to make well-ownership permanent city law. It comes to a Council vote in forty days. In doing so, it would also make the Seventh Clause's indemnity permanent.",
+      "source": "Proposal · 2026-10-09 · lore expansion draft for creator review",
+      "spoiler": false,
+      "links": [
+        "silvyr-moondew",
+        "the-unity-accord",
+        "the-council",
+        "the-wells"
+      ]
+    },
+    {
+      "id": "hush",
+      "name": "Hush",
+      "type": "Lore",
+      "body": "The most sought-after substance in the Mutant Quarters: a soft, grey calm. Felix Morpho cooks it for the Neon Shadows from Stonefist dross, which is crystallized silt. Long-term users go grey early. Tiny doses seem to ease Plagued lungs. Both are true.",
+      "source": "Proposal · 2026-10-09 · lore expansion draft for creator review",
+      "spoiler": true,
+      "links": [
+        "dr-felix-morpho",
+        "the-neon-shadows",
+        "the-stonefist-clan",
+        "rex-nightshade",
+        "the-sump"
+      ]
+    },
+    {
+      "id": "the-quiet-office",
+      "name": "The Quiet Office",
+      "type": "Lore",
+      "body": "The elven intelligence network run by Faelar Shadowsong. It appears in no charter. Researchers who get close to the truth of the Gloom receive generous offers in faraway cities. It reads the city post and keeps Ambassador Julian Torres as an asset.",
+      "source": "Proposal · 2026-10-09 · lore expansion draft for creator review",
+      "spoiler": true,
+      "links": [
+        "faelar-shadowsong",
+        "ambassador-julian-torres",
+        "thrombur-irontrack",
+        "lireal-moonblade",
+        "jax-the-ghost-turner"
+      ]
+    },
+    {
+      "id": "the-long-pour",
+      "name": "The Long Pour",
+      "type": "Lore",
+      "body": "Once a year the city's three great bartenders, Lysanthir Altherion, Borin Gravelbeard and Mia Sanchez, host a crawl from Neon Nirvana to Iron Spirits to The Human Touch. Every faction honors the truce for the night. The three call themselves the Last Call circle.",
+      "source": "Proposal · 2026-10-09 · lore expansion draft for creator review",
+      "spoiler": false,
+      "links": [
+        "lysanthir-altherion",
+        "borin-gravelbeard",
+        "mia-sanchez",
+        "neon-nirvana",
+        "iron-spirits",
+        "the-human-touch"
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "when": "Now",
+      "event": "The Mana Rights Act heads to a vote. The Sump is rising."
+    },
+    {
+      "when": "3 years ago",
+      "event": "Zara Flux wins the first Mutant Quarters seat."
+    },
+    {
+      "when": "6 years ago",
+      "event": "The Carmine Night: a fire in the upper Gloomscape kills 31. Blaze Carmine becomes a folk hero; Aerendir Leafgold buys the burned blocks."
+    },
+    {
+      "when": "8 years ago",
+      "event": "Kovalenko's first silt data reaches Maxwell. He funds \"further study.\""
+    },
+    {
+      "when": "12 years ago",
+      "event": "The Unity Accord. The Unity Plaza standoff, staged by Elara Vance, makes Maxwell Speaker."
+    },
+    {
+      "when": "18 years ago",
+      "event": "The Ley Riots. Erica Stone and Valkyrie Stroud serve in the Riot Corps; Maxwell loses his hand in a Lattice fire."
+    },
+    {
+      "when": "40 years ago",
+      "event": "The Downflow drainage project, designed by Gilda Rockfounder."
+    },
+    {
+      "when": "About 80 years ago",
+      "event": "Elandra's ley-survey finds silt. She seals it and takes the mana-sight eye."
+    },
+    {
+      "when": "About 90 years ago",
+      "event": "The Ironfist-Stonefist schism over the Lattice contract."
+    },
+    {
+      "when": "About 110 years ago",
+      "event": "The Coupling: mana first run through a machine."
+    },
+    {
+      "when": "Over 1,000 years ago",
+      "event": "The elven houses claim the Wells."
+    }
+  ]
+}
