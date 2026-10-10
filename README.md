@@ -19,6 +19,17 @@ Five species/peoples studies and nine unnamed faction-member studies form the fi
 
 The skyline is a creator-supplied reference. Character studies were generated locally with ComfyUI; prompts, seeds, checkpoint names, and proposed design notes are available in the Art Studio and `docs/assets/manifest.json`. Load a file from `docs/workflows/` into ComfyUI to continue a study using the named checkpoint. Earlier explorations are labeled as superseded.
 
+## Production notes (not shown on the site)
+
+Creative toolkit for the art pipeline:
+
+- **2D generation**: used with the installed Prefect Illustrious XL checkpoint for inked, cel-shaded studies.
+- **Reference and outfit workflows**: available to stabilize approved designs.
+- **Expression editor**: available for future character work.
+- **H3 video, extension, and upscaling**: available for a later motion pass.
+
+Only the 2D generation workflow has been exercised for Neonix. The city image is the creator-supplied reference; the character studies are text-prompted, not image-conditioned.
+
 ## Editing
 
 - Website appearance and behavior: `docs/index.html`, `docs/style.css`, `docs/app.js`.
