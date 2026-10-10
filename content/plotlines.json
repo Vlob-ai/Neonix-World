@@ -1,0 +1,215 @@
+{
+  "source": "Proposal · 2026-10-09 · lore expansion draft for creator review",
+  "about": "Six citywide arcs that run in the same forty days and collide. Each ends at a fork for the players, not a resolution.",
+  "arcs": [
+    {
+      "id": "the-seventh-clause",
+      "name": "The Seventh Clause",
+      "question": "Will the city write its cover-up into permanent law?",
+      "premise": "Silvyr's Mana Rights Act comes to a vote in forty days. Passing it makes well-ownership, and the Seventh Clause's indemnity for \"downstream effects,\" permanent. Lena Kovalenko is weeks from proof that the downstream effect is the Gloom. Everyone who knows is now on a clock.",
+      "cast": [
+        "silvyr-moondew",
+        "elandra-silvershade",
+        "ambassador-julian-torres",
+        "faelar-shadowsong",
+        "dr-lena-kovalenko",
+        "aerendir-leafgold",
+        "maxwell-riggs",
+        "lireal-moonblade",
+        "alex-datafist-mercer",
+        "sylph-voidwalker",
+        "commander-erica-stone"
+      ],
+      "places": [
+        "the-archive-of-ages",
+        "neon-nirvana",
+        "neonix-university",
+        "the-unity-plaza"
+      ],
+      "factions": [
+        "the-shade-pacers"
+      ],
+      "beats": [
+        "Julian quietly lines up the votes. Silvyr notices he left one clause untouched in his redline.",
+        "A University courier carrying Lena's samples doesn't arrive. Erica's missing-persons file grows by one, and the trail ends at the gates of Elven Heights.",
+        "Alex tells Lena who really funds her. She has to decide whether Aerendir's money poisons the proof.",
+        "Lireal leads the Pacers into the Archive of Ages for the original ley-survey. Faelar's songbird watches them go in, and Sylph watches the songbird.",
+        "Silvyr traces the annex's drafting history to her mentor's hand and asks Elandra to her face."
+      ],
+      "fork": "On vote day Silvyr can withdraw the Act (and break Elandra), pass it (and become the cover-up), or amend it so the well-owners carry the liability (and start a war between the houses). Faelar decides, separately, whether the survey reaches the press.",
+      "leftOpen": "Did Elandra choose Silvyr for her rigor or her trust? Elandra may not know either."
+    },
+    {
+      "id": "the-3-10-freight",
+      "name": "The 3:10 Freight",
+      "question": "What's in the canisters, and who gets to say?",
+      "premise": "Mara's Gloom Raiders hire the Neon Runners through Jax to hit Thrombur's night freight for food. The car they open holds sealed canisters stamped with Elandra's mark. The canisters are full of concentrated silt, bound for the Gloomscape sumps.",
+      "cast": [
+        "mara-hearthkeeper",
+        "thrombur-irontrack",
+        "elandor-swiftwind",
+        "max-turbo-jackson",
+        "riley-gearshift-morgan",
+        "brond-ironwheel-gravelheart",
+        "sirena-velocity-vexx",
+        "jax-the-ghost-turner",
+        "ivor-grimeshade",
+        "echo-the-wraith-vale",
+        "rollo-scrapminder",
+        "faelar-shadowsong",
+        "ghost-nakamura"
+      ],
+      "places": [
+        "the-boneyard",
+        "the-breathless-bazaar"
+      ],
+      "factions": [
+        "the-gloom-raiders",
+        "the-neon-runners"
+      ],
+      "beats": [
+        "The hit goes cleanly, because a freight door was left unbolted. Thrombur reports the loss an hour late.",
+        "Elandor recognizes his mother's seal and goes quiet for the whole drive back.",
+        "Ivor appraises a canister at the Bazaar and says one word: \"Grey.\" Echo opens one and finds what she bottles.",
+        "Rollo puts a moss filter over an open canister. By morning the silt reading has dropped by half.",
+        "The Quiet Office hires Ghost, through Milo, to get the canisters back. Jax is asked, politely, to drive someone out of the city."
+      ],
+      "fork": "The Raiders hold the proof. They can sell it to Aerendir, give it to Morgana, hand it to Gael's network, or hold it as leverage. Elandor can take it home to his mother himself.",
+      "leftOpen": "How much does Thrombur know he knows? He has never once opened a canister."
+    },
+    {
+      "id": "the-deep-is-rising",
+      "name": "The Deep Is Rising",
+      "question": "Can the dwarves seal the Sump without admitting what's in it?",
+      "premise": "A Stonefist seam floods with silt and traps twelve miners below Ironheart Foundry. The Sump is rising. To seal it, Thrain needs the Stonefist, Gilda's honest drawings of the Downflow, and Bruni's explosives, and each of them costs him something he swore he'd never pay.",
+      "cast": [
+        "thrain-ironfist",
+        "borin-gravelbeard",
+        "brogan-steelbrow",
+        "gilda-rockfounder",
+        "bruni-gearhack",
+        "brond-ironwheel-gravelheart",
+        "dr-felix-morpho",
+        "rex-nightshade"
+      ],
+      "places": [
+        "the-underforge",
+        "ironheart-foundry",
+        "iron-spirits",
+        "stonehall-stadium"
+      ],
+      "factions": [
+        "the-stonefist-clan"
+      ],
+      "beats": [
+        "Borin's back room becomes the only place Thrain and the Stonefist matriarch will meet. He puts out two mugs and his whole stock of rings.",
+        "Brogan's workers refuse the lower levels. The Syndicate calls in Local 7's strike-fund loan to break the refusal.",
+        "Gilda draws the Downflow honestly for the first time and has to put her name on where it empties.",
+        "Bruni is asked to blow another tunnel. Brond asks to go down with him.",
+        "Felix's dross supply dries up, and the price of Hush in the Quarters doubles overnight. Rex's crystal reaches his eye."
+      ],
+      "fork": "Sealing the Sump saves the miners and pushes the silt somewhere else: up into the Quarters or out into the Gloomscape. Thrain chooses where the grey goes, and someone has to be told.",
+      "leftOpen": "Whose axe took Thrain's hand on the night of the schism?"
+    },
+    {
+      "id": "the-carmine-night",
+      "name": "The Carmine Night",
+      "question": "Who pays for a fire that made a hero?",
+      "premise": "On the sixth anniversary, Maxwell rededicates Blaze's statue at Unity Plaza. Valkyrie gets an invitation, and Milo finally gives her a name. The fire that killed 31 people was a planned clearance, and four people in this city planned it, paid for it, staffed it or were paid to be its hero.",
+      "cast": [
+        "blaze-carmine",
+        "valkyrie-stroud",
+        "elara-the-conductor-vance",
+        "milo-the-broker-harland",
+        "aerendir-leafgold",
+        "commander-erica-stone",
+        "echo-the-wraith-vale",
+        "maxwell-riggs",
+        "rollo-scrapminder",
+        "zara-flux"
+      ],
+      "places": [
+        "the-unity-plaza",
+        "the-gloomscape",
+        "the-human-touch"
+      ],
+      "factions": [
+        "the-iron-syndicate"
+      ],
+      "beats": [
+        "A survivor speaks on Zara's channel about who arrived before Blaze did.",
+        "Valkyrie gets the planner's name from Milo, and Elara gets a warning from Milo in the same hour.",
+        "Elara tells Maxwell she'll release the Unity Plaza proof if Erica's investigation goes forward.",
+        "Echo meets Valkyrie for the first time and says her squad's names out loud.",
+        "Rollo returns the thing Blaze dropped in the fire."
+      ],
+      "fork": "Blaze can tell the truth at the rededication and lose the legend that pays him, or he can keep the legend. Erica can close the case and lose Maxwell, or let it go and lose Valkyrie for good. Either way, Aerendir still owns the land.",
+      "leftOpen": "Did Blaze know how big the fire would be? He says no. The children he carried believe him."
+    },
+    {
+      "id": "ascension",
+      "name": "Ascension",
+      "question": "Is the DreamPlane a door or a drain?",
+      "premise": "Orion opens a free DreamPlane node at the Veil of Mist, and Morgana's dying patients line up. That same week Max Turbo crashes and wakes up inside the DreamPlane, and he doesn't want to leave. Gael's throat goes violet at every node.",
+      "cast": [
+        "orion-cybermind",
+        "eva-trueborn",
+        "max-turbo-jackson",
+        "morgana-vale",
+        "gael-greenwarden",
+        "dr-nova-seraph",
+        "mia-sanchez",
+        "lireal-moonblade"
+      ],
+      "places": [
+        "the-veil-of-mist",
+        "the-chrysalis-clinic"
+      ],
+      "factions": [
+        "the-dreamplane-ascendants",
+        "the-purists",
+        "the-terra-guardians"
+      ],
+      "beats": [
+        "Morgana's best nurse ascends first, and her body stays breathing for nine days.",
+        "Gael preaches at the node's door with his throat lit violet. People believe him for an afternoon.",
+        "Max's body is at Nova's clinic while his mind is in the DreamPlane. Mia sits with the body.",
+        "Eva Trueborn plugs in to reach her son. She's the first Purist to do it.",
+        "Inside, the drowned speak to Eva in voices she recognizes from her clinics."
+      ],
+      "fork": "Eva can bring Max back and burn the node, prove Orion right by staying, or come out saying the drowned are real, which would make the Purists the DreamPlane's newest believers.",
+      "leftOpen": "Are the drowned the ascended dead, or echoes in silt-heavy mana? The bible never answers this."
+    },
+    {
+      "id": "last-call",
+      "name": "Last Call",
+      "question": "Can one night of truce hold a city together?",
+      "premise": "Once a year the three great bartenders host the Long Pour: a crawl from Neon Nirvana to Iron Spirits to The Human Touch, under a truce every faction honors. This year it ends at Mia's bar, during the week everything else is breaking.",
+      "cast": [
+        "mia-sanchez",
+        "borin-gravelbeard",
+        "lysanthir-altherion",
+        "riley-gearshift-morgan",
+        "max-turbo-jackson",
+        "milo-the-broker-harland",
+        "ivor-grimeshade",
+        "maxwell-riggs"
+      ],
+      "places": [
+        "neon-nirvana",
+        "iron-spirits",
+        "the-human-touch"
+      ],
+      "factions": [],
+      "beats": [
+        "Mia's jar finally reaches the ocular price the same week her mother's filters fail.",
+        "Lysanthir calls in Aerendir's old debt on Mia's behalf. She hasn't decided whether to let him.",
+        "At Iron Spirits, Borin adds a ring. Nobody asks whose until he's poured.",
+        "A tap blows at The Human Touch at the worst possible moment. Riley fixes it with her tool fingers while two factions watch.",
+        "At dawn Ivor's anonymous tips stop arriving, and Mia finally works out who sent them."
+      ],
+      "fork": "Mia can buy the eye, buy her mother's filters, or take Lysanthir's favor and owe the Heights. Each choice is small, and each one is the city's bargain at the size of one person.",
+      "leftOpen": "Why doesn't Riley drive? Mia knows. The Long Pour is the one night she might tell."
+    }
+  ]
+}

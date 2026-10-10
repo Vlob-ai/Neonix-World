@@ -24,6 +24,8 @@ The skyline is a creator-supplied reference. Character studies were generated lo
 - Website appearance and behavior: `docs/index.html`, `docs/style.css`, `docs/app.js`.
 - Indexed lore: `docs/lore.json`; source world notes: `docs/Neonix.txt`.
 - Creator additions and concept briefs: `content/`.
+- Expanded lore (character bios, relationship ties, plotlines, world lore): `content/characters-expanded.json`, `content/relationships.json`, `content/plotlines.json`, `content/world-lore.json`. The site reads its copies from `docs/data/`.
+- Story feed and the Weave (relationship web): `docs/story.js`, `docs/weave.js`, styles in `docs/sections.css`. The expanded character file in each dossier comes from `docs/expanded.js`.
 - Artwork and generation metadata: `docs/assets/`.
 
 Keep stable lore IDs when editing so links continue to work. Use relative URLs so the site works under GitHub Pages' `/Neonix-World/` path. Commit updates to `main` to publish them after Pages is enabled.
