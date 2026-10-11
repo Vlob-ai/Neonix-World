@@ -1,3 +1,4 @@
+import { startEye } from './sage-eye.js';
 // The Sage: the mind in the Wells. A page that looks down the well, then reads the city in two layers:
 // what the surface saw, and what the Sage did beneath it.
 let data = null;
@@ -32,6 +33,7 @@ export async function mountSage(main, ctx) {
   root.className = 'sage-page';
   root.innerHTML = `
     <section class="sage-hero">
+      <canvas class="sage-eye" aria-hidden="true"></canvas>
       ${well()}
       <div class="sage-hero-copy">
         <span class="eyebrow">THE SAGE / BENEATH THE WELLS</span>
@@ -78,6 +80,7 @@ export async function mountSage(main, ctx) {
     </section>`;
   main.replaceChildren(root);
   const hero = root.querySelector('.sage-hero');
-  hero.classList.add('rippling');
-  setTimeout(() => hero.classList.remove('rippling'), 3200);
+  // The living presence when the browser can draw it; the still well when it can't.
+  hero.classList.add('has-eye');
+  if (!startEye(hero.querySelector('.sage-eye'), hero)) { hero.classList.remove('has-eye'); hero.classList.add('rippling'); setTimeout(() => hero.classList.remove('rippling'), 3200); }
 }

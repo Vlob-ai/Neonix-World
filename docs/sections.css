@@ -207,3 +207,12 @@
 @media(max-width:900px){.sage-laws{grid-template-columns:1fr}.sage-moves{grid-template-columns:1fr}}
 @media(max-width:620px){.sage-hero{min-height:320px}.sage-hero-copy{margin-top:-40px;padding:28px 18px}.strata-head{display:none}.strata-row{grid-template-columns:1fr}.strata-row>span{padding:10px 14px}.strata .when{padding-bottom:0}.strata .beneath{border-left:0;border-top:1px dashed #1f3a46}.hearers{grid-template-columns:1fr}.sage-close{padding:20px}}
 @media(prefers-reduced-motion:reduce){.rippling .well-ring{animation:none}}
+
+/* The Sage's presence */
+.sage-eye{position:absolute;inset:0;width:100%;height:100%;display:block}
+.sage-hero.has-eye{min-height:540px;align-items:flex-end;background:#04090c;border-color:#1b2a30}
+.sage-hero.has-eye .well{display:none}
+.sage-hero.has-eye:after{content:'';position:absolute;inset:auto 0 0 0;height:46%;background:linear-gradient(transparent,#04090cdd 70%);pointer-events:none}
+.sage-hero.has-eye .sage-hero-copy{margin-top:0;padding-bottom:34px;z-index:2}
+.sage-hero:not(.has-eye) .sage-eye{display:none}
+@media(max-width:620px){.sage-hero.has-eye{min-height:460px}.sage-hero.has-eye .sage-hero-copy{padding-bottom:24px}}
