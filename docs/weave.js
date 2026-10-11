@@ -189,6 +189,64 @@ function applyFilter(root) {
   root.querySelectorAll('.thread').forEach(p => p.classList.toggle('hidden', !state.show.has([...p.classList].find(c => c.startsWith('vis-')).slice(4))));
 }
 
+// A magnifying lens that follows the cursor over the web. It shows a live copy of the weave,
+// so highlights and filters show through it, and it never blocks clicks on the beads beneath.
+const LENS_KEY = 'neonix-lens';
+function lensPref() { try { return localStorage.getItem(LENS_KEY) !== 'off'; } catch { return true; } }
+function setupLens(stage) {
+  if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+  const svgEl = stage.querySelector('.weave-svg');
+  const D = 240, Z = 2.3;
+  let on = lensPref(), dirty = true, clone = null, last = null, raf = 0;
+  const lens = document.createElement('div');
+  lens.className = 'weave-lens';
+  lens.setAttribute('aria-hidden', 'true');
+  const inner = document.createElement('div');
+  inner.className = 'weave-lens-inner';
+  lens.append(inner);
+  const toggle = document.createElement('button');
+  toggle.className = 'lens-toggle';
+  toggle.type = 'button';
+  const label = () => { toggle.setAttribute('aria-pressed', on); toggle.innerHTML = `<span aria-hidden="true">⌕</span> Magnifier ${on ? 'on' : 'off'}`; };
+  label();
+  stage.append(lens, toggle);
+  const sync = () => {
+    clone = svgEl.cloneNode(true);
+    clone.removeAttribute('role'); clone.removeAttribute('aria-label');
+    clone.querySelectorAll('[tabindex]').forEach(n => { n.removeAttribute('tabindex'); n.removeAttribute('role'); });
+    inner.className = 'weave-lens-inner ' + [...stage.classList].filter(c => c !== 'weave-stage').join(' ');
+    inner.replaceChildren(clone);
+    dirty = false;
+  };
+  const hide = () => lens.classList.remove('show');
+  const place = () => {
+    raf = 0;
+    if (!on || !last) return hide();
+    const sr = stage.getBoundingClientRect(), vr = svgEl.getBoundingClientRect();
+    const { clientX: cx, clientY: cy } = last;
+    if (cx < vr.left || cx > vr.right || cy < vr.top || cy > vr.bottom) return hide();
+    if (dirty) sync();
+    clone.style.width = vr.width * Z + 'px';
+    clone.style.height = vr.height * Z + 'px';
+    inner.style.transform = `translate(${D / 2 - (cx - vr.left) * Z}px, ${D / 2 - (cy - vr.top) * Z}px)`;
+    lens.style.transform = `translate(${cx - sr.left - D / 2}px, ${cy - sr.top - D / 2}px)`;
+    lens.classList.add('show');
+  };
+  const queue = () => { if (!raf) raf = requestAnimationFrame(place); };
+  new MutationObserver(records => {
+    if (records.every(r => lens.contains(r.target) || r.target === toggle)) return;
+    dirty = true;
+    if (lens.classList.contains('show')) queue();
+  }).observe(stage, { attributes: true, subtree: true, attributeFilter: ['class'] });
+  stage.addEventListener('pointermove', e => { if (e.pointerType !== 'mouse') return; last = e; if (on) queue(); });
+  stage.addEventListener('pointerleave', () => { last = null; hide(); });
+  toggle.addEventListener('click', e => {
+    e.stopPropagation();
+    on = !on; label(); try { localStorage.setItem(LENS_KEY, on ? 'on' : 'off'); } catch {}
+    on ? queue() : hide();
+  });
+}
+
 export function preselect(id) { state.selected = id; state.kind = 'node'; }
 
 export async function mountWeave(main, ctx) {
@@ -213,6 +271,7 @@ export async function mountWeave(main, ctx) {
   const stage = root.querySelector('.weave-stage');
   stage.classList.add('weaving');
   setTimeout(() => stage.classList.remove('weaving'), 2400);
+  setupLens(stage);
   root.addEventListener('mouseover', e => {
     const b = e.target.closest('.bead');
     if (b) highlight(root, d, b.dataset.id, 'node');

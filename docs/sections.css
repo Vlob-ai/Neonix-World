@@ -216,3 +216,17 @@
 .sage-hero.has-eye .sage-hero-copy{margin-top:0;padding-bottom:34px;z-index:2}
 .sage-hero:not(.has-eye) .sage-eye{display:none}
 @media(max-width:620px){.sage-hero.has-eye{min-height:460px}.sage-hero.has-eye .sage-hero-copy{padding-bottom:24px}}
+
+/* Weave magnifier */
+.weave-stage{overflow:hidden}
+.weave-lens{position:absolute;left:0;top:0;width:240px;height:240px;border-radius:50%;overflow:hidden;pointer-events:none;opacity:0;transition:opacity .16s;background:#0c1517;box-shadow:0 0 0 1.5px #8fd3ffb3,0 0 0 6px #0b131599,0 0 34px #3fa9ff55,0 14px 40px #000a;z-index:3;will-change:transform}
+.weave-lens.show{opacity:1}
+.weave-lens:after{content:'';position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle at 34% 26%,#ffffff1f,transparent 34%),radial-gradient(circle,transparent 62%,#02080acc 100%);pointer-events:none}
+.weave-lens-inner{position:absolute;left:0;top:0;transform-origin:0 0}
+.weave-lens-inner .weave-svg{display:block;max-height:none;margin:0}
+.weave-lens-inner .bead text{font-weight:500}
+.lens-toggle{position:absolute;top:12px;right:12px;z-index:4;display:inline-flex;align-items:center;gap:6px;background:#0f1715cc;border:1px solid #2e3a36;color:#c9d2c6;font-size:11px;padding:6px 10px}
+.lens-toggle span{font-size:15px;line-height:1}
+.lens-toggle[aria-pressed=false]{color:var(--muted)}
+.lens-toggle:hover{border-color:var(--mana)}
+@media(prefers-reduced-motion:reduce){.weave-lens{transition:none}}
