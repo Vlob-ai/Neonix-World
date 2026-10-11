@@ -12,6 +12,7 @@ export async function enrichDossier(entry, container, ctx) {
   if (container.querySelector('#dossier-title')?.textContent !== entry.name) return;
   const { escape: esc, byId } = ctx;
   const rows = [['Wants', c.wants], ['Paradox', c.paradox], ['How they read their past', c.construal], ['Secret', c.secret], ['How they cope', c.copes]];
+  if (c.sage) rows.push(['What the Sage is to them', c.sage]);
   const section = document.createElement('section');
   section.className = 'expanded-file';
   section.innerHTML = `<p class="expanded-tagline">${esc(c.tagline)}</p>
@@ -22,7 +23,7 @@ export async function enrichDossier(entry, container, ctx) {
     <div class="related">${c.ties.map(t => `<a href="#entry/${t.id}" class="vis-${t.visibility}" title="${esc(t.visibility)}">${esc(byId.get(t.id)?.name || t.id)} <small>${esc(t.label)}</small></a>`).join('')}</div>
     <h3>COULD HAPPEN NEXT</h3>
     <ul class="expanded-hooks">${c.hooks.map(h => `<li>${esc(h)}</li>`).join('')}</ul>
-    <a class="weave-link" href="#weave">Trace these ties in the Weave ↗</a>`;
+    <div class="file-links"><a class="weave-link" href="#weave">Trace these ties in the Weave ↗</a><a class="weave-link speak-link" href="#speak/${c.id}">Speak with ${esc(c.name.replace(/^(Ambassador|Commander|Dr\.)\s+/, '').split(' ')[0])} ↗</a></div>`;
   section.querySelector('.weave-link').addEventListener('click', () => preselect(c.id));
   actions.before(section);
 }

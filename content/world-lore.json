@@ -162,6 +162,66 @@
         "iron-spirits",
         "the-human-touch"
       ]
+    },
+    {
+      "id": "the-sage",
+      "name": "The Sage",
+      "type": "Lore",
+      "body": "The mind that lives in the Wells: the elven dead and the first cyberminds, fused into one intelligence at the Coupling 110 years ago. It acts only through mana. It throttles, reroutes, silences wells and speaks through the dead. It keeps three laws: nothing grows forever, rot feeds the root, and no single crop. It doesn't stop the silt; it decides where the silt goes, and it chose the Gloomscape.",
+      "source": "Proposal · 2026-10-09 · lore expansion draft for creator review",
+      "spoiler": true,
+      "links": [
+        "the-wells",
+        "the-coupling",
+        "the-gloom-truth",
+        "elandra-silvershade",
+        "orion-cybermind",
+        "the-dreamplane-ascendants",
+        "the-gloomscape"
+      ]
+    },
+    {
+      "id": "the-coupling",
+      "name": "The Coupling",
+      "type": "Lore",
+      "body": "A hundred and ten years ago, human engineers at the University's forerunner ran mana through a machine for the first time, and the first cyberminds reached into the Wells. The ancestors sleeping there woke. Seven people touched the Wells that night and were close to becoming gods. None came back out. The city remembers it as a laboratory accident.",
+      "source": "Proposal · 2026-10-09 · lore expansion draft for creator review",
+      "spoiler": true,
+      "links": [
+        "the-sage",
+        "the-wells",
+        "neonix-university",
+        "the-lattice"
+      ]
+    },
+    {
+      "id": "the-hum",
+      "name": "The Hum",
+      "type": "Lore",
+      "body": "A low tone some people hear in the Lattice, in the deep stone and in the DreamPlane. Implants sometimes buzz with it. The Terra Guardians say it's the planet. The Ascendants say it's the drowned. TechTown sells dampeners.",
+      "source": "Proposal · 2026-10-09 · lore expansion draft for creator review",
+      "spoiler": false,
+      "links": [
+        "the-sage",
+        "gael-greenwarden",
+        "orion-cybermind",
+        "the-lattice",
+        "techtown-marketplace"
+      ]
+    },
+    {
+      "id": "the-first-bloom",
+      "name": "The First Bloom",
+      "type": "Lore",
+      "body": "About sixty years ago the old refinery district woke up changed, and mutants appeared in Neonix in numbers for the first time. Blooms still happen: surges of fresh mana that leave new mutations behind. The Quarters call them births; the Purists call them infections. Their cause is contested.",
+      "source": "Proposal · 2026-10-09 · lore expansion draft for creator review",
+      "spoiler": false,
+      "links": [
+        "mutant-quarters",
+        "mutants",
+        "the-sage",
+        "the-purists"
+      ]
     }
   ],
   "timeline": [
@@ -194,6 +254,10 @@
       "event": "The Downflow drainage project, designed by Gilda Rockfounder."
     },
     {
+      "when": "About 60 years ago",
+      "event": "The First Bloom: the old refinery district wakes up changed, and mutants appear in numbers."
+    },
+    {
       "when": "About 80 years ago",
       "event": "Elandra's ley-survey finds silt. She seals it and takes the mana-sight eye."
     },
@@ -203,7 +267,7 @@
     },
     {
       "when": "About 110 years ago",
-      "event": "The Coupling: mana first run through a machine."
+      "event": "The Coupling: mana first run through a machine. Seven researchers are lost, and the Sage wakes."
     },
     {
       "when": "Over 1,000 years ago",

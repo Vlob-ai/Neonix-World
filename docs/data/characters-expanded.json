@@ -11,7 +11,8 @@
     "copes": "how they process loss without naming it",
     "voice": "a sample line",
     "hooks": "roleplay openers",
-    "cluster": "which of the five relationship circles they belong to"
+    "cluster": "which of the five relationship circles they belong to",
+    "sage": "what the Sage is to them, if they can hear it"
   },
   "characters": [
     {
@@ -28,6 +29,7 @@
       "construal": "She believes she chose the many over the few. She has never counted who the few are.",
       "secret": "The survey, the Seventh Clause and the true story of her eye. Her estranged son Elandor would inherit all three.",
       "copes": "She goes barefoot. Feeling the stone keeps her honest, she says; it also keeps her from sleeping.",
+      "sage": "Through the ocular she sees the Sage's currents and bargains with it. She has kept its terms for eighty years. One of the seven lost at the Coupling may have been her husband.",
       "voice": "\"Every light in this city is a debt. I simply know who holds the paper.\"",
       "hooks": [
         "Silvyr brings her the draft annex and asks, very carefully, who wrote it.",
@@ -110,6 +112,7 @@
       "construal": "He thinks hospitality is power. He might just be lonely with excellent taste.",
       "secret": "He knows which Council members met at his bar the night before every major vote of the last century, and what they ordered.",
       "copes": "He re-sets the table. Bad news gets a fresh cloth and a better vintage.",
+      "sage": null,
       "voice": "\"Sit. You're welcome here. You'll owe me nothing tonight, and you'll remember that you didn't.\"",
       "hooks": [
         "He finally calls in Aerendir's debt, on someone else's behalf.",
@@ -174,6 +177,7 @@
       "construal": "He thinks he's the one realist in a city of sleepwalkers. He doesn't count the fire as something he did.",
       "secret": "He paid for the Carmine Night: the fire and the hero.",
       "copes": "He checks the gold pocket watch. Time is the only position he can't hedge.",
+      "sage": null,
       "voice": "\"Everything's a short now, darling. The trick is knowing when to cover.\"",
       "hooks": [
         "Kovalenko gets a grant renewal with a deadline that matches his portfolio a little too well.",
@@ -226,6 +230,7 @@
       "construal": "She believes Elandra chose her for her rigor. Elandra may have chosen her for her trust.",
       "secret": "She once found a redacted annex in the Accord archive and let it stay redacted. She tells herself it was procedure.",
       "copes": "She re-reads. Anything that frightens her gets read three times until it becomes text.",
+      "sage": null,
       "voice": "\"If it isn't written, it isn't binding. If it's written badly, it binds the wrong people.\"",
       "hooks": [
         "Julian redlines her draft and leaves one clause untouched. She notices.",
@@ -272,6 +277,7 @@
       "construal": "He believes he has never killed anyone. He has arranged for a great many people to be elsewhere.",
       "secret": "He lets Jax Turner smuggle out the people he's supposed to remove. He let Lireal walk out with his network map. Both were choices.",
       "copes": "Under his breath he hums the tune the songbird plays when it records, so his mouth has something to do.",
+      "sage": "Every recording the songbird made in the Heights has a second voice under the conversation. He has listened to them all twice.",
       "voice": "\"I don't make people disappear. I make the city forget to look for them. It's kinder. Mostly.\"",
       "hooks": [
         "The songbird records something outside Kovalenko's lab that he decides not to report.",
@@ -342,6 +348,7 @@
       "construal": "He thinks the unseen rescue earned him the staged one. The ledger balances in his head.",
       "secret": "He knew about the silt eight years ago, and he knows Elara has proof the Plaza standoff was staged.",
       "copes": "He drinks at The Human Touch without staff and talks to Mia about his father.",
+      "sage": null,
       "voice": "\"Progress pays its debts. Not always on time, and not always to the right people, but it pays.\"",
       "hooks": [
         "Elara calls in her leverage the week Erica reopens the Carmine Night file.",
@@ -418,6 +425,7 @@
       "construal": "She thinks she's just behind on saving. She's actually the city's whole bargain in miniature.",
       "secret": "She has started skimming the tip line to keep the jar from looking empty.",
       "copes": "\"Next month.\" She says it about the jar, about Max, and about calling her mother back.",
+      "sage": null,
       "voice": "\"What are we drinking to? Pick something. I'm not pouring for nothing.\"",
       "hooks": [
         "Someone powerful offers to fill the jar, with strings.",
@@ -482,6 +490,7 @@
       "construal": "She thinks she was too cautious eight years ago. She's about to be reckless to make up for it.",
       "secret": "She buys Gael Greenwarden's sensor logs through a cutout, after calling him a crank on a broadcast.",
       "copes": "She tightens the coil until it sparks. The pain is data.",
+      "sage": "Her silt-routing data is too precise for gravity. Something is choosing which drains to use.",
       "voice": "\"I'm not brave. I'm thorough. From outside it looks the same.\"",
       "hooks": [
         "Her grant renewal arrives with an unusually specific deadline.",
@@ -546,6 +555,7 @@
       "construal": "He thinks he's a translator between peoples. He's a translator between truths.",
       "secret": "He wrote the Seventh Clause, and he reports to the Quiet Office.",
       "copes": "He cooks a Sunday dinner for twenty and talks only about food.",
+      "sage": null,
       "voice": "\"Peace isn't the absence of lies, my friend. It's the right lies, agreed on.\"",
       "hooks": [
         "Silvyr asks him straight out who wrote the annex.",
@@ -598,6 +608,7 @@
       "construal": "She thinks she stayed to fix it. Valkyrie thinks she stayed because leaving would mean admitting it can't be fixed.",
       "secret": "Alex \"Datafist\" Mercer is her informant inside the shadow economy.",
       "copes": "She refills the chipped NPD mug. The coffee is terrible on purpose.",
+      "sage": null,
       "voice": "\"I don't need you to be innocent. I need you to be useful and on time.\"",
       "hooks": [
         "Valkyrie walks into her office asking for the Carmine Night file.",
@@ -667,6 +678,7 @@
       "construal": "She believes she chose the movement for Max's sake. Max believes she chose it over him.",
       "secret": "She has a cyber-specialist's number saved under \"plumber,\" in case Max crashes.",
       "copes": "She knits through every sermon she doesn't give.",
+      "sage": null,
       "voice": "\"I'm not against the future. I'm against forgetting the part of us that has to live in it.\"",
       "hooks": [
         "Max crashes and goes deep into the DreamPlane; to reach him she has to plug in.",
@@ -724,6 +736,7 @@
       "construal": "He believes he's a door. He may be a drain.",
       "secret": "The DreamPlane nodes are the hottest silt sources in the city, and he has seen Gael's readings.",
       "copes": "He closes his eyes and lets the dome pulse. Whatever he feels goes into the light.",
+      "sage": "He calls them the drowned and believes they are the ascended dead. He hasn't recognized that every voice comes from the same mind.",
       "voice": "\"You're not dying. You're being uploaded slowly, by a bad technician. Let me help.\"",
       "hooks": [
         "He opens a free node at the Veil of Mist, and Morgana's patients line up.",
@@ -776,6 +789,7 @@
       "construal": "He thinks the schism was his father's sin. It's also his inheritance, and he signs the renewals every year.",
       "secret": "Bruni Gearhack's illegal blast in the Hollow Seam saved Thrain's lower foundry levels from a silt surge. Thrain arranged Bruni's exile anyway.",
       "copes": "He clenches the iron fist until the knuckle runes flare, then opens it slowly, finger by finger.",
+      "sage": null,
       "voice": "\"I've made a hammer that outlasted three kings. I can't make one thing the Stonefist will drink with me.\"",
       "hooks": [
         "A Stonefist seam floods with silt and twelve miners are trapped below his foundry.",
@@ -845,6 +859,7 @@
       "construal": "He thinks he escaped the Stonefist. Everyone in the Stonefist thinks he's their ambassador.",
       "secret": "He hid his nephew Brond for a week when Brond ran from the matriarch, and he still sends her a keg every winter so she won't ask.",
       "copes": "He counts the rings with his thumb, then pours the next round.",
+      "sage": "The Gravel house always knew the deep stone sings. He left so he wouldn't have to listen.",
       "voice": "\"Sit, drink, keep your hands where the bar can see them. Same rule for kings.\"",
       "hooks": [
         "The Stonefist matriarch and Thrain both ask for his back room on the same night.",
@@ -914,6 +929,7 @@
       "construal": "He thinks the Gloom on his floor is negligence. It's design.",
       "secret": "Half of Local 7's strike fund is Iron Syndicate money, borrowed at a price he hasn't paid yet.",
       "copes": "He wrestles. Every rest-day at Stonehall, Brond Gravelheart puts him on the mat or he puts Brond there.",
+      "sage": null,
       "voice": "\"I don't need a speech. I need a ventilation spec and a signature.\"",
       "hooks": [
         "The Syndicate calls in the strike-fund loan: one vote at Local 7, their way.",
@@ -966,6 +982,7 @@
       "construal": "\"I built what was specced.\" She repeats it more often than she notices.",
       "secret": "Rollo Scrapminder has mapped every Downflow outfall. She has never asked to see the map, and she knows exactly what it would show.",
       "copes": "She measures. When a thought gets too close, she takes out the tape and measures the nearest wall.",
+      "sage": null,
       "voice": "\"Show me the load, show me the spec, and don't show me the people. That's someone else's drawing.\"",
       "hooks": [
         "Thrain asks her to design a seal for the Sump, which means drawing the Downflow honestly for the first time.",
@@ -1012,6 +1029,7 @@
       "construal": "He thinks not asking was professionalism. It was the price of the schedule.",
       "secret": "He leaves the door unbolted for Mara's Raiders and would deny it on his beard.",
       "copes": "\"On time.\" He snaps the watch shut and says it whether or not it's true.",
+      "sage": "The canisters on the 3:10 hum in a key he can't name. He has started humming back.",
       "voice": "\"The 3:10 leaves at 3:10. What rides on it is between the sender and the gods.\"",
       "hooks": [
         "The Raiders take a canister instead of food, and he has to decide whether to report the loss.",
@@ -1064,6 +1082,7 @@
       "construal": "She thinks Ghost left the movement. He left because she couldn't hide, and he could never be seen.",
       "secret": "She knows Hush is going grey on her people and hasn't moved against Rex, because the movement can't survive without his money.",
       "copes": "She talks louder. The collar turns the feeling into a speech before the skin can betray it.",
+      "sage": null,
       "voice": "\"Look at me. No, really look. That's the whole demand.\"",
       "hooks": [
         "A mutant registration bill appears on the Council agenda the week Rex's crystal reaches his eye.",
@@ -1139,6 +1158,7 @@
       "construal": "He thinks his face is the price of beauty. It's the city's exhaust, wearing a crown.",
       "secret": "The crystal has reached his right eye. He sees violet now on that side, and something underneath it that moves.",
       "copes": "He lights the cigarette in its long holder and doesn't smoke it. The ritual is the point.",
+      "sage": "Something moves beneath the crystal over his right eye. Lately it looks out when he isn't.",
       "voice": "\"Darling, everything here is for sale except the people. That's what the lamps are for.\"",
       "hooks": [
         "Felix brings him Hush data that says the drug is the same grey as his face.",
@@ -1208,6 +1228,7 @@
       "construal": "He thinks chemistry is neutral. His notebook disagrees.",
       "secret": "He's been dosing Plagued volunteers at the Breathless Bazaar's edge with micro-Hush, behind Ivor's back.",
       "copes": "He giggles. The worse the result, the higher the giggle.",
+      "sage": null,
       "voice": "\"It's not a drug, it's a molecule with a fan club.\"",
       "hooks": [
         "Morgana asks for his notebook.",
@@ -1260,6 +1281,7 @@
       "construal": "She thinks she escaped the Gloomscape. Every box she sends down the hill says otherwise.",
       "secret": "Her replacement lungs only buy three or four years, because the silt is in the air, not the lungs. She sells them anyway.",
       "copes": "She folds the back arms in, slowly, one joint at a time.",
+      "sage": null,
       "voice": "\"Tell me who you want to be. I'll tell you what it costs, and I'll tell you the truth about both.\"",
       "hooks": [
         "Lena Kovalenko asks her for a lung to test, and for the failure data.",
@@ -1324,6 +1346,7 @@
       "construal": "She thinks her failures are hers. They're the city's design.",
       "secret": "She has stopped believing the Gloom is a disease. She hasn't told her patients what she believes instead.",
       "copes": "She writes everything down in the field journal, including the names. Especially the names.",
+      "sage": "Her dying patients say the same last words, in the same order: \"It's warm down there.\" She writes each one in the journal.",
       "voice": "\"I can't vote, so I have to be right. Every single time.\"",
       "hooks": [
         "Lena brings her the proof, and asks her to stand beside it at the press conference.",
@@ -1418,6 +1441,7 @@
       "construal": "He thinks he's a bad man doing one good thing. He might be a good man with a terrible business.",
       "secret": "He sells Mia Sanchez's mother her filters at cost and charges Mia full price, then sends the difference back to her bar as anonymous tips.",
       "copes": "He polishes the gold tooth with his tongue and quotes a price.",
+      "sage": null,
       "voice": "\"Everything has a price down here. Air's the expensive one.\"",
       "hooks": [
         "The Raiders bring him a sealed canister to appraise. He knows what grey looks like.",
@@ -1481,6 +1505,7 @@
       "construal": "She thinks she's a cook who steals. Her people think she's a general who cooks.",
       "secret": "She knows a dwarf on the 3:10 leaves a door unbolted. She's never asked which one, so she can't be made to tell.",
       "copes": "She counts tins. Out loud, in order, every night.",
+      "sage": null,
       "voice": "\"One each. Yes, you too. No, not two. One each, and you'll eat tomorrow.\"",
       "hooks": [
         "The Raiders open a freight car and find canisters instead of food.",
@@ -1538,6 +1563,7 @@
       "construal": "He thinks he's a tinkerer. He's the closest thing Neonix has to a cure.",
       "secret": "He's hiding three Raider hauls under scrap for Mara, and a fourth he hasn't told her about: a sealed canister he found in an outfall.",
       "copes": "He sorts. A screw goes in its jar, a bolt in its jar, and the world gets a little more orderly.",
+      "sage": "The moss grows toward the Hum. He has started planting where it points.",
       "voice": "\"Nothing is trash. It's just in the wrong place.\"",
       "hooks": [
         "Gael brings a sensor reading that proves the moss works, and a reporter.",
@@ -1607,6 +1633,7 @@
       "construal": "He thinks being ignored proves he's right. Sometimes it only proves he's tiresome.",
       "secret": "He knows his sensor is adding a little grey to the air he's warning about. He has done the math.",
       "copes": "He waters the sapling on his staff, even when it rains.",
+      "sage": "His throat sensor catches the Hum as a single tone. He thinks it's the planet singing. He is half right.",
       "voice": "\"You don't need to believe me. Hold your breath and count. Then tell me the air's fine.\"",
       "hooks": [
         "Rollo asks him to test the moss in front of witnesses.",
@@ -1665,6 +1692,7 @@
       "construal": "He thinks the children he carried out cancel the contract he signed. Some nights the math works.",
       "secret": "He knew the fire was arranged. He didn't know how big it would get.",
       "copes": "He grins. The bigger the crowd, the bigger the grin.",
+      "sage": null,
       "voice": "\"Sure I'll save you. Rates are on the card, kid. The first rescue's always free.\"",
       "hooks": [
         "Maxwell rededicates the statue on the sixth anniversary, and Valkyrie is invited.",
@@ -1734,6 +1762,7 @@
       "construal": "He thinks he left Zara for the money. He left because she couldn't hide, and standing next to her made him visible.",
       "secret": "He goes to Zara's rallies, invisible, and stands at the back.",
       "copes": "He holds still until he disappears.",
+      "sage": null,
       "voice": "\"You didn't see me. That's the service. That's the whole service.\"",
       "hooks": [
         "Sylph puts a scope on him, then lowers the rifle.",
@@ -1797,6 +1826,7 @@
       "construal": "She blames herself for taking the job. She hasn't let herself blame anyone else yet, because then she'd have to do something.",
       "secret": "She and Erica were together six years after the Corps. She left, and she tells people Erica did.",
       "copes": "She counts the tags. Five. Always five.",
+      "sage": null,
       "voice": "\"I don't need to like the job. I need the exits, the pay, and the name of whoever's lying.\"",
       "hooks": [
         "Milo finally gives her a name: Elara Vance.",
@@ -1860,6 +1890,7 @@
       "construal": "She thinks the wind killed 31 people. She budgeted for the wind.",
       "secret": "Her proof of the staged standoff could end Maxwell. It's the only reason Erica's orchestra file has never been funded.",
       "copes": "She conducts. A gloved hand moves in four-four time when no one is watching.",
+      "sage": null,
       "voice": "\"Chaos is just order you didn't pay for. I invoice in advance.\"",
       "hooks": [
         "Valkyrie gets her name.",
@@ -1911,6 +1942,7 @@
       "construal": "He thinks everyone has a price. He's never checked his own tag.",
       "secret": "He sends Valkyrie the best contracts at no commission. He has never told her why, and he isn't sure himself.",
       "copes": "He rolls the unlit cigar between his fingers and does the math out loud.",
+      "sage": null,
       "voice": "\"Everybody's a deal, friend. Some of you are just bad ones.\"",
       "hooks": [
         "Valkyrie asks him for the planner's name.",
@@ -1980,6 +2012,7 @@
       "construal": "He thinks he's a coward who's good at running. The people he drove out think he's the bravest man in the city.",
       "secret": "The last researcher he drove out left a sealed envelope with him: \"Give to Kovalenko if I stop writing.\" The letters stopped two years ago.",
       "copes": "He spins the keyring on one finger until it blurs.",
+      "sage": null,
       "voice": "\"Get in, sit low, don't tell me your name. I already know it, but don't tell me.\"",
       "hooks": [
         "He delivers the envelope.",
@@ -2043,6 +2076,7 @@
       "construal": "She thinks she escaped Faelar. He might have sent her.",
       "secret": "She has already opened one sealed Archive drawer. She closed it again without reading it.",
       "copes": "She projects a little moon over her palm and makes it wax and wane.",
+      "sage": null,
       "voice": "\"You saw a door. I saw you see a door. That's the job.\"",
       "hooks": [
         "The Pacers decide to break the Archive.",
@@ -2100,6 +2134,7 @@
       "construal": "He thinks he protected Lena by staying quiet. He may have left her funded by the man who wants her as a weapon.",
       "secret": "He's Erica's informant.",
       "copes": "He shadowboxes until the ports spark.",
+      "sage": null,
       "voice": "\"I don't hack. I knock. Very hard.\"",
       "hooks": [
         "Lena's lab goes dark, and he's the one who notices the songbird.",
@@ -2161,6 +2196,7 @@
       "construal": "He thinks he killed four people. Borin thinks he saved four hundred. Both are counting.",
       "secret": "He still has the trigger from the Hollow Seam. It's the only thing in his kit he's never used twice.",
       "copes": "He takes something apart. Anything. Then he puts it back better.",
+      "sage": null,
       "voice": "\"Everything's a bomb if you love it wrong enough.\"",
       "hooks": [
         "Thrain asks him to blow another tunnel to seal the Sump.",
@@ -2228,6 +2264,7 @@
       "construal": "He thinks Ghost abandoned him. Ghost thinks he went back, and couldn't find him in the dark.",
       "secret": "He has had Ghost in his scope eleven times and lowered the rifle every time.",
       "copes": "He counts breaths: in four, hold four, out four.",
+      "sage": null,
       "voice": "\"I see you. I always see you. That's not a threat. That's the sad part.\"",
       "hooks": [
         "A contract on Ghost reaches the Pacers.",
@@ -2289,6 +2326,7 @@
       "construal": "She thinks Morgana is too polite to the people killing them. Morgana thinks Echo is the Gloom with legs.",
       "secret": "She knows the Gloom isn't a disease. She worked it out from her canisters: the silt in them behaves exactly like the air.",
       "copes": "She checks her mask seal. Twice. Every time.",
+      "sage": null,
       "voice": "\"I don't make poison. I just return it to sender.\"",
       "hooks": [
         "The Raiders bring her a sealed canister from the 3:10, and it's full of what she makes.",
@@ -2346,6 +2384,7 @@
       "construal": "He thinks he left his mother's world. He's about to find out he's been running inside it.",
       "secret": "He still has the key to his mother's study. He has never used it.",
       "copes": "He plots a route, any route, even to the corner store.",
+      "sage": null,
       "voice": "\"There's always a way out. I just like to know about it before we need it.\"",
       "hooks": [
         "The Raiders hire the Runners to hit the 3:10, and the canisters carry his mother's seal.",
@@ -2409,6 +2448,7 @@
       "construal": "He thinks his mother picked the movement over him. She thinks she picked it for him. Neither has said so out loud.",
       "secret": "He keeps a Purist pamphlet in his glovebox, the first one she ever printed.",
       "copes": "He drives faster.",
+      "sage": "After the crash, something in the DreamPlane talked to him in his father's voice.",
       "voice": "\"If they're gonna talk about you, give 'em something worth the breath.\"",
       "hooks": [
         "He crashes and wakes up inside the DreamPlane, not wanting to leave.",
@@ -2466,6 +2506,7 @@
       "construal": "She won't say why she doesn't drive. Mia knows, and has never told.",
       "secret": "She has been building something that isn't a car: a moss filter housing, from Rollo's sketches.",
       "copes": "She tightens bolts that are already tight.",
+      "sage": null,
       "voice": "\"I can make it faster. I can't make you smarter. Pick one problem.\"",
       "hooks": [
         "Rollo asks her to scale up the moss filters.",
@@ -2527,6 +2568,7 @@
       "construal": "He thinks he ran from the clan. He ran from the deep, which is killing it.",
       "secret": "He sends half his pay down the tunnels to his mother, through Borin.",
       "copes": "He wrestles, and he lets the other dwarf win when they need it more.",
+      "sage": null,
       "voice": "\"Nobody's getting hurt. I'm the one who decides that. Sit down.\"",
       "hooks": [
         "The Stonefist matriarch calls him home to help seal the Sump.",
@@ -2594,6 +2636,7 @@
       "construal": "She thinks she owes Zara her life. Zara thinks Sirena saved herself and just needed someone to hold the door.",
       "secret": "She still runs one job a year for the Neon Shadows, the price of getting out. Zara doesn't know.",
       "copes": "She runs. Around the block, around the district, until her head is quiet.",
+      "sage": null,
       "voice": "\"Catch me? Cute. You'll need a better car. I'll steal you one.\"",
       "hooks": [
         "Her annual Shadows job is a Hush shipment.",

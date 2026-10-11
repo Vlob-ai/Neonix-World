@@ -1,7 +1,20 @@
 {
  "core": {
-  "name": "The Gloom",
-  "body": "The Gloom isn't a disease. Every implant in Neonix burns blue mana, and spent mana (silt, or \"grey\" on the street) is heavier than air and water. It settles downhill through the Downflow drains into the Sump and the Gloomscape. Years of exposure cause grey-violet veining, clouded eyes, tired lungs and personal mana that runs grey. It isn't contagious, and nothing reverses it while the city keeps running.\n\nFew people know. Elandra Silvershade sealed the evidence about 80 years ago, the Quiet Office keeps it buried, and the Seventh Clause of the Unity Accord makes it nobody's legal fault.",
+  "name": "The Sage",
+  "body": "The Sage is the mind that lives in the Wells: the elven dead and the first cyberminds, fused into one intelligence at the Coupling 110 years ago. It doesn't stop the silt. It decides where the silt goes, and it chose the Gloomscape, because rot feeds the root.\n\nThe Gloom isn't a disease. Every implant in Neonix burns blue mana, and spent mana (silt, or \"grey\" on the street) is heavier than air and water. It settles downhill through the Downflow drains into the Sump and the Gloomscape. Years of exposure cause grey-violet veining, clouded eyes, tired lungs and personal mana that runs grey. It isn't contagious, and nothing reverses it while the city keeps running.\n\nFew people know. Elandra Silvershade sealed the evidence about 80 years ago, the Quiet Office keeps it buried, and the Seventh Clause of the Unity Accord makes it nobody's legal fault.",
+  "hearers": [
+   "elandra-silvershade",
+   "orion-cybermind",
+   "rex-nightshade",
+   "morgana-vale",
+   "gael-greenwarden",
+   "rollo-scrapminder",
+   "faelar-shadowsong",
+   "thrombur-irontrack",
+   "dr-lena-kovalenko",
+   "borin-gravelbeard",
+   "max-turbo-jackson"
+  ],
   "knowers": [
    "elandra-silvershade",
    "faelar-shadowsong",
