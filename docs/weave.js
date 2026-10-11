@@ -1,6 +1,6 @@
 // The Weave: the relationship web drawn as a dreamcatcher.
 // Beads are characters (colored by people), threads are ties (colored by who knows them),
-// feathers are the five circles, and the bead at the center is the secret they all orbit.
+// feathers are the five circles, and the bead at the center is the Sage, the mind in the Wells.
 let data = null;
 const VIS = {
   public: { label: 'Public', note: 'the city knows' },
@@ -94,7 +94,7 @@ function svg(d, esc) {
     <circle class="hoop-inner" cx="${CX}" cy="${CY}" r="${R_HOOP - 13}"/>
     <g class="feathers">${feathers}</g>
     <g class="beads">${beads}</g>
-    <g class="core" tabindex="0" role="button" aria-label="The secret at the center: the Gloom">
+    <g class="core" tabindex="0" role="button" aria-label="The Sage, at the center of the weave">
       <circle cx="${CX}" cy="${CY}" r="34" fill="url(#weave-core)" class="core-glow"/>
       <circle cx="${CX}" cy="${CY}" r="9" class="core-bead"/>
     </g>
@@ -145,13 +145,14 @@ function panel(d, esc) {
       <p class="eyebrow">The bead at the center</p>
       <h2>${esc(d.core.name)}</h2>
       ${d.core.body.split('\n\n').map(p => `<p class="weave-body">${esc(p)}</p>`).join('')}
-      <h3>Who knows some of it</h3>
-      <div class="member-list">${d.core.knowers.map(id => { const n = d.byId.get(id); return `<button data-pick="${id}"><span class="dot" style="background:${n.color}"></span>${esc(n.name)}</button>`; }).join('')}</div>
+      <a class="ghost-button" href="#sage">Read about the Sage ↗</a>
+      <h3>Who hears it</h3>
+      <div class="member-list">${d.core.hearers.map(id => { const n = d.byId.get(id); return `<button data-pick="${id}"><span class="dot" style="background:${n.color}"></span>${esc(n.name)}</button>`; }).join('')}</div>
       <button class="weave-clear" data-clear>Show the whole web</button></div>`;
   }
   return `<div class="weave-card">
     <h2>Read the weave</h2>
-    <p class="weave-body">Each bead is a person, colored by their people. Each thread is a tie between two of them, and its color tells you who knows about it. The feathers are the five circles the web falls into, and the bead at the center is the secret the whole city orbits.</p>
+    <p class="weave-body">Each bead is a person, colored by their people. Each thread is a tie between two of them, and its color tells you who knows about it. The feathers are the five circles the web falls into, and the bead at the center is the Sage, the mind in the Wells that the whole city orbits.</p>
     <p class="weave-muted">Hover a bead to trace its threads. Select a bead, a feather or the center to read what binds them.</p>
     ${legend}
     <h3>The five circles</h3>
@@ -168,7 +169,7 @@ function highlight(root, d, id, kind) {
   stage.classList.toggle('core-chosen', kind === 'core');
   if (!id) return;
   if (kind === 'core') {
-    const set = new Set(d.core.knowers);
+    const set = new Set(d.core.hearers);
     root.querySelectorAll('.bead').forEach(b => b.classList.toggle('near', set.has(b.dataset.id)));
     root.querySelectorAll('.thread').forEach(p => { if (set.has(p.dataset.a) && set.has(p.dataset.b)) p.classList.add('lit'); });
     return;

@@ -111,6 +111,14 @@
     "ivor-grimeshade",
     "maxwell-riggs"
    ]
+  },
+  {
+   "id": "the-sage",
+   "name": "The Sage",
+   "question": "What does the mind in the Wells want?",
+   "premise": "The Sage is the mind that lives in the Wells: the elven dead and the first cyberminds, fused into one intelligence at the Coupling 110 years ago. It doesn't stop the silt. It decides where the silt goes, and it chose the Gloomscape, because rot feeds the root.",
+   "color": "#e8dfc6",
+   "cast": []
   }
  ],
  "prologue": [
@@ -121,7 +129,7 @@
   },
   {
    "when": "About 110 years ago",
-   "text": "The Coupling: mana first run through a machine.",
+   "text": "The Coupling: mana first run through a machine. Seven researchers are lost, and the Sage wakes.",
    "cast": []
   },
   {
@@ -135,6 +143,11 @@
    "cast": [
     "elandra-silvershade"
    ]
+  },
+  {
+   "when": "About 60 years ago",
+   "text": "The First Bloom: the old refinery district wakes up changed, and mutants appear in numbers.",
+   "cast": []
   },
   {
    "when": "40 years ago",
@@ -217,6 +230,14 @@
    ]
   },
   {
+   "id": "sage-1",
+   "kind": "sage",
+   "day": 3,
+   "arc": "the-sage",
+   "text": "The Hum. For eleven seconds every implant in Humanity Central buzzes at the same pitch. TechTown sells out of dampeners by noon.",
+   "cast": []
+  },
+  {
    "id": "the-3-10-freight-3",
    "kind": "beat",
    "day": 4,
@@ -277,6 +298,16 @@
    "text": "Morgana's best nurse ascends first, and her body stays breathing for nine days.",
    "cast": [
     "morgana-vale"
+   ]
+  },
+  {
+   "id": "sage-2",
+   "kind": "sage",
+   "day": 11,
+   "arc": "the-sage",
+   "text": "A brownout rolls across Humanity Central the night the Act clears committee. Maxwell's speech goes dark mid-sentence.",
+   "cast": [
+    "maxwell-riggs"
    ]
   },
   {
@@ -350,6 +381,16 @@
    ]
   },
   {
+   "id": "sage-3",
+   "kind": "sage",
+   "day": 17,
+   "arc": "the-sage",
+   "text": "The day after the Archive break-in, the Silvershade well dims for an hour. Elandra stands barefoot on the stone until it returns.",
+   "cast": [
+    "elandra-silvershade"
+   ]
+  },
+  {
    "id": "the-carmine-night-1",
    "kind": "beat",
    "day": 18,
@@ -390,6 +431,17 @@
    "arc": "ascension",
    "text": "Eva Trueborn plugs in to reach her son. She's the first Purist to do it.",
    "cast": [
+    "eva-trueborn"
+   ]
+  },
+  {
+   "id": "sage-4",
+   "kind": "sage",
+   "day": 22,
+   "arc": "the-sage",
+   "text": "A bloom in the lower Quarters. A block of tenants wakes with new skin. Zara's channel calls it a birth; the Purists call it an infection.",
+   "cast": [
+    "zara-flux",
     "eva-trueborn"
    ]
   },
@@ -507,6 +559,16 @@
    "text": "Mia's jar finally reaches the ocular price the same week her mother's filters fail.",
    "cast": [
     "mia-sanchez"
+   ]
+  },
+  {
+   "id": "sage-5",
+   "kind": "sage",
+   "day": 34,
+   "arc": "the-sage",
+   "text": "The Sump rises a full meter overnight. Every lantern in the Breathless Bazaar burns grey-blue at once.",
+   "cast": [
+    "ivor-grimeshade"
    ]
   },
   {

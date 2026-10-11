@@ -12,6 +12,7 @@ export async function enrichDossier(entry, container, ctx) {
   if (container.querySelector('#dossier-title')?.textContent !== entry.name) return;
   const { escape: esc, byId } = ctx;
   const rows = [['Wants', c.wants], ['Paradox', c.paradox], ['How they read their past', c.construal], ['Secret', c.secret], ['How they cope', c.copes]];
+  if (c.sage) rows.push(['What the Sage is to them', c.sage]);
   const section = document.createElement('section');
   section.className = 'expanded-file';
   section.innerHTML = `<p class="expanded-tagline">${esc(c.tagline)}</p>

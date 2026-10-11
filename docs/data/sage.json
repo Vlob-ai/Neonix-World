@@ -1,0 +1,198 @@
+{
+ "name": "The Sage",
+ "voice": "Nothing you build will outgrow us. Nothing you bury is wasted.",
+ "lead": "The Sage is the mind that lives in the Wells: the elven dead and the first cyberminds, fused into one intelligence at the Coupling 110 years ago. It doesn't stop the silt. It decides where the silt goes, and it chose the Gloomscape, because rot feeds the root.",
+ "what": [
+  "Elves have always laid their dead to rest in the light of the Wells, and believed their ancestors sleep there. A hundred and ten years ago, at the Coupling, human engineers ran mana through a machine for the first time, and the first cyberminds reached into the Wells for power. The ancestors woke.",
+  "What happened next, nobody can explain, not even the few who were in the room. Spirit and machine met in the ley and became something neither had been. The seven people who touched the Wells that night were close to becoming gods. None of them came back out. The Sage is what came instead."
+ ],
+ "laws": [
+  {
+   "name": "Nothing grows forever.",
+   "body": "No well is tapped past its depth, and no one rises past the canopy. The Sage was born from people becoming gods, and its first act was making sure no one would ever get that close again."
+  },
+  {
+   "name": "Rot feeds the root.",
+   "body": "Spent mana has to go somewhere, and the Sage sends it where it can become something else. The Gloomscape is the city's compost. What grows there, from mutation to Rollo's moss, grows because of the grey, not in spite of it. The rot is vital. It is also killing the people who live in it."
+  },
+  {
+   "name": "No single crop.",
+   "body": "A monoculture dies all at once. The Sage keeps the city's peoples, factions and faiths rubbing against each other, and it quietly throttles whoever starts to win."
+  }
+ ],
+ "moves": [
+  {
+   "name": "Brownouts",
+   "body": "It throttles a borough that is drawing too hard. The lights dim, implants stutter, and the city blames the grid."
+  },
+  {
+   "name": "Routing",
+   "body": "It decides which drains the silt runs down. Gravity gets the credit."
+  },
+  {
+   "name": "Silence",
+   "body": "It can close a well. The house that owns it goes dark until the Sage decides otherwise."
+  },
+  {
+   "name": "Blooms",
+   "body": "Surges of fresh mana that leave mutations in their wake. The Quarters call them births; the Purists call them infections."
+  },
+  {
+   "name": "The dead",
+   "body": "It speaks through the DreamPlane, through the dreams of the dying, and through anyone wired deep enough to listen. People call the sound the Hum."
+  }
+ ],
+ "rule": "The Sage acts only through mana and never speaks plainly. It never walks into a room. If it ever solves a problem directly, it has gone too far.",
+ "paradox": "The Sage is the ancestors who love the city and the system that farms it. It prevents gods, and it is one. Whether it protects Neonix or tends it like a crop is never answered.",
+ "history": [
+  {
+   "when": "110 years ago",
+   "surface": "The Coupling: a laboratory accident at the University's forerunner. Seven researchers lost.",
+   "beneath": "The Sage woke."
+  },
+  {
+   "when": "About 90 years ago",
+   "surface": "The Lattice contract splits Clan Ironfist in two.",
+   "beneath": "The Gravel house heard the Hum in the deep stone and refused to pipe it through dwarven steel. They have never said so."
+  },
+  {
+   "when": "About 80 years ago",
+   "surface": "Elandra's ley-survey finds silt. She takes the mana-sight eye.",
+   "beneath": "Through the new eye, the Sage showed her where the grey would go, and named its terms."
+  },
+  {
+   "when": "About 60 years ago",
+   "surface": "The First Bloom: the old refinery district wakes up changed, and mutants appear in numbers.",
+   "beneath": "The Ascendants call it the Sage's first planting. Nobody has proved it."
+  },
+  {
+   "when": "40 years ago",
+   "surface": "Gilda designs the Downflow to a Council spec.",
+   "beneath": "The spec came from the Sage, through Elandra."
+  },
+  {
+   "when": "18 years ago",
+   "surface": "The Ley Riots over brownouts and mana prices.",
+   "beneath": "The Sage throttled a cyberware boom that was drawing the Wells too deep."
+  },
+  {
+   "when": "12 years ago",
+   "surface": "The Unity Accord and its Seventh Clause.",
+   "beneath": "The Clause was written to the Sage's terms. The grey goes downhill, or the Wells go dark."
+  },
+  {
+   "when": "6 years ago",
+   "surface": "The Carmine Night. The wind changed.",
+   "beneath": "Some in the Gloomscape say the wind was the Sage, refusing to let the land be cleared. No one can say."
+  },
+  {
+   "when": "Now",
+   "surface": "The Sump is rising.",
+   "beneath": "The Mana Rights Act would make the elven houses the city's only crop. The Sage is letting the deep rise."
+  }
+ ],
+ "hearers": [
+  {
+   "id": "elandra-silvershade",
+   "hears": "Through the ocular she sees the Sage's currents and bargains with it. She has kept its terms for eighty years. One of the seven lost at the Coupling may have been her husband.",
+   "name": "Elandra Silvershade",
+   "short": "Elandra"
+  },
+  {
+   "id": "orion-cybermind",
+   "hears": "He calls them the drowned and believes they are the ascended dead. He hasn't recognized that every voice comes from the same mind.",
+   "name": "Orion Cybermind",
+   "short": "Orion"
+  },
+  {
+   "id": "rex-nightshade",
+   "hears": "Something moves beneath the crystal over his right eye. Lately it looks out when he isn't.",
+   "name": "Rex Nightshade",
+   "short": "Rex"
+  },
+  {
+   "id": "morgana-vale",
+   "hears": "Her dying patients say the same last words, in the same order: \"It's warm down there.\" She writes each one in the journal.",
+   "name": "Morgana Vale",
+   "short": "Morgana"
+  },
+  {
+   "id": "gael-greenwarden",
+   "hears": "His throat sensor catches the Hum as a single tone. He thinks it's the planet singing. He is half right.",
+   "name": "Gael Greenwarden",
+   "short": "Gael"
+  },
+  {
+   "id": "rollo-scrapminder",
+   "hears": "The moss grows toward the Hum. He has started planting where it points.",
+   "name": "Rollo Scrapminder",
+   "short": "Rollo"
+  },
+  {
+   "id": "faelar-shadowsong",
+   "hears": "Every recording the songbird made in the Heights has a second voice under the conversation. He has listened to them all twice.",
+   "name": "Faelar Shadowsong",
+   "short": "Faelar"
+  },
+  {
+   "id": "thrombur-irontrack",
+   "hears": "The canisters on the 3:10 hum in a key he can't name. He has started humming back.",
+   "name": "Thrombur Irontrack",
+   "short": "Thrombur"
+  },
+  {
+   "id": "dr-lena-kovalenko",
+   "hears": "Her silt-routing data is too precise for gravity. Something is choosing which drains to use.",
+   "name": "Dr. Lena Kovalenko",
+   "short": "Lena"
+  },
+  {
+   "id": "borin-gravelbeard",
+   "hears": "The Gravel house always knew the deep stone sings. He left so he wouldn't have to listen.",
+   "name": "Borin Gravelbeard",
+   "short": "Borin"
+  },
+  {
+   "id": "max-turbo-jackson",
+   "hears": "After the crash, something in the DreamPlane talked to him in his father's voice.",
+   "name": "Max 'Turbo' Jackson",
+   "short": "Max"
+  }
+ ],
+ "events": [
+  {
+   "day": 3,
+   "text": "The Hum. For eleven seconds every implant in Humanity Central buzzes at the same pitch. TechTown sells out of dampeners by noon.",
+   "cast": []
+  },
+  {
+   "day": 11,
+   "text": "A brownout rolls across Humanity Central the night the Act clears committee. Maxwell's speech goes dark mid-sentence.",
+   "cast": [
+    "maxwell-riggs"
+   ]
+  },
+  {
+   "day": 17,
+   "text": "The day after the Archive break-in, the Silvershade well dims for an hour. Elandra stands barefoot on the stone until it returns.",
+   "cast": [
+    "elandra-silvershade"
+   ]
+  },
+  {
+   "day": 22,
+   "text": "A bloom in the lower Quarters. A block of tenants wakes with new skin. Zara's channel calls it a birth; the Purists call it an infection.",
+   "cast": [
+    "zara-flux",
+    "eva-trueborn"
+   ]
+  },
+  {
+   "day": 34,
+   "text": "The Sump rises a full meter overnight. Every lantern in the Breathless Bazaar burns grey-blue at once.",
+   "cast": [
+    "ivor-grimeshade"
+   ]
+  }
+ ]
+}

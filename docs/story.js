@@ -38,6 +38,7 @@ function daysView(d, esc) {
           seen.add(e.arc);
           opener = `<article class="event thread-start" style="--arc:${arc.color}"><header><span class="arc-dot"></span><span>A thread begins</span></header><h3>${esc(arc.name)}</h3><p class="question">${esc(arc.question)}</p><p>${esc(arc.premise)}</p></article>`;
         }
+        if (e.kind === 'sage') return `<article class="event sage-event" style="--arc:${arc.color}"><header><span class="arc-dot"></span><button class="arc-name" data-only="${arc.id}">The Sage moves</button><a class="sage-more" href="#sage">What is the Sage?</a></header><p>${esc(e.text)}</p>${chips(d, e.cast, esc)}</article>`;
         if (e.kind === 'fork') return opener + `<article class="event fork" style="--arc:${arc.color}"><header><span class="arc-dot"></span><button class="arc-name" data-only="${arc.id}">${esc(arc.name)}</button><span class="fork-tag">The fork</span></header><p>${esc(e.text)}</p><p class="left-open"><b>Left open:</b> ${esc(e.open)}</p>${chips(d, e.cast, esc)}</article>`;
         return opener + `<article class="event" style="--arc:${arc.color}"><header><span class="arc-dot"></span><button class="arc-name" data-only="${arc.id}">${esc(arc.name)}</button></header><p>${esc(e.text)}</p>${chips(d, e.cast, esc)}</article>`;
       }).join('')}</div>
