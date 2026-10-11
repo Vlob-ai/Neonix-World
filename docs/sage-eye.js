@@ -47,7 +47,12 @@ void main(){
   gl_FragColor = vec4(max(col, 0.), 1.);
 }`;
 
-export function startEye(canvas, host) {
+// Returns false without WebGL; otherwise a small controller so a page can make it react:
+//   hear(amount)  a flare, as when it catches a word
+//   listen(on)    lean in and hold attention (e.g. while it is composing a reply)
+// opts.keyHeard sets how strongly a keystroke registers (default 0.6; lower for pages with typing).
+export function startEye(canvas, host, opts = {}) {
+  const keyHeard = opts.keyHeard ?? 0.6;
   const gl = canvas.getContext('webgl', { antialias: false, premultipliedAlpha: false, powerPreference: 'low-power' });
   if (!gl) return false;
   const compile = (type, src) => { const s = gl.createShader(type); gl.shaderSource(s, src); gl.compileShader(s); return gl.getShaderParameter(s, gl.COMPILE_STATUS) ? s : null; };
@@ -79,7 +84,7 @@ export function startEye(canvas, host) {
     s.ty = Math.max(-1, Math.min(1, -(e.clientY - (r.top + r.height * 0.43)) / (r.height / 1.2)));
     s.lastMove = performance.now(); s.mouse = true;
   };
-  const onHeard = () => { s.heard = Math.min(1, s.heard + 0.6); };
+  const onHeard = e => { s.heard = Math.min(1, s.heard + (e && e.type === 'keydown' ? keyHeard : 0.6)); };
   let raf = 0;
   const cleanup = () => {
     window.removeEventListener('pointermove', onMove);
@@ -114,7 +119,7 @@ export function startEye(canvas, host) {
     s.gx += (s.tx - s.gx) * 0.012; s.gy += (s.ty - s.gy) * 0.012;
     // Attention: keep still and it leans in.
     const idle = now - s.lastMove;
-    s.attend += ((s.mouse && idle > 2200 ? 1 : 0) - s.attend) * 0.01;
+    s.attend += ((s.hold || (s.mouse && idle > 2200) ? 1 : 0) - s.attend) * (s.hold ? 0.03 : 0.01);
     s.heard *= 0.965;
     gl.uniform2f(u.res, canvas.width, canvas.height);
     gl.uniform1f(u.time, still ? 40 : t);
@@ -127,5 +132,9 @@ export function startEye(canvas, host) {
     if (!still && s.visible) raf = requestAnimationFrame(frame);
   }
   raf = requestAnimationFrame(frame);
-  return true;
+  const wake = () => { if (!raf && s.visible && canvas.isConnected) raf = requestAnimationFrame(frame); };
+  return {
+    hear(amount = 0.6) { s.heard = Math.min(1, s.heard + amount); wake(); },
+    listen(on) { s.hold = !!on; wake(); },
+  };
 }

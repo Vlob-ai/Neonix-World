@@ -38,6 +38,7 @@ export async function mountSage(main, ctx) {
       <div class="sage-hero-copy">
         <span class="eyebrow">THE SAGE / BENEATH THE WELLS</span>
         <blockquote>${esc(d.voice)}</blockquote>
+        <a class="sage-speak" href="#speak">Speak to it <span>↗</span></a>
       </div>
     </section>
     <p class="sage-lead">${esc(d.lead)}</p>
@@ -76,7 +77,7 @@ export async function mountSage(main, ctx) {
     <section class="sage-close">
       <p>${esc(d.paradox)}</p>
       <p class="sage-rule"><b>A rule for anyone writing the Sage.</b> ${esc(d.rule)}</p>
-      <div class="sage-links"><a class="ghost-button" href="#weave">See the Sage at the center of the Weave ↗</a><a class="ghost-button" href="#story">Follow it through the forty days ↗</a></div>
+      <div class="sage-links"><a class="ghost-button" href="#speak">Speak to the Sage ↗</a><a class="ghost-button" href="#weave">See the Sage at the center of the Weave ↗</a><a class="ghost-button" href="#story">Follow it through the forty days ↗</a></div>
     </section>`;
   main.replaceChildren(root);
   const hero = root.querySelector('.sage-hero');
