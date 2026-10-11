@@ -322,3 +322,8 @@
 @media(max-width:900px){.speak-layout{grid-template-columns:1fr}.speak-presence{position:relative;top:0;height:260px;min-height:0}.presence-caption{padding:40px 16px 14px}.presence-line{display:none}.speak-panel{min-height:0}}
 @media(max-width:620px){.speak-gate{padding:24px 18px}.gate-row{flex-direction:column}.speak-log{padding:18px 14px 6px}.msg{max-width:100%}.speak-form{padding:12px}.speak-bar{padding:14px 12px}}
 @media(prefers-reduced-motion:reduce){.listening span,.speak-presence.no-eye:before{animation:none;opacity:.7}}
+.msg-error p{margin:0}
+.msg-error small{display:block;margin-top:6px;font:10.5px/1.5 var(--mono);color:#c9a397;word-break:break-word}
+.msg-note{color:#8a9a96;font-style:italic}
+.listening em{margin-left:10px;font:italic 12.5px Georgia,serif;color:var(--muted);opacity:1;animation:none}
+.listening{align-items:center}

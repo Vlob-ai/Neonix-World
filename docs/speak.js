@@ -12,7 +12,7 @@ const MODEL_SLOT = 'neonix-gemini-model';
 const SAGE = 'sage', ARCHIVE = 'archive';
 
 // Lives for this visit only; a refresh forgets it all.
-const state = { key: '', models: null, model: '', persona: SAGE, who: '', threads: new Map(), busy: null };
+const state = { key: '', models: null, model: '', persona: SAGE, who: '', threads: new Map(), busy: null, mode: '' };
 
 const session = {
   get() { try { return sessionStorage.getItem(KEY_SLOT) || ''; } catch { return ''; } },
@@ -152,7 +152,7 @@ async function apiError(res) {
     s === 401 || s === 403 ? "This key isn't allowed to do that. Check the key, and that the Gemini API is enabled for its project." :
     s === 404 ? "That model isn't available to this key. Pick another model below." :
     s === 429 ? "The well is tired. This key hit Google's rate limit or free-tier quota. Wait a minute, or choose a lighter Flash model." :
-    s >= 500 ? "Google's side stumbled. Try again in a moment." :
+    s >= 500 ? `Google's servers failed to answer (error ${s}), even after retrying. That isn't your key or your message. This model is overloaded or misbehaving right now.` :
     `Google answered with an error${msg ? ': ' + msg : '.'}`;
   const err = Error(friendly);
   err.status = s; err.detail = msg;
@@ -185,24 +185,23 @@ async function listModels(key) {
     .sort((a, b) => score(b.id) - score(a.id) || a.id.localeCompare(b.id));
 }
 
-// One streamed call. Returns every part the model sent (kept as-is, so thought signatures survive).
-async function streamOnce({ key, model, body, signal, onText }) {
-  let res = await post(key, model, body, signal);
+// One call to Gemini, streamed (text arrives as it's written) or not. Returns every part the model sent,
+// kept as-is so thought signatures survive the round trip.
+async function callGemini({ key, model, body, signal, onText, stream = true }) {
+  const send = () => fetch(`${API}/models/${encodeURIComponent(model)}:${stream ? 'streamGenerateContent?alt=sse' : 'generateContent'}`, {
+    method: 'POST', signal,
+    headers: { 'Content-Type': 'application/json', 'x-goog-api-key': key },
+    body: JSON.stringify(body),
+  });
+  let res = await send();
   if (!res.ok && res.status === 400 && body.safetySettings) {
     const err = await apiError(res.clone());
-    if (/safety/i.test(err.detail)) { delete body.safetySettings; res = await post(key, model, body, signal); }
+    if (/safety/i.test(err.detail)) { delete body.safetySettings; res = await send(); }
     else throw err;
   }
   if (!res.ok) throw await apiError(res);
-  const reader = res.body.getReader();
-  const dec = new TextDecoder();
   const out = { parts: [], finish: '', block: '' };
-  let buf = '';
-  const handle = chunk => {
-    const data = chunk.split('\n').filter(l => l.startsWith('data:')).map(l => l.slice(5).trimStart()).join('\n');
-    if (!data) return;
-    let j;
-    try { j = JSON.parse(data); } catch { return; }
+  const take = j => {
     if (j.promptFeedback?.blockReason) out.block = j.promptFeedback.blockReason;
     const cand = j.candidates?.[0];
     if (!cand) return;
@@ -211,6 +210,15 @@ async function streamOnce({ key, model, body, signal, onText }) {
       out.parts.push(part);
       if (part.text && !part.thought) onText(part.text);
     }
+  };
+  if (!stream) { take(await res.json()); return out; }
+  const reader = res.body.getReader();
+  const dec = new TextDecoder();
+  let buf = '';
+  const handle = chunk => {
+    const data = chunk.split('\n').filter(l => l.startsWith('data:')).map(l => l.slice(5).trimStart()).join('\n');
+    if (!data) return;
+    try { take(JSON.parse(data)); } catch {}
   };
   for (;;) {
     const { value, done } = await reader.read();
@@ -224,13 +232,10 @@ async function streamOnce({ key, model, body, signal, onText }) {
   return out;
 }
 
-function post(key, model, body, signal) {
-  return fetch(`${API}/models/${encodeURIComponent(model)}:streamGenerateContent?alt=sse`, {
-    method: 'POST', signal,
-    headers: { 'Content-Type': 'application/json', 'x-goog-api-key': key },
-    body: JSON.stringify(body),
-  });
-}
+const pause = (ms, signal) => new Promise((resolve, reject) => {
+  const t = setTimeout(resolve, ms);
+  signal?.addEventListener('abort', () => { clearTimeout(t); reject(new DOMException('Aborted', 'AbortError')); }, { once: true });
+});
 
 function runTool(files, call) {
   const args = call.args || {};
@@ -368,13 +373,16 @@ export async function mountSpeak(main, ctx) {
     const trace = ex.trace.map(t => `<li>${t.kind === 'search' ? '⌕ searched' : '▤ opened'} <span>${esc(t.label)}</span></li>`).join('');
     const opened = [...new Set(ex.trace.filter(t => t.kind === 'open' && t.link).map(t => t.id))];
     let body = ex.reply ? prose(ex.reply, p.kind) : '';
-    if (!ex.reply && !ex.error) body = ex.done ? '<p class="quiet">(Silence.)</p>' : '<p class="listening"><span></span><span></span><span></span></p>';
+    if (!ex.reply && !ex.error) body = ex.done ? '<p class="quiet">(Silence.)</p>' : `<p class="listening"><span></span><span></span><span></span>${ex.retrying ? '<em>The well is slow to answer. Listening again…</em>' : ''}</p>`;
+    const alt = ex.failedModel && state.models ? state.models.find(m => m.id !== ex.failedModel && !/preview|exp/.test(m.id)) || state.models.find(m => m.id !== ex.failedModel) : null;
     const foot = [
       opened.length ? `<span class="drew">Drew on ${opened.map(id => `<a href="${files.link(id)}">${esc(files.title(id))}</a>`).join(', ')}</span>` : '',
+      ex.note ? `<span class="msg-note">${esc(ex.note)}</span>` : '',
       last && ex.done && !state.busy ? '<button type="button" data-act="again">↻ Again</button>' : '',
+      last && ex.done && !state.busy && alt ? `<button type="button" data-act="switch" data-model="${esc(alt.id)}">↻ Try with ${esc(alt.label)}</button>` : '',
     ].filter(Boolean).join('');
     return `<div class="msg you"><span class="msg-who">${esc(state.who || 'You')}</span><div class="msg-body">${prose(ex.user)}</div></div>
-      <div class="msg them kind-${p.kind}" data-i="${i}"><span class="msg-who">${esc(p.name)}</span>${trace ? `<ul class="msg-trace">${trace}</ul>` : ''}<div class="msg-body">${body}</div>${ex.error ? `<p class="msg-error" role="alert">${esc(ex.error)}</p>` : ''}${foot ? `<div class="msg-foot">${foot}</div>` : ''}</div>`;
+      <div class="msg them kind-${p.kind}" data-i="${i}"><span class="msg-who">${esc(p.name)}</span>${trace ? `<ul class="msg-trace">${trace}</ul>` : ''}${body ? `<div class="msg-body">${body}</div>` : ''}${ex.error ? `<div class="msg-error" role="alert"><p>${esc(ex.error)}</p>${ex.detail ? `<small>${esc(ex.detail)}</small>` : ''}</div>` : ''}${foot ? `<div class="msg-foot">${foot}</div>` : ''}</div>`;
   }
 
   function draw() {
@@ -417,24 +425,51 @@ export async function mountSpeak(main, ctx) {
     redrawLast(); follow(true);
     try {
       for (let round = 0; round < 6; round++) {
-        const body = {
-          systemInstruction: { parts: [{ text: systemPrompt(files, byId, p, state.who.trim()) }] },
-          contents: [...past, { role: 'user', parts: [{ text: ex.user }] }, ...ex.steps],
-          tools: TOOLS,
-          safetySettings: SAFETY,
+        const system = systemPrompt(files, byId, p, state.who.trim());
+        const asked = [...past, { role: 'user', parts: [{ text: ex.user }] }];
+        const full = () => {
+          const body = { systemInstruction: { parts: [{ text: system }] }, contents: [...asked, ...ex.steps], tools: TOOLS, safetySettings: SAFETY };
+          if (round >= 4) body.toolConfig = { functionCallingConfig: { mode: 'NONE' } };
+          return body;
         };
-        if (round >= 4) body.toolConfig = { functionCallingConfig: { mode: 'NONE' } };
+        // The fallback that can't search: whatever was already found goes into the instructions instead.
+        const bare = () => {
+          const found = ex.steps.filter(st => st.role === 'user').flatMap(st => st.parts.map(pt => JSON.stringify(pt.functionResponse?.response || ''))).join('\n').slice(0, 14000);
+          const note = found ? `\n\nWhat you found in the files for this message:\n${found}` : '\n\nYou cannot search the files for this message. Answer from what you already know, and stay vague rather than invent specifics.';
+          return { systemInstruction: { parts: [{ text: system + note }] }, contents: asked, safetySettings: SAFETY };
+        };
         let said = '';
-        const out = await streamOnce({
-          key: state.key, model: state.model, body, signal: ctrl.signal,
-          onText: chunk => {
-            const stick = nearBottom();
-            if (!said && ex.reply) ex.reply += '\n\n';
-            said += chunk; ex.reply += chunk;
-            eye?.listen(false); eye?.hear(Math.min(0.35, 0.04 + chunk.length / 300));
-            redrawLast(); follow(stick);
-          },
-        });
+        const onText = chunk => {
+          const stick = nearBottom();
+          if (!said && ex.reply) ex.reply += '\n\n';
+          said += chunk; ex.reply += chunk; ex.retrying = false;
+          eye?.listen(false); eye?.hear(Math.min(0.35, 0.04 + chunk.length / 300));
+          redrawLast(); follow(stick);
+        };
+        // Google's 5xx errors are usually passing. Try again, then without streaming, then without searching.
+        const plan = state.mode === 'bare' ? ['bare'] : state.mode === 'once' ? ['once', 'bare'] : ['stream', 'stream', 'once', 'bare'];
+        let out = null, lastErr = null;
+        for (let k = 0; k < plan.length && !out; k++) {
+          if (k) {
+            if (said) break;
+            ex.retrying = true; redrawLast();
+            await pause(k === 1 ? 1200 + Math.random() * 600 : 700, ctrl.signal);
+          }
+          const how = plan[k];
+          try {
+            out = await callGemini({ key: state.key, model: state.model, signal: ctrl.signal, onText, body: how === 'bare' ? bare() : full(), stream: how !== 'once' });
+            // Remember the fallback only for real breakage (500s), not a model that's merely busy (503s).
+            if (how !== 'stream' && lastErr?.status === 500) state.mode = how;
+            if (how === 'once') ex.note = 'Replies arrive whole: this model kept failing when streaming.';
+            if (how === 'bare') ex.note = 'Answered without searching: this model kept failing with searching on.';
+          } catch (err) {
+            if (err.name === 'AbortError' || !(err.status >= 500)) throw err;
+            console.warn('[speak] Gemini', err.status, err.detail, `(${how})`);
+            lastErr = err;
+          }
+        }
+        ex.retrying = false;
+        if (!out) throw lastErr;
         const calls = out.parts.filter(part => part.functionCall);
         if (calls.length) {
           ex.steps.push({ role: 'model', parts: out.parts });
@@ -458,7 +493,11 @@ export async function mountSpeak(main, ctx) {
       }
     } catch (err) {
       if (err.name === 'AbortError') ex.stopped = true;
-      else ex.error = err.status ? err.message : "Couldn't reach Google. Check your connection and try again.";
+      else {
+        ex.error = err.status ? err.message : "Couldn't reach Google. Check your connection and try again.";
+        ex.detail = err.status ? `Google said (${err.status}): ${err.detail || 'no details'}` : '';
+        ex.failedModel = err.status >= 500 || err.status === 404 || err.status === 429 ? state.model : '';
+      }
       if (err.status === 400 && /api key/i.test(err.detail || '')) { keyRejected = true; state.key = ''; state.models = null; session.set(''); }
     } finally {
       ex.done = true;
@@ -504,7 +543,7 @@ export async function mountSpeak(main, ctx) {
     try {
       const models = await listModels(key);
       if (!models.length) throw Error('This key works, but no Gemini text models are available to it.');
-      state.key = key; state.models = models;
+      state.key = key; state.models = models; state.mode = '';
       session.set(keep ? key : '');
       $('#gemini-key').value = '';
       await openRoom();
@@ -530,7 +569,7 @@ export async function mountSpeak(main, ctx) {
     presence(); draw(); eye?.hear(0.5);
   });
   $('#speak-who').addEventListener('input', e => { state.who = e.target.value; });
-  $('#speak-model').addEventListener('change', e => { state.model = e.target.value; prefs.set(MODEL_SLOT, state.model); });
+  $('#speak-model').addEventListener('change', e => { state.model = e.target.value; state.mode = ''; prefs.set(MODEL_SLOT, state.model); });
   $('.speak-form').addEventListener('submit', e => { e.preventDefault(); say(input.value); });
   input.addEventListener('keydown', e => { if (e.key === 'Enter' && !e.shiftKey && !e.isComposing) { e.preventDefault(); say(input.value); } });
   stop.addEventListener('click', () => state.busy?.abort());
@@ -543,7 +582,15 @@ export async function mountSpeak(main, ctx) {
     if (act === 'again') {
       const ex = thread().exchanges.at(-1);
       if (!ex || state.busy) return;
-      Object.assign(ex, { reply: '', steps: [], trace: [], error: '', done: false, stopped: false });
+      Object.assign(ex, { reply: '', steps: [], trace: [], error: '', detail: '', note: '', failedModel: '', done: false, stopped: false });
+      return respond(ex);
+    }
+    if (act === 'switch') {
+      const ex = thread().exchanges.at(-1);
+      if (!ex || state.busy) return;
+      state.model = b.dataset.model; state.mode = ''; prefs.set(MODEL_SLOT, state.model);
+      $('#speak-model').value = state.model;
+      Object.assign(ex, { reply: '', steps: [], trace: [], error: '', detail: '', note: '', failedModel: '', done: false, stopped: false });
       return respond(ex);
     }
     if (act === 'reset') { if (state.busy) state.busy.abort(); thread().exchanges = []; return draw(); }
