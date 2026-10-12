@@ -11,6 +11,8 @@ The site has no build step or external dependencies. `docs/` contains the comple
 
 Saved entries stay in the visitor's browser. Shared accounts and community contributions are planned for a later phase.
 
+The illustrated archive includes all 42 character thumbnails, additional character studies, and 120 location concepts: five views for each of the 24 locations. Open an entry to see its gallery, or filter characters and locations in the Art Studio. Both asset plans can be downloaded there. Images are exploratory concepts; refinement notes flag continuity, anatomy, composition, or lettering that needs another pass. Public images use WebP for lighter downloads; full-resolution source PNGs remain in the local production workspace.
+
 ## World and art direction
 
 Cyberware is common, with visible blue mana flowing between its components. The visual direction is manhwa / graphic novel cyberpunk fantasy. The Purists' opposition to modification remains a deliberate contrast.
