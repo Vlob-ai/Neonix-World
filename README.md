@@ -13,6 +13,17 @@ Saved entries stay in the visitor's browser. Shared accounts and community contr
 
 The illustrated archive includes all 42 character thumbnails, additional character studies, and 120 location concepts: five views for each of the 24 locations. Open an entry to see its gallery, or filter characters and locations in the Art Studio. Both asset plans can be downloaded there. Images are exploratory concepts; refinement notes flag continuity, anatomy, composition, or lettering that needs another pass. Public images use WebP for lighter downloads; full-resolution source PNGs remain in the local production workspace.
 
+## City map
+
+The **City map** page (`#map`) is an editable first layout of Neonix: five boroughs, 18 numbered landmarks, and 85 named examples of supporting food, shops, services and transport. Large landmarks have larger footprints. Select a hub to see its proposed neighborhood and rough attendance, food-counter and service estimates; search also finds local businesses. The Underforge and Breathless Bazaar are marked below surface.
+
+Borough membership comes from existing lore. Boundaries, streets, coordinates, footprint sizes, business names and demand figures are proposals. The estimates include on-site concessions/canteens and nearby serving capacity; named examples are not a complete business inventory. Catchments overlap and must not be summed as city population.
+
+- Geometry and landmark positions: `docs/data/neonix-map.json`.
+- Neighborhood names, naming pools, assumptions and support businesses: `docs/data/neonix-map-support.json`.
+- Map rendering and presentation: `docs/neonix-map.js` and `docs/neonix-map.css`.
+- Interactive SVG uses vendored **jsVectorMap 1.7.0**, under the included MIT license in `docs/vendor/jsvectormap/`. No network dependency or API key is required for the map.
+
 ## World and art direction
 
 Cyberware is common, with visible blue mana flowing between its components. The visual direction is manhwa / graphic novel cyberpunk fantasy. The Purists' opposition to modification remains a deliberate contrast.

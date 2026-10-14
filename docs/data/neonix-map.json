@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "status": "Draft geography — positions, boundaries, footprints and routes are editable proposals.",
+  "view": "Oblique city survey; screen directions do not establish compass bearings.",
+  "width": 1200,
+  "height": 850,
+  "districts": [
+    {"id":"elven-heights","color":"#bddaa1","label":[340,114],"subtitle":"GARDENS / HIGH GROUND","points":[[160,130],[280,55],[505,80],[595,165],[540,260],[375,315],[205,285],[130,205]]},
+    {"id":"humanity-central","color":"#64d4d2","label":[631,277],"subtitle":"TRADE / CIVIC LIFE","points":[[390,327],[552,274],[610,180],[765,230],[807,354],[722,485],[558,505],[370,424]]},
+    {"id":"dwarf-district","color":"#d6aa71","label":[935,275],"subtitle":"INDUSTRY / CRAFT","points":[[785,230],[900,193],[1065,272],[1123,429],[1010,568],[830,544],[744,491],[828,366]]},
+    {"id":"mutant-quarters","color":"#c393cf","label":[312,646],"subtitle":"MARKETS / EXPRESSION","points":[[213,321],[361,326],[353,433],[548,529],[550,651],[398,688],[237,613],[160,485]]},
+    {"id":"the-gloomscape","color":"#7c99af","label":[685,757],"subtitle":"SALVAGE / SURVIVAL","points":[[585,535],[723,509],[821,575],[998,600],[934,733],[770,785],[575,755],[428,724],[572,667]]}
+  ],
+  "places": [
+    {"id":"neon-nirvana","district":"elven-heights","point":[399,174],"footprint":[28,19],"form":"hall"},
+    {"id":"elven-bathhouses-aqua-elysium","district":"elven-heights","point":[479,224],"footprint":[48,32],"form":"court"},
+    {"id":"the-crystal-conservatory","district":"elven-heights","point":[237,187],"footprint":[67,50],"form":"dome"},
+    {"id":"the-archive-of-ages","district":"elven-heights","point":[323,263],"footprint":[47,30],"form":"hall"},
+    {"id":"the-human-touch","district":"humanity-central","point":[582,372],"footprint":[26,18],"form":"hall"},
+    {"id":"techtown-marketplace","district":"humanity-central","point":[702,330],"footprint":[61,38],"form":"market"},
+    {"id":"the-unity-plaza","district":"humanity-central","point":[661,444],"footprint":[66,40],"form":"plaza"},
+    {"id":"neonix-university","district":"humanity-central","point":[461,387],"footprint":[73,47],"form":"campus"},
+    {"id":"iron-spirits","district":"dwarf-district","point":[891,411],"footprint":[27,19],"form":"hall"},
+    {"id":"ironheart-foundry","district":"dwarf-district","point":[999,352],"footprint":[80,54],"form":"foundry"},
+    {"id":"the-underforge","district":"dwarf-district","point":[795,468],"footprint":[44,33],"form":"underground","depth":"Below surface"},
+    {"id":"stonehall-stadium","district":"dwarf-district","point":[990,488],"footprint":[86,59],"form":"stadium"},
+    {"id":"the-neon-labyrinth","district":"mutant-quarters","point":[267,405],"footprint":[70,46],"form":"market"},
+    {"id":"the-chrysalis-clinic","district":"mutant-quarters","point":[441,565],"footprint":[40,26],"form":"hall"},
+    {"id":"the-fringe-theatre","district":"mutant-quarters","point":[282,556],"footprint":[53,34],"form":"hall"},
+    {"id":"the-boneyard","district":"the-gloomscape","point":[790,629],"footprint":[95,49],"form":"yard"},
+    {"id":"the-breathless-bazaar","district":"the-gloomscape","point":[632,657],"footprint":[65,42],"form":"underground","depth":"Below surface"},
+    {"id":"the-veil-of-mist","district":"the-gloomscape","point":[858,716],"footprint":[68,40],"form":"park"}
+  ],
+  "routes": [
+    [[200,292],[372,325],[570,290],[775,228],[1045,274]],
+    [[368,311],[373,437],[553,520],[741,497],[1035,580]],
+    [[557,92],[609,174],[817,369],[735,506],[565,673],[406,722]],
+    [[185,377],[170,489],[242,630],[412,705],[570,778],[778,807],[949,757],[1078,579],[1137,438],[1098,284]],
+    [[552,521],[582,552],[723,537],[821,591],[986,617]]
+  ]
+}

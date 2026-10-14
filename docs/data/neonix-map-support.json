@@ -1,0 +1,1415 @@
+{
+  "status": "Proposal · map planning assumptions · 2026-10-13 · not established canon",
+  "assumptions": {
+    "scope": "All figures, neighborhood labels and business names are editable planning proposals. Existing hub IDs and borough assignments come from lore.json; no owners, histories, factions or new lore claims are introduced.",
+    "representation": "The 85 named sites are representative anchors, not an exhaustive business inventory. Eight major hubs have six examples, seven medium hubs have four, and three bars have three.",
+    "catchment": "Each estimate covers the hub and its immediately supporting neighborhood, not the entire borough. Catchments can overlap; do not sum them as unique city population or citywide business totals.",
+    "footfall": "Rough busy-operating scenarios, not measured attendance or simultaneous occupancy. A visit is a use of the hub during the stated day or event; repeat visitors can appear across hubs. Foundry and Underforge counts describe one staffed shift. The theatre event is one show.",
+    "foodModel": {
+      "formula": "Low = ceil(low footfall × purchased-food share ÷ high counter throughput); high = ceil(high footfall × share ÷ low counter throughput).",
+      "normalThroughput": {
+        "low": 150,
+        "high": 250,
+        "unit": "meals per counter per stated day, shift or theatre event"
+      },
+      "stadiumThroughput": {
+        "low": 200,
+        "high": 350,
+        "unit": "servings per counter per stadium event"
+      },
+      "share": "Each hub records its assumed food-purchase share. These are scenario inputs rather than survey findings.",
+      "scope": "Food counters include on-site concessions, canteens, market stalls, takeaways and nearby restaurant serving capacity. A large venue may contain many counters; the estimate is not a count of separate restaurants or named map sites.",
+      "limitation": "A first sizing pass only; demand peaks, queues, opening hours, repeat purchases and delivery logistics need later design."
+    },
+    "supportModel": "Non-food support ranges are rough judgment calls for nearby shops, repair/service businesses and commercial transport operators. They are not calculated from a fixed ratio and exclude the main hub's core operation, general market stall inventory and public transit stops.",
+    "mapPlacement": "dx/dy are small local SVG display offsets from the parent hub, not final geography, metres, district boundaries or walking distances. Every representative site inherits its hub's borough and depth; Underforge and Breathless Bazaar sites remain underground.",
+    "naming": {
+      "rule": "Combine a recognizable hub cue with one borough stem and one functional suffix, for example 'Ironheart Rivet Canteen'. Local street-position words may replace the stem where clearer. Pools and every resulting name are editable.",
+      "neighborhoodRule": "Use the hub cue plus a physical grouping: Terrace, Court, Crossings, Gate Ring, Shift Belt, Loops, Galleries or Rows. Labels describe the proposed catchment, not a new administrative borough.",
+      "pools": [
+        {
+          "boroughId": "elven-heights",
+          "borough": "Elven Heights",
+          "tone": "Refined garden, glass and heritage vocabulary.",
+          "stems": [
+            "Laurel",
+            "Silverleaf",
+            "Amber",
+            "Glass"
+          ],
+          "suffixes": {
+            "food": [
+              "Kitchen",
+              "Tea Room",
+              "Pantry"
+            ],
+            "service": [
+              "Atelier",
+              "Care",
+              "House"
+            ],
+            "shop": [
+              "Books",
+              "Florist",
+              "Outfitters"
+            ],
+            "transport": [
+              "Carriage Hire",
+              "Cycle Hire"
+            ]
+          }
+        },
+        {
+          "boroughId": "humanity-central",
+          "borough": "Humanity Central",
+          "tone": "Busy civic, campus and practical technology vocabulary.",
+          "stems": [
+            "Circuit",
+            "Common",
+            "Crossing",
+            "Signal"
+          ],
+          "suffixes": {
+            "food": [
+              "Kitchen",
+              "Canteen",
+              "Coffee"
+            ],
+            "service": [
+              "Repair",
+              "Print",
+              "Laundry"
+            ],
+            "shop": [
+              "Supply",
+              "Books",
+              "Exchange"
+            ],
+            "transport": [
+              "Cycle Hire",
+              "Courier"
+            ]
+          }
+        },
+        {
+          "boroughId": "dwarf-district",
+          "borough": "Dwarf District",
+          "tone": "Stone, metal, shift work and robust craft vocabulary.",
+          "stems": [
+            "Rivet",
+            "Hearth",
+            "Copper",
+            "Anvil"
+          ],
+          "suffixes": {
+            "food": [
+              "Grill",
+              "Bread",
+              "Canteen"
+            ],
+            "service": [
+              "Repair",
+              "Tool Hire",
+              "Workwear"
+            ],
+            "shop": [
+              "Supply",
+              "Outfitters",
+              "Exchange"
+            ],
+            "transport": [
+              "Haulage",
+              "Cart Hire"
+            ]
+          }
+        },
+        {
+          "boroughId": "mutant-quarters",
+          "borough": "Mutant Quarters",
+          "tone": "Light, changing shapes, independent arts and adaptable services.",
+          "stems": [
+            "Prism",
+            "Switch",
+            "Patch",
+            "Violet"
+          ],
+          "suffixes": {
+            "food": [
+              "Noodles",
+              "Kitchen",
+              "Night Bites"
+            ],
+            "service": [
+              "Alterations",
+              "Repair",
+              "Laundry"
+            ],
+            "shop": [
+              "Records",
+              "Supply",
+              "Costumes"
+            ],
+            "transport": [
+              "Cycle Hire",
+              "Ride Desk"
+            ]
+          }
+        },
+        {
+          "boroughId": "the-gloomscape",
+          "borough": "The Gloomscape",
+          "tone": "Weathered, practical names for reuse, inexpensive meals and essentials.",
+          "stems": [
+            "Tin",
+            "Mend",
+            "Lantern",
+            "Rain"
+          ],
+          "suffixes": {
+            "food": [
+              "Kettle",
+              "Bread",
+              "Kitchen"
+            ],
+            "service": [
+              "Repair",
+              "Wash",
+              "Refill"
+            ],
+            "shop": [
+              "Salvage",
+              "Exchange",
+              "Supply"
+            ],
+            "transport": [
+              "Cart Hire",
+              "Haulage"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "hubs": [
+    {
+      "id": "neon-nirvana",
+      "borough": "Elven Heights",
+      "neighborhood": "Nirvana Terrace",
+      "scale": "Local evening anchor",
+      "footfall": {
+        "low": 200,
+        "high": 500,
+        "unit": "visits / day"
+      },
+      "food": {
+        "low": 1,
+        "high": 2,
+        "unit": "food counters",
+        "purchaseShare": 0.35,
+        "counterThroughput": {
+          "low": 150,
+          "high": 250
+        },
+        "basis": "Assume 35% buy food; 150–250 meals per counter per day. Includes on-site and surrounding capacity."
+      },
+      "support": {
+        "low": 3,
+        "high": 6,
+        "unit": "nearby service businesses"
+      },
+      "notes": "Small dining and arrival cluster; the bar remains a single venue.",
+      "sites": [
+        {
+          "id": "nirvana-laurel-kitchen",
+          "name": "Nirvana Laurel Kitchen",
+          "category": "food",
+          "description": "Late supper near the bar.",
+          "dx": -32,
+          "dy": -22
+        },
+        {
+          "id": "nirvana-silverleaf-atelier",
+          "name": "Nirvana Silverleaf Atelier",
+          "category": "service",
+          "description": "Eveningwear repairs and alterations.",
+          "dx": 28,
+          "dy": -24
+        },
+        {
+          "id": "nirvana-carriage-hire",
+          "name": "Nirvana Carriage Hire",
+          "category": "transport",
+          "description": "Hired rides for evening departures.",
+          "dx": 40,
+          "dy": 10
+        }
+      ]
+    },
+    {
+      "id": "the-human-touch",
+      "borough": "Humanity Central",
+      "neighborhood": "Touch Corner",
+      "scale": "Local evening anchor",
+      "footfall": {
+        "low": 250,
+        "high": 600,
+        "unit": "visits / day"
+      },
+      "food": {
+        "low": 1,
+        "high": 2,
+        "unit": "food counters",
+        "purchaseShare": 0.35,
+        "counterThroughput": {
+          "low": 150,
+          "high": 250
+        },
+        "basis": "Assume 35% buy food; 150–250 meals per counter per day. Includes on-site and surrounding capacity."
+      },
+      "support": {
+        "low": 4,
+        "high": 8,
+        "unit": "nearby service businesses"
+      },
+      "notes": "A busy street corner around one bar, with shared neighborhood services.",
+      "sites": [
+        {
+          "id": "touch-crossing-kitchen",
+          "name": "Touch Crossing Kitchen",
+          "category": "food",
+          "description": "Affordable late meals.",
+          "dx": -32,
+          "dy": -22
+        },
+        {
+          "id": "touch-signal-repair",
+          "name": "Touch Signal Repair",
+          "category": "service",
+          "description": "Quick device repairs.",
+          "dx": 28,
+          "dy": -24
+        },
+        {
+          "id": "touch-corner-cycle-hire",
+          "name": "Touch Corner Cycle Hire",
+          "category": "transport",
+          "description": "Short-trip cycle rentals.",
+          "dx": 40,
+          "dy": 10
+        }
+      ]
+    },
+    {
+      "id": "iron-spirits",
+      "borough": "Dwarf District",
+      "neighborhood": "Spirits Yard",
+      "scale": "Local evening anchor",
+      "footfall": {
+        "low": 200,
+        "high": 550,
+        "unit": "visits / day"
+      },
+      "food": {
+        "low": 1,
+        "high": 2,
+        "unit": "food counters",
+        "purchaseShare": 0.35,
+        "counterThroughput": {
+          "low": 150,
+          "high": 250
+        },
+        "basis": "Assume 35% buy food; 150–250 meals per counter per day. Includes on-site and surrounding capacity."
+      },
+      "support": {
+        "low": 3,
+        "high": 6,
+        "unit": "nearby service businesses"
+      },
+      "notes": "Serves local workers across staggered shifts.",
+      "sites": [
+        {
+          "id": "spirits-hearth-bread",
+          "name": "Spirits Hearth Bread",
+          "category": "food",
+          "description": "Filled rolls and hot bread.",
+          "dx": -32,
+          "dy": -22
+        },
+        {
+          "id": "spirits-rivet-workwear",
+          "name": "Spirits Rivet Workwear",
+          "category": "shop",
+          "description": "Replacement boots and work clothing.",
+          "dx": 28,
+          "dy": -24
+        },
+        {
+          "id": "spirits-yard-cart-hire",
+          "name": "Spirits Yard Cart Hire",
+          "category": "transport",
+          "description": "Small load and passenger cart rentals.",
+          "dx": 40,
+          "dy": 10
+        }
+      ]
+    },
+    {
+      "id": "elven-bathhouses-aqua-elysium",
+      "borough": "Elven Heights",
+      "neighborhood": "Elysium Steps",
+      "scale": "Large bathhouse campus",
+      "footfall": {
+        "low": 2000,
+        "high": 4000,
+        "unit": "visits / day"
+      },
+      "food": {
+        "low": 2,
+        "high": 7,
+        "unit": "food counters",
+        "purchaseShare": 0.25,
+        "counterThroughput": {
+          "low": 150,
+          "high": 250
+        },
+        "basis": "Assume 25% buy food; 150–250 meals per counter per day. Includes on-site and surrounding capacity."
+      },
+      "support": {
+        "low": 10,
+        "high": 18,
+        "unit": "nearby service businesses"
+      },
+      "notes": "Several bathhouse buildings and a walkable arrival district.",
+      "sites": [
+        {
+          "id": "elysium-laurel-tea-room",
+          "name": "Elysium Laurel Tea Room",
+          "category": "food",
+          "description": "Tea and light post-bath meals.",
+          "dx": -32,
+          "dy": -22
+        },
+        {
+          "id": "elysium-amber-pantry",
+          "name": "Elysium Amber Pantry",
+          "category": "food",
+          "description": "Packed lunches and fruit.",
+          "dx": 28,
+          "dy": -24
+        },
+        {
+          "id": "elysium-silverleaf-linen-house",
+          "name": "Elysium Silverleaf Linen House",
+          "category": "service",
+          "description": "Linen and garment care.",
+          "dx": 40,
+          "dy": 10
+        },
+        {
+          "id": "elysium-glass-outfitters",
+          "name": "Elysium Glass Outfitters",
+          "category": "shop",
+          "description": "Bathing essentials and robes.",
+          "dx": 24,
+          "dy": 34
+        }
+      ]
+    },
+    {
+      "id": "the-crystal-conservatory",
+      "borough": "Elven Heights",
+      "neighborhood": "Crystal Garden Ring",
+      "scale": "Very large garden destination",
+      "footfall": {
+        "low": 8000,
+        "high": 16000,
+        "unit": "visits / day"
+      },
+      "food": {
+        "low": 10,
+        "high": 32,
+        "unit": "food counters",
+        "purchaseShare": 0.3,
+        "counterThroughput": {
+          "low": 150,
+          "high": 250
+        },
+        "basis": "Assume 30% buy food; 150–250 meals per counter per day. Includes on-site and surrounding capacity."
+      },
+      "support": {
+        "low": 20,
+        "high": 40,
+        "unit": "nearby service businesses"
+      },
+      "notes": "A district-scale dome and garden grounds; food service is spread between gates and internal courts.",
+      "sites": [
+        {
+          "id": "crystal-laurel-kitchen",
+          "name": "Crystal Laurel Kitchen",
+          "category": "food",
+          "description": "Garden-gate lunches.",
+          "dx": -32,
+          "dy": -22
+        },
+        {
+          "id": "crystal-amber-tea-room",
+          "name": "Crystal Amber Tea Room",
+          "category": "food",
+          "description": "Tea and snacks near the visitor route.",
+          "dx": 28,
+          "dy": -24
+        },
+        {
+          "id": "crystal-glass-pantry",
+          "name": "Crystal Glass Pantry",
+          "category": "food",
+          "description": "Picnic meals and drinks.",
+          "dx": 40,
+          "dy": 10
+        },
+        {
+          "id": "crystal-silverleaf-florist",
+          "name": "Crystal Silverleaf Florist",
+          "category": "shop",
+          "description": "Flowers and small garden plants.",
+          "dx": 24,
+          "dy": 34
+        },
+        {
+          "id": "crystal-garden-care",
+          "name": "Crystal Garden Care",
+          "category": "service",
+          "description": "Plant care and gardening services.",
+          "dx": -27,
+          "dy": 32
+        },
+        {
+          "id": "crystal-ring-cycle-hire",
+          "name": "Crystal Ring Cycle Hire",
+          "category": "transport",
+          "description": "Cycle rentals around the grounds.",
+          "dx": -43,
+          "dy": 6
+        }
+      ]
+    },
+    {
+      "id": "the-archive-of-ages",
+      "borough": "Elven Heights",
+      "neighborhood": "Archive Court",
+      "scale": "Major museum and library campus",
+      "footfall": {
+        "low": 3000,
+        "high": 6000,
+        "unit": "visits / day"
+      },
+      "food": {
+        "low": 3,
+        "high": 10,
+        "unit": "food counters",
+        "purchaseShare": 0.25,
+        "counterThroughput": {
+          "low": 150,
+          "high": 250
+        },
+        "basis": "Assume 25% buy food; 150–250 meals per counter per day. Includes on-site and surrounding capacity."
+      },
+      "support": {
+        "low": 12,
+        "high": 24,
+        "unit": "nearby service businesses"
+      },
+      "notes": "Readers and museum visitors share a quieter service district.",
+      "sites": [
+        {
+          "id": "archive-laurel-tea-room",
+          "name": "Archive Laurel Tea Room",
+          "category": "food",
+          "description": "Quiet lunches for readers.",
+          "dx": -32,
+          "dy": -22
+        },
+        {
+          "id": "archive-amber-books",
+          "name": "Archive Amber Books",
+          "category": "shop",
+          "description": "Books and facsimile prints.",
+          "dx": 28,
+          "dy": -24
+        },
+        {
+          "id": "archive-glass-copy-house",
+          "name": "Archive Glass Copy House",
+          "category": "service",
+          "description": "Document copying and scanning.",
+          "dx": 40,
+          "dy": 10
+        },
+        {
+          "id": "archive-silverleaf-repair",
+          "name": "Archive Silverleaf Repair",
+          "category": "service",
+          "description": "Book and paper repairs.",
+          "dx": 24,
+          "dy": 34
+        }
+      ]
+    },
+    {
+      "id": "techtown-marketplace",
+      "borough": "Humanity Central",
+      "neighborhood": "TechTown Crossings",
+      "scale": "Very large market district",
+      "footfall": {
+        "low": 18000,
+        "high": 35000,
+        "unit": "visits / day"
+      },
+      "food": {
+        "low": 22,
+        "high": 70,
+        "unit": "food counters",
+        "purchaseShare": 0.3,
+        "counterThroughput": {
+          "low": 150,
+          "high": 250
+        },
+        "basis": "Assume 30% buy food; 150–250 meals per counter per day. Includes on-site and surrounding capacity."
+      },
+      "support": {
+        "low": 60,
+        "high": 100,
+        "unit": "nearby service businesses"
+      },
+      "notes": "Several market blocks with food courts, repair lanes and freight access; support range excludes the main market's general merchandise stalls.",
+      "sites": [
+        {
+          "id": "techtown-circuit-canteen",
+          "name": "TechTown Circuit Canteen",
+          "category": "food",
+          "description": "Quick meals for traders and customers.",
+          "dx": -32,
+          "dy": -22
+        },
+        {
+          "id": "techtown-common-coffee",
+          "name": "TechTown Common Coffee",
+          "category": "food",
+          "description": "Coffee and breakfast.",
+          "dx": 28,
+          "dy": -24
+        },
+        {
+          "id": "techtown-crossing-kitchen",
+          "name": "TechTown Crossing Kitchen",
+          "category": "food",
+          "description": "Meals near the main pedestrian crossing.",
+          "dx": 40,
+          "dy": 10
+        },
+        {
+          "id": "techtown-signal-repair",
+          "name": "TechTown Signal Repair",
+          "category": "service",
+          "description": "Device diagnosis and repair.",
+          "dx": 24,
+          "dy": 34
+        },
+        {
+          "id": "techtown-circuit-supply",
+          "name": "TechTown Circuit Supply",
+          "category": "shop",
+          "description": "Components and everyday cables.",
+          "dx": -27,
+          "dy": 32
+        },
+        {
+          "id": "techtown-crossing-courier",
+          "name": "TechTown Crossing Courier",
+          "category": "transport",
+          "description": "Local parcel and purchase delivery.",
+          "dx": -43,
+          "dy": 6
+        }
+      ]
+    },
+    {
+      "id": "the-unity-plaza",
+      "borough": "Humanity Central",
+      "neighborhood": "Unity Commons",
+      "scale": "Very large civic gathering district",
+      "footfall": {
+        "low": 15000,
+        "high": 30000,
+        "unit": "visits / day"
+      },
+      "food": {
+        "low": 15,
+        "high": 50,
+        "unit": "food counters",
+        "purchaseShare": 0.25,
+        "counterThroughput": {
+          "low": 150,
+          "high": 250
+        },
+        "basis": "Assume 25% buy food; 150–250 meals per counter per day. Includes on-site and surrounding capacity."
+      },
+      "support": {
+        "low": 35,
+        "high": 70,
+        "unit": "nearby service businesses"
+      },
+      "notes": "An ordinary busy day across the plaza and its edges; major festival attendance needs a separate event estimate.",
+      "sites": [
+        {
+          "id": "unity-common-kitchen",
+          "name": "Unity Common Kitchen",
+          "category": "food",
+          "description": "Sit-down meals near the plaza.",
+          "dx": -32,
+          "dy": -22
+        },
+        {
+          "id": "unity-crossing-canteen",
+          "name": "Unity Crossing Canteen",
+          "category": "food",
+          "description": "Fast lunches for daytime crowds.",
+          "dx": 28,
+          "dy": -24
+        },
+        {
+          "id": "unity-signal-coffee",
+          "name": "Unity Signal Coffee",
+          "category": "food",
+          "description": "Drinks and pastries at the plaza edge.",
+          "dx": 40,
+          "dy": 10
+        },
+        {
+          "id": "unity-common-print",
+          "name": "Unity Common Print",
+          "category": "service",
+          "description": "Posters, signs and short print runs.",
+          "dx": 24,
+          "dy": 34
+        },
+        {
+          "id": "unity-crossing-supply",
+          "name": "Unity Crossing Supply",
+          "category": "shop",
+          "description": "Everyday event and visitor essentials.",
+          "dx": -27,
+          "dy": 32
+        },
+        {
+          "id": "unity-commons-cycle-hire",
+          "name": "Unity Commons Cycle Hire",
+          "category": "transport",
+          "description": "Cycle rentals for plaza arrivals.",
+          "dx": -43,
+          "dy": 6
+        }
+      ]
+    },
+    {
+      "id": "neonix-university",
+      "borough": "Humanity Central",
+      "neighborhood": "University Circuit",
+      "scale": "Very large university campus",
+      "footfall": {
+        "low": 10000,
+        "high": 20000,
+        "unit": "visits / day"
+      },
+      "food": {
+        "low": 14,
+        "high": 47,
+        "unit": "food counters",
+        "purchaseShare": 0.35,
+        "counterThroughput": {
+          "low": 150,
+          "high": 250
+        },
+        "basis": "Assume 35% buy food; 150–250 meals per counter per day. Includes on-site and surrounding capacity."
+      },
+      "support": {
+        "low": 35,
+        "high": 65,
+        "unit": "nearby service businesses"
+      },
+      "notes": "Teaching, research and campus life create multiple meal periods; counters include student canteens.",
+      "sites": [
+        {
+          "id": "university-circuit-canteen",
+          "name": "University Circuit Canteen",
+          "category": "food",
+          "description": "Student and staff meals.",
+          "dx": -32,
+          "dy": -22
+        },
+        {
+          "id": "university-common-coffee",
+          "name": "University Common Coffee",
+          "category": "food",
+          "description": "Coffee and study-break snacks.",
+          "dx": 28,
+          "dy": -24
+        },
+        {
+          "id": "university-crossing-kitchen",
+          "name": "University Crossing Kitchen",
+          "category": "food",
+          "description": "Evening meals near campus housing.",
+          "dx": 40,
+          "dy": 10
+        },
+        {
+          "id": "university-signal-print",
+          "name": "University Signal Print",
+          "category": "service",
+          "description": "Printing and document binding.",
+          "dx": 24,
+          "dy": 34
+        },
+        {
+          "id": "university-circuit-books",
+          "name": "University Circuit Books",
+          "category": "shop",
+          "description": "Course books and stationery.",
+          "dx": -27,
+          "dy": 32
+        },
+        {
+          "id": "university-common-laundry",
+          "name": "University Common Laundry",
+          "category": "service",
+          "description": "Student laundry and linen cleaning.",
+          "dx": -43,
+          "dy": 6
+        }
+      ]
+    },
+    {
+      "id": "ironheart-foundry",
+      "borough": "Dwarf District",
+      "neighborhood": "Ironheart Shift Belt",
+      "scale": "Very large industrial works",
+      "footfall": {
+        "low": 2000,
+        "high": 4000,
+        "unit": "people / shift"
+      },
+      "food": {
+        "low": 4,
+        "high": 11,
+        "unit": "food counters",
+        "purchaseShare": 0.4,
+        "counterThroughput": {
+          "low": 150,
+          "high": 250
+        },
+        "basis": "Assume 40% buy food; 150–250 meals per counter per shift. Includes on-site and surrounding capacity."
+      },
+      "support": {
+        "low": 20,
+        "high": 40,
+        "unit": "nearby service businesses"
+      },
+      "notes": "One staffed shift across a large works; do not treat shift populations as distinct residents.",
+      "sites": [
+        {
+          "id": "ironheart-rivet-canteen",
+          "name": "Ironheart Rivet Canteen",
+          "category": "food",
+          "description": "Fast meals around shift change.",
+          "dx": -32,
+          "dy": -22
+        },
+        {
+          "id": "ironheart-hearth-grill",
+          "name": "Ironheart Hearth Grill",
+          "category": "food",
+          "description": "Hot meals by the works entrance.",
+          "dx": 28,
+          "dy": -24
+        },
+        {
+          "id": "ironheart-copper-bread",
+          "name": "Ironheart Copper Bread",
+          "category": "food",
+          "description": "Portable breakfasts and lunch rolls.",
+          "dx": 40,
+          "dy": 10
+        },
+        {
+          "id": "ironheart-anvil-tool-hire",
+          "name": "Ironheart Anvil Tool Hire",
+          "category": "service",
+          "description": "Short-term industrial tool rentals.",
+          "dx": 24,
+          "dy": 34
+        },
+        {
+          "id": "ironheart-rivet-workwear",
+          "name": "Ironheart Rivet Workwear",
+          "category": "shop",
+          "description": "Protective clothing and replacement boots.",
+          "dx": -27,
+          "dy": 32
+        },
+        {
+          "id": "ironheart-copper-haulage",
+          "name": "Ironheart Copper Haulage",
+          "category": "transport",
+          "description": "Local loads and supplies delivery.",
+          "dx": -43,
+          "dy": 6
+        }
+      ]
+    },
+    {
+      "id": "the-underforge",
+      "borough": "Dwarf District",
+      "neighborhood": "Underforge Galleries",
+      "scale": "Extensive subterranean workshop complex",
+      "footfall": {
+        "low": 2500,
+        "high": 5000,
+        "unit": "people / shift"
+      },
+      "food": {
+        "low": 4,
+        "high": 14,
+        "unit": "food counters",
+        "purchaseShare": 0.4,
+        "counterThroughput": {
+          "low": 150,
+          "high": 250
+        },
+        "basis": "Assume 40% buy food; 150–250 meals per counter per shift. Includes on-site and surrounding capacity."
+      },
+      "support": {
+        "low": 20,
+        "high": 35,
+        "unit": "nearby service businesses"
+      },
+      "notes": "Support sites inherit the Underforge's underground level; the map offsets do not create surface shops.",
+      "sites": [
+        {
+          "id": "underforge-hearth-canteen",
+          "name": "Underforge Hearth Canteen",
+          "category": "food",
+          "description": "Meals between workshop shifts.",
+          "dx": -32,
+          "dy": -22
+        },
+        {
+          "id": "underforge-copper-bread",
+          "name": "Underforge Copper Bread",
+          "category": "food",
+          "description": "Packed meals for craftspeople.",
+          "dx": 28,
+          "dy": -24
+        },
+        {
+          "id": "underforge-anvil-tool-hire",
+          "name": "Underforge Anvil Tool Hire",
+          "category": "service",
+          "description": "Specialist workshop tool rentals.",
+          "dx": 40,
+          "dy": 10
+        },
+        {
+          "id": "underforge-rivet-supply",
+          "name": "Underforge Rivet Supply",
+          "category": "shop",
+          "description": "Fasteners and everyday workshop stock.",
+          "dx": 24,
+          "dy": 34
+        }
+      ]
+    },
+    {
+      "id": "stonehall-stadium",
+      "borough": "Dwarf District",
+      "neighborhood": "Stonehall Gate Ring",
+      "scale": "Very large stadium and arrival district",
+      "footfall": {
+        "low": 30000,
+        "high": 50000,
+        "unit": "visits / event"
+      },
+      "food": {
+        "low": 30,
+        "high": 88,
+        "unit": "food counters",
+        "purchaseShare": 0.35,
+        "counterThroughput": {
+          "low": 200,
+          "high": 350
+        },
+        "basis": "Assume 35% buy food; 200–350 servings per counter per event. Includes on-site and surrounding capacity."
+      },
+      "support": {
+        "low": 35,
+        "high": 60,
+        "unit": "nearby service businesses"
+      },
+      "notes": "A major event scenario; most food capacity is concessions within the stadium, with street food and permanent kitchens around its gates.",
+      "sites": [
+        {
+          "id": "stonehall-hearth-grill",
+          "name": "Stonehall Hearth Grill",
+          "category": "food",
+          "description": "Hot food at the stadium gates.",
+          "dx": -32,
+          "dy": -22
+        },
+        {
+          "id": "stonehall-copper-bread",
+          "name": "Stonehall Copper Bread",
+          "category": "food",
+          "description": "Filled rolls for event crowds.",
+          "dx": 28,
+          "dy": -24
+        },
+        {
+          "id": "stonehall-rivet-canteen",
+          "name": "Stonehall Rivet Canteen",
+          "category": "food",
+          "description": "Meals before and after events.",
+          "dx": 40,
+          "dy": 10
+        },
+        {
+          "id": "stonehall-anvil-outfitters",
+          "name": "Stonehall Anvil Outfitters",
+          "category": "shop",
+          "description": "Event clothing and practical crowd essentials.",
+          "dx": 24,
+          "dy": 34
+        },
+        {
+          "id": "stonehall-rivet-locker-house",
+          "name": "Stonehall Rivet Locker House",
+          "category": "service",
+          "description": "Paid bag and equipment storage.",
+          "dx": -27,
+          "dy": 32
+        },
+        {
+          "id": "stonehall-gate-cart-hire",
+          "name": "Stonehall Gate Cart Hire",
+          "category": "transport",
+          "description": "Hired rides between gates and nearby streets.",
+          "dx": -43,
+          "dy": 6
+        }
+      ]
+    },
+    {
+      "id": "the-neon-labyrinth",
+      "borough": "Mutant Quarters",
+      "neighborhood": "Labyrinth Loops",
+      "scale": "Very large nightlife and market district",
+      "footfall": {
+        "low": 12000,
+        "high": 25000,
+        "unit": "visits / day"
+      },
+      "food": {
+        "low": 17,
+        "high": 59,
+        "unit": "food counters",
+        "purchaseShare": 0.35,
+        "counterThroughput": {
+          "low": 150,
+          "high": 250
+        },
+        "basis": "Assume 35% buy food; 150–250 meals per counter per day. Includes on-site and surrounding capacity."
+      },
+      "support": {
+        "low": 50,
+        "high": 90,
+        "unit": "nearby service businesses"
+      },
+      "notes": "An extended day-to-night trading cycle across many lanes; underground music describes the scene, not a required below-ground location.",
+      "sites": [
+        {
+          "id": "labyrinth-prism-noodles",
+          "name": "Labyrinth Prism Noodles",
+          "category": "food",
+          "description": "Fast meals through the evening.",
+          "dx": -32,
+          "dy": -22
+        },
+        {
+          "id": "labyrinth-violet-night-bites",
+          "name": "Labyrinth Violet Night Bites",
+          "category": "food",
+          "description": "Late snacks between venues.",
+          "dx": 28,
+          "dy": -24
+        },
+        {
+          "id": "labyrinth-patch-kitchen",
+          "name": "Labyrinth Patch Kitchen",
+          "category": "food",
+          "description": "Affordable daytime meals.",
+          "dx": 40,
+          "dy": 10
+        },
+        {
+          "id": "labyrinth-switch-records",
+          "name": "Labyrinth Switch Records",
+          "category": "shop",
+          "description": "Recorded music and small audio supplies.",
+          "dx": 24,
+          "dy": 34
+        },
+        {
+          "id": "labyrinth-prism-alterations",
+          "name": "Labyrinth Prism Alterations",
+          "category": "service",
+          "description": "Clothing adjustments for varied body shapes.",
+          "dx": -27,
+          "dy": 32
+        },
+        {
+          "id": "labyrinth-loop-ride-desk",
+          "name": "Labyrinth Loop Ride Desk",
+          "category": "transport",
+          "description": "Booked rides from the nightlife streets.",
+          "dx": -43,
+          "dy": 6
+        }
+      ]
+    },
+    {
+      "id": "the-chrysalis-clinic",
+      "borough": "Mutant Quarters",
+      "neighborhood": "Chrysalis Care Quarter",
+      "scale": "Major specialist clinic campus",
+      "footfall": {
+        "low": 1500,
+        "high": 3500,
+        "unit": "visits / day"
+      },
+      "food": {
+        "low": 2,
+        "high": 6,
+        "unit": "food counters",
+        "purchaseShare": 0.25,
+        "counterThroughput": {
+          "low": 150,
+          "high": 250
+        },
+        "basis": "Assume 25% buy food; 150–250 meals per counter per day. Includes on-site and surrounding capacity."
+      },
+      "support": {
+        "low": 15,
+        "high": 30,
+        "unit": "nearby service businesses"
+      },
+      "notes": "Visit estimate includes patients, companions and staff; support businesses add convenience without implying medical outcomes.",
+      "sites": [
+        {
+          "id": "chrysalis-patch-kitchen",
+          "name": "Chrysalis Patch Kitchen",
+          "category": "food",
+          "description": "Simple meals near the clinic.",
+          "dx": -32,
+          "dy": -22
+        },
+        {
+          "id": "chrysalis-prism-supply",
+          "name": "Chrysalis Prism Supply",
+          "category": "shop",
+          "description": "Everyday mobility and comfort items.",
+          "dx": 28,
+          "dy": -24
+        },
+        {
+          "id": "chrysalis-switch-alterations",
+          "name": "Chrysalis Switch Alterations",
+          "category": "service",
+          "description": "Garment adjustments after fittings.",
+          "dx": 40,
+          "dy": 10
+        },
+        {
+          "id": "chrysalis-violet-laundry",
+          "name": "Chrysalis Violet Laundry",
+          "category": "service",
+          "description": "Clothing and linen cleaning.",
+          "dx": 24,
+          "dy": 34
+        }
+      ]
+    },
+    {
+      "id": "the-fringe-theatre",
+      "borough": "Mutant Quarters",
+      "neighborhood": "Fringe Stage Rows",
+      "scale": "Large performance venue",
+      "footfall": {
+        "low": 800,
+        "high": 2000,
+        "unit": "visits / event"
+      },
+      "food": {
+        "low": 1,
+        "high": 4,
+        "unit": "food counters",
+        "purchaseShare": 0.3,
+        "counterThroughput": {
+          "low": 150,
+          "high": 250
+        },
+        "basis": "Assume 30% buy food; 150–250 meals per counter per event. Includes on-site and surrounding capacity."
+      },
+      "support": {
+        "low": 8,
+        "high": 16,
+        "unit": "nearby service businesses"
+      },
+      "notes": "One show with pre- and post-show trade; event food estimates assume counter service on both sides of the performance.",
+      "sites": [
+        {
+          "id": "fringe-violet-night-bites",
+          "name": "Fringe Violet Night Bites",
+          "category": "food",
+          "description": "Quick food before and after shows.",
+          "dx": -32,
+          "dy": -22
+        },
+        {
+          "id": "fringe-prism-kitchen",
+          "name": "Fringe Prism Kitchen",
+          "category": "food",
+          "description": "Meals for performers and audiences.",
+          "dx": 28,
+          "dy": -24
+        },
+        {
+          "id": "fringe-patch-costumes",
+          "name": "Fringe Patch Costumes",
+          "category": "shop",
+          "description": "Costume pieces and stage accessories.",
+          "dx": 40,
+          "dy": 10
+        },
+        {
+          "id": "fringe-switch-repair",
+          "name": "Fringe Switch Repair",
+          "category": "service",
+          "description": "Small sound and lighting equipment repairs.",
+          "dx": 24,
+          "dy": 34
+        }
+      ]
+    },
+    {
+      "id": "the-boneyard",
+      "borough": "The Gloomscape",
+      "neighborhood": "Boneyard Reclaim Belt",
+      "scale": "Very large salvage and recycling district",
+      "footfall": {
+        "low": 3000,
+        "high": 6000,
+        "unit": "visits / day"
+      },
+      "food": {
+        "low": 4,
+        "high": 12,
+        "unit": "food counters",
+        "purchaseShare": 0.3,
+        "counterThroughput": {
+          "low": 150,
+          "high": 250
+        },
+        "basis": "Assume 30% buy food; 150–250 meals per counter per day. Includes on-site and surrounding capacity."
+      },
+      "support": {
+        "low": 25,
+        "high": 45,
+        "unit": "nearby service businesses"
+      },
+      "notes": "A sprawling work district with dispersed gates and collection points; counts include workers and visiting traders.",
+      "sites": [
+        {
+          "id": "boneyard-tin-kettle",
+          "name": "Boneyard Tin Kettle",
+          "category": "food",
+          "description": "Low-cost hot meals.",
+          "dx": -32,
+          "dy": -22
+        },
+        {
+          "id": "boneyard-lantern-bread",
+          "name": "Boneyard Lantern Bread",
+          "category": "food",
+          "description": "Bread and portable work lunches.",
+          "dx": 28,
+          "dy": -24
+        },
+        {
+          "id": "boneyard-rain-kitchen",
+          "name": "Boneyard Rain Kitchen",
+          "category": "food",
+          "description": "Meals near the collection gates.",
+          "dx": 40,
+          "dy": 10
+        },
+        {
+          "id": "boneyard-mend-repair",
+          "name": "Boneyard Mend Repair",
+          "category": "service",
+          "description": "Repairs using recovered parts.",
+          "dx": 24,
+          "dy": 34
+        },
+        {
+          "id": "boneyard-tin-exchange",
+          "name": "Boneyard Tin Exchange",
+          "category": "shop",
+          "description": "Sorted reusable fittings and components.",
+          "dx": -27,
+          "dy": 32
+        },
+        {
+          "id": "boneyard-reclaim-cart-hire",
+          "name": "Boneyard Reclaim Cart Hire",
+          "category": "transport",
+          "description": "Handcarts and small salvage load rentals.",
+          "dx": -43,
+          "dy": 6
+        }
+      ]
+    },
+    {
+      "id": "the-breathless-bazaar",
+      "borough": "The Gloomscape",
+      "neighborhood": "Bazaar Lower Rows",
+      "scale": "Large underground market",
+      "footfall": {
+        "low": 6000,
+        "high": 12000,
+        "unit": "visits / day"
+      },
+      "food": {
+        "low": 8,
+        "high": 24,
+        "unit": "food counters",
+        "purchaseShare": 0.3,
+        "counterThroughput": {
+          "low": 150,
+          "high": 250
+        },
+        "basis": "Assume 30% buy food; 150–250 meals per counter per day. Includes on-site and surrounding capacity."
+      },
+      "support": {
+        "low": 20,
+        "high": 40,
+        "unit": "nearby service businesses"
+      },
+      "notes": "Support sites inherit the bazaar's underground level; the proposal names ordinary supporting functions without adding illicit lore.",
+      "sites": [
+        {
+          "id": "bazaar-lantern-kettle",
+          "name": "Bazaar Lantern Kettle",
+          "category": "food",
+          "description": "Hot meals for traders and visitors.",
+          "dx": -32,
+          "dy": -22
+        },
+        {
+          "id": "bazaar-tin-bread",
+          "name": "Bazaar Tin Bread",
+          "category": "food",
+          "description": "Inexpensive bread and filled rolls.",
+          "dx": 28,
+          "dy": -24
+        },
+        {
+          "id": "bazaar-mend-repair",
+          "name": "Bazaar Mend Repair",
+          "category": "service",
+          "description": "Clothing and small goods repairs.",
+          "dx": 40,
+          "dy": 10
+        },
+        {
+          "id": "bazaar-lower-cart-hire",
+          "name": "Bazaar Lower Cart Hire",
+          "category": "transport",
+          "description": "Small load rentals within market passages.",
+          "dx": 24,
+          "dy": 34
+        }
+      ]
+    },
+    {
+      "id": "the-veil-of-mist",
+      "borough": "The Gloomscape",
+      "neighborhood": "Veil Walks",
+      "scale": "Large park and neighborhood refuge",
+      "footfall": {
+        "low": 2500,
+        "high": 5000,
+        "unit": "visits / day"
+      },
+      "food": {
+        "low": 2,
+        "high": 7,
+        "unit": "food counters",
+        "purchaseShare": 0.2,
+        "counterThroughput": {
+          "low": 150,
+          "high": 250
+        },
+        "basis": "Assume 20% buy food; 150–250 meals per counter per day. Includes on-site and surrounding capacity."
+      },
+      "support": {
+        "low": 8,
+        "high": 16,
+        "unit": "nearby service businesses"
+      },
+      "notes": "Light food and essential services cluster at park approaches; demand is spread over the day.",
+      "sites": [
+        {
+          "id": "veil-lantern-kettle",
+          "name": "Veil Lantern Kettle",
+          "category": "food",
+          "description": "Warm drinks and simple soup.",
+          "dx": -32,
+          "dy": -22
+        },
+        {
+          "id": "veil-rain-bread",
+          "name": "Veil Rain Bread",
+          "category": "food",
+          "description": "Bread and picnic portions.",
+          "dx": 28,
+          "dy": -24
+        },
+        {
+          "id": "veil-mend-supply",
+          "name": "Veil Mend Supply",
+          "category": "shop",
+          "description": "Low-cost everyday essentials.",
+          "dx": 40,
+          "dy": 10
+        },
+        {
+          "id": "veil-tin-repair",
+          "name": "Veil Tin Repair",
+          "category": "service",
+          "description": "Repairs to bags, shoes and small goods.",
+          "dx": 24,
+          "dy": 34
+        }
+      ]
+    }
+  ]
+}
