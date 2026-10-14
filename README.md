@@ -54,6 +54,18 @@ The **Speak** page lets a visitor talk with the Sage, the out-of-character Archi
 
 Each speaker gets a system prompt built from the lore files: the Sage from `sage.json`, a character from their expanded file, ties and plotlines. Speakers can search the city files mid-conversation (`search_city_files`, `open_file`), and the page shows what they searched and drew on. In a character conversation, text in ((double parentheses)) is an out-of-character note or a scene direction.
 
+## The living map
+
+The City map has a living layer on top of the survey (`docs/map-life.js`, geography in `docs/data/neonix-flows.json`):
+
+- **Elevation.** The Heights are a spur of the northern highlands, with their cliffs facing the city. The ground falls south and east to the Gloomscape, which sits below the river datum over the Sump. There is hillshading lit by the hour, an elevation tint, 20 m contours, and a readout under the cursor.
+- **Mana.** Blue light leaves the Wells (Silvershade, Leafgold, and the dry Altherion well) along the Lattice.
+- **Silt.** Spent mana is shed where implants burn and runs downhill into the Downflow drains, then on to the Sump and the Boneyard.
+- **The Sage.** Its presence sits over the Silvershade Well and moves every so often: a brownout, routing the silt, silencing a well, a Bloom, or the Hum.
+- **Sky.** Time of day can run on its own, be set by hand, or follow the viewer's local clock ("Now"). Weather can be clear, rain, fog, storm, or left to change on its own. Windows light up after dark, and the 3:10 night freight runs at 03:10.
+
+The terrain features, Wells, Lattice lines, drains, outfalls, freight line, light colours and landmark glows are all editable in `neonix-flows.json`, in the same coordinates as `neonix-map.json`. Drain and well names there are proposals.
+
 ## Editing
 
 - Website appearance and behavior: `docs/index.html`, `docs/style.css`, `docs/app.js`.

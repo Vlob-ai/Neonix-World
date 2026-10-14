@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "status": "Draft geography for the living map: elevation, the Lattice, the Downflow, the Wells and the Sump. All coordinates are in the same display units as neonix-map.json and are editable proposals.",
+  "about": {
+    "elevation": "Elevation is in metres above the river datum. The Heights stand on a plateau above the Wells; the city falls south and east to the Gloomscape, which sits on the Sump.",
+    "mana": "Blue mana leaves the Wells through the Lattice, the citywide conduit grid. Particle density follows each line's weight.",
+    "silt": "Spent mana (silt, 'grey') is heavier than air and water. It is shed where implants burn and runs downhill, into the Downflow drains and on to the Sump and the Boneyard.",
+    "sage": "The Sage lives in the Wells and acts only through mana: brownouts, routing, silencing a well, blooms, and the Hum."
+  },
+  "terrain": {
+    "unit": "m",
+    "grid": 6,
+    "bounds": [-300, -250, 1500, 1100],
+    "contourInterval": 20,
+    "indexContour": 100,
+    "tilt": {"high": [330, 110], "low": [620, 800], "drop": 150, "clamp": [-0.3, 1.25]},
+    "features": [
+      {"name": "The Heights escarpment", "kind": "plateau", "note": "A spur of the northern highlands. Its cliffs face the city; to the north it runs on into the Weald.", "polygon": [[595,165],[540,260],[375,315],[205,285],[130,205],[92,60],[70,-320],[720,-320],[660,90]], "rise": 85, "edge": [-34, 26]},
+      {"name": "The High Weald", "kind": "hill", "center": [420, -140], "radius": 300, "rise": 110},
+      {"name": "Ironback Ridge", "kind": "hill", "center": [1075, 300], "radius": 200, "rise": 90},
+      {"name": "The Eastern Fells", "kind": "hill", "center": [1400, 230], "radius": 300, "rise": 120},
+      {"name": "The Sump basin", "kind": "hill", "center": [545, 705], "radius": 150, "rise": -34},
+      {"name": "The Gloom lowland", "kind": "hill", "center": [720, 745], "radius": 240, "rise": -26}
+    ],
+    "noise": {"amplitude": 9, "scale": 120, "seed": 7}
+  },
+  "wells": [
+    {"id": "silvershade", "name": "The Silvershade Well", "note": "The largest well, held by House Silvershade. The Sage is strongest here.", "point": [316, 192], "strength": 1},
+    {"id": "leafgold", "name": "The Leafgold Well", "note": "A minor well, held by House Leafgold.", "point": [470, 128], "strength": 0.45},
+    {"id": "altherion", "name": "The Altherion Well", "note": "Dry for three centuries.", "point": [200, 236], "strength": 0, "dry": true}
+  ],
+  "sage": {"well": "silvershade", "radius": 92},
+  "lattice": [
+    {"id": "lattice-central", "name": "Lattice / Central trunk", "from": "silvershade", "to": "humanity-central", "weight": 1, "points": [[316,192],[360,240],[400,290],[470,330],[560,345],[640,360],[700,400],[730,440]]},
+    {"id": "lattice-east", "name": "Lattice / Foundry line", "from": "silvershade", "to": "dwarf-district", "weight": 0.9, "points": [[316,192],[380,215],[470,250],[560,250],[650,232],[760,252],[860,292],[960,332],[1050,392]]},
+    {"id": "lattice-west", "name": "Lattice / Quarter line", "from": "silvershade", "to": "mutant-quarters", "weight": 0.6, "points": [[316,192],[290,250],[262,320],[240,400],[236,480],[270,560],[340,620],[430,642]]},
+    {"id": "lattice-south", "name": "Lattice / Low line", "from": "silvershade", "to": "the-gloomscape", "weight": 0.32, "points": [[316,192],[360,240],[400,290],[470,330],[560,345],[590,430],[600,520],[650,600],[730,650],[830,690],[900,720]]},
+    {"id": "leafgold-line", "name": "Leafgold line", "from": "leafgold", "to": "humanity-central", "weight": 0.5, "points": [[470,128],[540,160],[610,205],[680,262],[705,322]]}
+  ],
+  "freight": {
+    "name": "The 3:10 night freight",
+    "note": "Thrombur Irontrack's rail runs along the Lattice right-of-way, down from the Heights to the Sump railhead. Sealed cars; nothing on the manifest.",
+    "departs": 3.1667,
+    "hours": 0.6,
+    "points": [[338,214],[400,290],[470,330],[560,345],[590,430],[600,520],[585,610],[556,688]]
+  },
+  "downflow": [
+    {"id": "heights-spillway", "name": "The Heights Spillway", "to": "sump", "points": [[540,250],[585,320],[610,420],[600,520],[575,610],[552,690]]},
+    {"id": "quarter-gutter", "name": "The Quarter Gutter", "to": "sump", "points": [[252,330],[300,430],[360,520],[430,600],[500,668],[536,700]]},
+    {"id": "central-main", "name": "The Central Main", "to": "sump", "points": [[720,290],[745,380],[722,480],[680,560],[620,640],[562,702]]},
+    {"id": "foundry-cut", "name": "The Foundry Cut", "to": "boneyard", "points": [[1030,300],[985,420],[935,520],[870,592],[800,630]]},
+    {"id": "boneyard-overflow", "name": "The Boneyard overflow", "to": "sump", "points": [[790,640],[720,680],[640,706],[578,712]]}
+  ],
+  "outfalls": {
+    "sump": {"name": "The Sump", "note": "A silt reservoir under the old refinery district, beneath the Gloomscape and the lower Mutant Quarters. It is rising.", "point": [545, 705], "radius": [88, 46]},
+    "boneyard": {"name": "The Boneyard outfall", "note": "Where the Foundry Cut empties into the Boneyard.", "point": [792, 632], "radius": [26, 16]}
+  },
+  "silt": {"humanity-central": 1, "dwarf-district": 0.9, "mutant-quarters": 0.6, "the-gloomscape": 0.25, "elven-heights": 0.12},
+  "veil": {"name": "The Veil of Mist", "point": [858, 716], "radius": 62},
+  "lights": {
+    "elven-heights": ["#ffe6b0", "#d9f0ff", "#ffd38a"],
+    "humanity-central": ["#bff4ff", "#ff7ad9", "#fff2c4", "#6fe3ff"],
+    "dwarf-district": ["#ffb060", "#ff8a3d", "#ffe0a0"],
+    "mutant-quarters": ["#ff6ad5", "#b98cff", "#7dfcf0", "#ffd36e"],
+    "the-gloomscape": ["#d8d080", "#9fb79a"]
+  },
+  "glows": {
+    "ironheart-foundry": "#ff7a2e",
+    "techtown-marketplace": "#5fe1ff",
+    "the-neon-labyrinth": "#ff5fd2",
+    "the-unity-plaza": "#a6dcff",
+    "neon-nirvana": "#ffe3a3",
+    "stonehall-stadium": "#ffd27a",
+    "the-fringe-theatre": "#c58cff",
+    "neonix-university": "#cfe8ff",
+    "the-boneyard": "#b9a65a"
+  }
+}

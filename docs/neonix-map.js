@@ -1,4 +1,5 @@
 import './vendor/jsvectormap/jsvectormap.min.js';
+import {bringToLife} from './map-life.js';
 
 const NS='http://www.w3.org/2000/svg';
 let activeCleanup=null, mountSequence=0;
@@ -31,7 +32,7 @@ export async function mountCityMap(container,{escape,byId,thumbnail}){
     for(let step=0;!inside(point,districts.get(place.district).points)&&step<20;step++)point=point.map((n,i)=>(n+place.point[i])/2);
     businesses.set(site.id,{...site,point,hubId:hub.id,district:place.district,depth:place.depth});
   }}
-  let map,selected=null,selectedBusiness=null,districtFilter=null,search='',dragStart=null,dragged=false;
+  let map,life=null,selected=null,selectedBusiness=null,districtFilter=null,search='',dragStart=null,dragged=false;
   const colors={food:'#ddbd70',service:'#70c9dd',shop:'#be9ad7',transport:'#99beab'};
   container.innerHTML=`<section class="city-atlas">
     <header class="atlas-heading"><div><span class="eyebrow">NEONIX / CARTOGRAPHY</span><h1>The shape of the city.</h1><p>Five boroughs. Eighteen landmarks. The neighborhoods that grow around them.</p></div><span class="atlas-version">LAYOUT STUDY / 01</span></header>
@@ -99,6 +100,7 @@ export async function mountCityMap(container,{escape,byId,thumbnail}){
     const labels=svg('g',{class:'atlas-district-labels'},group);for(const d of layout.districts){const t=svg('text',{x:d.label[0],y:d.label[1],class:'atlas-svg-label','text-anchor':'middle'},labels);t.textContent=byId.get(d.id).name.toUpperCase();svg('tspan',{x:d.label[0],dy:14},t).textContent=d.subtitle;}
     for(const [code,r] of Object.entries(instance.regions)){const node=r.element.shape.node;node.setAttribute('tabindex','0');node.setAttribute('role','button');node.setAttribute('aria-label',byId.get(code).name);}
     for(const [index,marker] of Object.entries(instance._markers)){const p=[...places.values()][Number(index)],node=marker.element.shape.node;node.setAttribute('tabindex','0');node.setAttribute('role','button');node.setAttribute('aria-label',`${p.index+1}. ${p.name}${p.depth?', below surface':''}`);}
+    life?.destroy();life=bringToLife({container,stage,mapEl:canvas,group,layout,byId,reduced});
   }
   globalThis.jsVectorMap.addMap('neonix-v1',{width:layout.width,height:layout.height,paths:Object.fromEntries(layout.districts.map(d=>[d.id,{name:byId.get(d.id).name,path:polygon(d.points)}]))});
   try{map=new globalThis.jsVectorMap({selector:'#neonix-map',map:'neonix-v1',backgroundColor:'transparent',draggable:true,zoomMin:1,zoomMax:6,zoomStep:1.4,zoomOnScroll:true,zoomAnimate:false,zoomButtons:true,zoomInButton:'#atlas-zoom-in',zoomOutButton:'#atlas-zoom-out',bindTouchEvents:true,showTooltip:true,
@@ -113,5 +115,5 @@ export async function mountCityMap(container,{escape,byId,thumbnail}){
   on(q('#map-search'),'input',event=>{search=event.target.value.trim();renderList();});
   on(container,'change',event=>{const layer=event.target.dataset.mapLayer;if(layer){stage.dataset[layer]=event.target.checked?'on':'off';if(layer==='support')for(const n of canvas.querySelectorAll('.atlas-support-site'))n.setAttribute('tabindex',event.target.checked?'0':'-1');}});
   const observer=new ResizeObserver(()=>{if(map&&canvas.isConnected){map.updateSize();q('.atlas-zoom-value').textContent=(map.scale/map._baseScale).toFixed(1)+'×';}});observer.observe(canvas);
-  activeCleanup=()=>{abort.abort();observer.disconnect();map?.destroy();};overviewPanel();renderList();
+  activeCleanup=()=>{abort.abort();observer.disconnect();life?.destroy();map?.destroy();};overviewPanel();renderList();
 }
